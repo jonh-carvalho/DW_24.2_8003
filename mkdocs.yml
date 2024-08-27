@@ -1,0 +1,4 @@
+site_name: DW
+theme:
+  name: null
+  custom_dir: 'cinder'
