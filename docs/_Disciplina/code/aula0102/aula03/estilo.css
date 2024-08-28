@@ -1,0 +1,27 @@
+table{
+    border : 1px  blue;
+    width: 50%;
+    
+    
+}
+
+td {
+    border : 1px solid #96D4D4;
+    background-color: #96D4D4;
+    border-radius: 10px;
+    padding: 30px 20px 10px 5px;
+    
+}
+
+th {
+    border : 1px solid green;
+    background-color: #ffe600;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    width:30%
+}
+
+h1{ color: blueviolet;}
