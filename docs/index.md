@@ -1,15 +1,13 @@
-## Commands
+# Desenvolvimento Web
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+**Código da Disciplina**: IBM1738/13006249-8003
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Sobre
 
-## Project layout
+Disciplina que apresenta a introdução a programação web: HTML, CSS e Javascript.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Ferramentas
+
+**Linguagens**: HTML, CSS e Javascript `<br>`
+**Tecnologias**: Visual Studio Code e Gityhub `<br>`
+As APs deverão ser enviadas no github e publicadas no github pages.
