@@ -10,6 +10,8 @@
 
 *`mkdocs -h` - Print help message and exit.
 
+*`mkdocs deploy` - Deploy site builded on Github.
+
 ##Project layout
 
     mkdocs.yml    # The configuration file.

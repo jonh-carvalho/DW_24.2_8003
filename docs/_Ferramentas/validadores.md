@@ -1,6 +1,6 @@
 ---
-id: documento_de_visao
-title: Documento de Visão
+id: validadores
+title: Validadores
 ---
 ## Introdução
 
@@ -8,7 +8,7 @@ title: Documento de Visão
 O propósito deste documento é fornecer uma visão geral sobre o projeto que será realizado na disciplina Arquitetura e Desenho de Software 2020/1, na Universidade de Brasília. Sendo assim, Nesse documento serão descritas de maneira resumida as principais funcionalidades, usabilidades, o problema que será abordado e os objetivos da equipe.
 </p>
 
-## Descrição do Problema 
+## Descrição do Problema
 
 <p align = "justify">
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
@@ -36,7 +36,7 @@ Utilizar a aplicação que será desenvolvida visando resolver...
 O objetivo da equipe de desenvolvimento é fornecer...
 </p>
 
-## Descrição do Usuário 
+## Descrição do Usuário
 
 <p align = "justify">
 Os usuários serão....
@@ -81,7 +81,7 @@ A aplicação não será responsável...
 > Documento de visão. Disponível em  Acesso em dd/MM/yyYY
 
 ## Versionamento
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX e ZZZ ZZZZ | 
 
+| Data       | Versão | Descrição            | Autor(es)           |
+| ---------- | ------- | ---------------------- | ------------------- |
+| DD/MM/YYYY | 1.0     | Criação do documento | XXX XXXX e ZZZ ZZZZ |
