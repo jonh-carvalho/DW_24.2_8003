@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1>Entre em Contato</h1>
+    <form action="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="name">Nome: </label><br>
+            <input type="text" id="name" name="name" required size="4" maxlength="4"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" placeholder="000.000.000-00"><br>
+            <label for="">Validade</label>
+            <input type="date" id="datemax" name="datemax" max="2006-12-31">
+            <label for="message">Mensagem</label><br>
+            <textarea>
+        </textarea><br>
+
+            <label for="cars">Escolha o Carro</label>
+            <select name="cars" id="cars" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="ferrari" selected>Ferrari</option>
+                <option value="audi">Audi</option>
+            </select><br>
+            <input type="submit" value="Enviar">
+        </fieldset><br>
+
+
+        <fieldset>
+            <legend>Usuário/Senha:</legend>
+            <label for="username">Usuário: </label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="email">Password:</label><br>
+            <input type="password"><br>
+            <input type="submit" value="Enviar">
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Usuário/Senha:</legend>
+            <label for="name">Nome: </label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text"><br>
+            <label for="message">Mensagem</label><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio</legend>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+
+        <fieldset>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>
