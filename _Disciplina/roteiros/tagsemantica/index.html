@@ -195,145 +195,120 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#estrutura-html-com-div-e-span">Estrutura HTML com &lt;div&gt; e &lt;span&gt;</a></li>
-        <li class="first-level "><a href="#css-estilizado-com-classes">CSS Estilizado com Classes</a></li>
-        <li class="first-level "><a href="#explicacao">Explicação</a></li>
-        <li class="first-level "><a href="#conclusao">Conclusão</a></li>
+        <li class="first-level active"><a href="#aula-tags-semanticas-em-html">Aula: Tags Semânticas em HTML</a></li>
+            <li class="second-level"><a href="#objetivo">Objetivo:</a></li>
+                
+            <li class="second-level"><a href="#1-introducao-as-tags-semanticas">1. Introdução às Tags Semânticas</a></li>
+                
+            <li class="second-level"><a href="#2-estrutura-do-site-basico">2. Estrutura do Site Básico</a></li>
+                
+            <li class="second-level"><a href="#3-exemplo-de-codigo">3. Exemplo de Código</a></li>
+                
+            <li class="second-level"><a href="#4-explicacao-do-exemplo">4. Explicação do Exemplo</a></li>
+                
+            <li class="second-level"><a href="#5-conclusao">5. Conclusão</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<p>Vamos modificar o exemplo anterior para usar <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> como containers e aplicar o estilo usando classes CSS. Isso permitirá maior flexibilidade e reutilização dos estilos.</p>
-<h3 id="estrutura-html-com-div-e-span">Estrutura HTML com <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code></h3>
+<h3 id="aula-tags-semanticas-em-html">Aula: Tags Semânticas em HTML</h3>
+<h4 id="objetivo">Objetivo:</h4>
+<p>Nesta aula, você aprenderá sobre as tags semânticas do HTML e como usá-las para criar uma estrutura de site básica. Utilizaremos conteúdo fictício "Lorem Ipsum" para ilustrar a aplicação dessas tags.</p>
+<h4 id="1-introducao-as-tags-semanticas">1. Introdução às Tags Semânticas</h4>
+<p>Tags semânticas são elementos HTML que não apenas definem o layout de um site, mas também fornecem significado ao conteúdo. Isso melhora a acessibilidade, a usabilidade e o SEO (Search Engine Optimization) de um site.</p>
+<p>Algumas das principais tags semânticas incluem:
+- <code>&lt;header&gt;</code>: Cabeçalho do site ou de uma seção.
+- <code>&lt;nav&gt;</code>: Menu de navegação.
+- <code>&lt;article&gt;</code>: Conteúdo independente, como um post ou um artigo.
+- <code>&lt;section&gt;</code>: Seção de conteúdo relacionada.
+- <code>&lt;aside&gt;</code>: Conteúdo relacionado, como barras laterais.
+- <code>&lt;footer&gt;</code>: Rodapé do site ou de uma seção.</p>
+<h4 id="2-estrutura-do-site-basico">2. Estrutura do Site Básico</h4>
+<p>Vamos criar um site simples com as seguintes seções:
+- Cabeçalho com o título do site.
+- Menu de navegação.
+- Um artigo principal.
+- Uma seção adicional.
+- Um rodapé.</p>
+<h4 id="3-exemplo-de-codigo">3. Exemplo de Código</h4>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;pt-BR&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Meu Site Básico Estilizado&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+    &lt;title&gt;Meu Site Básico&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, article, section, aside, footer {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+        }
+        header {
+            background-color: #f8f8f8;
+        }
+        nav {
+            background-color: #e8e8e8;
+        }
+        footer {
+            background-color: #f1f1f1;
+        }
+    &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class=&quot;header&quot;&gt;
-        &lt;h1&gt;&lt;span class=&quot;title&quot;&gt;Bem-vindo ao Meu Site&lt;/span&gt;&lt;/h1&gt;
-    &lt;/div&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Bem-vindo ao Meu Site&lt;/h1&gt;
+    &lt;/header&gt;
 
-    &lt;div class=&quot;nav&quot;&gt;
+    &lt;nav&gt;
         &lt;ul&gt;
             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Início&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sobre&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Serviços&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
-    &lt;/div&gt;
+    &lt;/nav&gt;
 
-    &lt;div class=&quot;main-content&quot;&gt;
-        &lt;div class=&quot;article&quot;&gt;
-            &lt;h2&gt;&lt;span class=&quot;subtitle&quot;&gt;Artigo Principal&lt;/span&gt;&lt;/h2&gt;
-            &lt;p&gt;&lt;span class=&quot;text&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/span&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;span class=&quot;text&quot;&gt;Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor.&lt;/span&gt;&lt;/p&gt;
-        &lt;/div&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Artigo Principal&lt;/h2&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
+        &lt;p&gt;Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+    &lt;/article&gt;
 
-        &lt;div class=&quot;section&quot;&gt;
-            &lt;h2&gt;&lt;span class=&quot;subtitle&quot;&gt;Outra Seção&lt;/span&gt;&lt;/h2&gt;
-            &lt;p&gt;&lt;span class=&quot;text&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.&lt;/span&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;span class=&quot;text&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.&lt;/span&gt;&lt;/p&gt;
-        &lt;/div&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Outra Seção&lt;/h2&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.&lt;/p&gt;
+        &lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
+    &lt;/section&gt;
 
-        &lt;div class=&quot;aside&quot;&gt;
-            &lt;h2&gt;&lt;span class=&quot;subtitle&quot;&gt;Barra Lateral&lt;/span&gt;&lt;/h2&gt;
-            &lt;p&gt;&lt;span class=&quot;text&quot;&gt;Informações adicionais ou links relacionados podem ser colocados aqui.&lt;/span&gt;&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;aside&gt;
+        &lt;h2&gt;Barra Lateral&lt;/h2&gt;
+        &lt;p&gt;Informações adicionais ou links relacionados podem ser colocados aqui.&lt;/p&gt;
+    &lt;/aside&gt;
 
-    &lt;div class=&quot;footer&quot;&gt;
-        &lt;p&gt;&lt;span class=&quot;footer-text&quot;&gt;&amp;copy; 2024 Meu Site Básico. Todos os direitos reservados.&lt;/span&gt;&lt;/p&gt;
-    &lt;/div&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 Meu Site Básico. Todos os direitos reservados.&lt;/p&gt;
+    &lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h3 id="css-estilizado-com-classes">CSS Estilizado com Classes</h3>
-<pre><code class="language-css">/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
-
-.header, .nav, .article, .section, .aside, .footer {
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-}
-
-.header {
-    background-color: #f8f8f8;
-}
-
-.nav {
-    background-color: #e8e8e8;
-}
-
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.article, .section, .aside {
-    flex: 1 1 100%;
-    margin: 5px;
-}
-
-.article, .section {
-    background-color: #fefefe;
-}
-
-.aside {
-    background-color: #f4f4f4;
-}
-
-.footer {
-    background-color: #f1f1f1;
-    text-align: center;
-}
-
-.title {
-    font-size: 24px;
-    color: #333;
-}
-
-.subtitle {
-    font-size: 20px;
-    color: #555;
-}
-
-.text {
-    font-size: 16px;
-    color: #666;
-}
-
-.footer-text {
-    font-size: 14px;
-    color: #777;
-}
-</code></pre>
-<h3 id="explicacao">Explicação</h3>
+<h4 id="4-explicacao-do-exemplo">4. Explicação do Exemplo</h4>
 <ul>
-<li><strong>HTML</strong>:</li>
-<li>Substituímos as tags semânticas por <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> para criar containers flexíveis.</li>
-<li>
-<p>As classes como <code>.header</code>, <code>.nav</code>, <code>.article</code>, etc., foram atribuídas para estilizar cada seção.</p>
-</li>
-<li>
-<p><strong>CSS</strong>:</p>
-</li>
-<li><strong>Classes</strong>: Foram usadas para aplicar estilos específicos a diferentes partes do conteúdo, como <code>.title</code>, <code>.subtitle</code>, <code>.text</code>, e <code>.footer-text</code>.</li>
-<li><strong>Layout Flexível</strong>: A classe <code>.main-content</code> usa flexbox para criar um layout flexível, permitindo que os artigos e seções se ajustem ao tamanho da tela.</li>
+<li><strong><code>&lt;header&gt;</code></strong>: Contém o título do site.</li>
+<li><strong><code>&lt;nav&gt;</code></strong>: Um menu de navegação básico com links fictícios.</li>
+<li><strong><code>&lt;article&gt;</code></strong>: O conteúdo principal do site.</li>
+<li><strong><code>&lt;section&gt;</code></strong>: Uma seção adicional que poderia conter mais conteúdo relacionado.</li>
+<li><strong><code>&lt;aside&gt;</code></strong>: Uma barra lateral com informações extras.</li>
+<li><strong><code>&lt;footer&gt;</code></strong>: O rodapé com informações de direitos autorais.</li>
 </ul>
-<h3 id="conclusao">Conclusão</h3>
-<p>Esta abordagem com <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, e classes CSS oferece maior controle sobre o layout e estilo do site. A estrutura do HTML fica mais genérica, enquanto o CSS define o visual e o comportamento das diferentes partes do site.</p></div>
+<h4 id="5-conclusao">5. Conclusão</h4>
+<p>As tags semânticas são fundamentais para criar sites bem estruturados e acessíveis. Ao usar essas tags, o HTML fica mais claro tanto para desenvolvedores quanto para mecanismos de busca, melhorando a experiência geral do usuário.</p>
+<p><strong>Tarefa:</strong> Crie seu próprio site usando tags semânticas e substitua o conteúdo "Lorem Ipsum" por informações reais de um projeto ou interesse pessoal.</p></div>
         
         
     </div>
