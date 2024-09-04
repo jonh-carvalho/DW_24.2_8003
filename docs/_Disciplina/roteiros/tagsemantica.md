@@ -1,4 +1,4 @@
-### Aula: Tags Semânticas em HTML
+# Aula: Tags Semânticas em HTML
 
 #### Objetivo:
 Nesta aula, você aprenderá sobre as tags semânticas do HTML e como usá-las para criar uma estrutura de site básica. Utilizaremos conteúdo fictício "Lorem Ipsum" para ilustrar a aplicação dessas tags.
