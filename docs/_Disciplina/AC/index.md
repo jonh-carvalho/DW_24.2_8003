@@ -1,8 +1,8 @@
 ## Entregas dos ACs
 
-* [AC1](/ac1/index.html) - Entrega 04/09/2024
-* [AC2](/ac2/index.html) - Entrega 11/09/2024
-* [AC3](/ac3/index.html) - Entrega 18/09/2024
+* AC1 - Entrega 04/09/2024
+* AC2 - Entrega 11/09/2024
+* AC3 - Entrega 18/09/2024
 
 Repositório de Avaliações ACs e APs
 
