@@ -1,6 +1,5 @@
 ### **Atividade: Criando uma página da Web básica**
 
- *Duração* : 70 minutos
 
 **Objetivo** :
 Ao final desta atividade, os alunos devem ser capazes de demonstrar sua compreensão dos elementos básicos e da estrutura do HTML, criando uma página da web de perfil pessoal.
