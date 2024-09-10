@@ -12,10 +12,10 @@
 | __08__ - 25/09/24     | AP1                                                     |
 | __09__ - 02/10/24     | Javascript                                              |
 | __10__ - 09/10/24     | Javascript                                              |
-| __10__ - 16/10/24     | Javascript                                              |
-| __10__ - 23/10/24     | Javascript                                              |
-| __10__ - 30/10/24     | Javascript                                              |
-| __10__ - 06/11/24     | Javascript - Fetch/API                                  |
-| __10__ - 13/11/24     | Javascript - Fetch/API                                  |
-| __10__ - 20/11/24     | Feriado                                                 |
-| __10__ - 27/11/24     | AP2                                                     |
+| __11__ - 16/10/24     | Javascript                                              |
+| __12__ - 23/10/24     | Javascript                                              |
+| __13__ - 30/10/24     | Javascript                                              |
+| __14__ - 06/11/24     | Javascript - Fetch/API                                  |
+| __15__ - 13/11/24     | Javascript - Fetch/API                                  |
+| __16__ - 20/11/24     | Feriado                                                 |
+| __17__ - 27/11/24     | AP2                                                     |
