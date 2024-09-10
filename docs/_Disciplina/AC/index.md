@@ -10,8 +10,9 @@ Repositório de Avaliações ACs e APs
 - Guilherme https://github.com/gl-dias/DW
 - Pedro - https://github.com/PedroQuadrat/dw
 - Bernardo https://github.com/meireles07/repositorio-dw
-- Vitor https://github.com/VitorOsouza02/Ac1DW
+- Vitor https://github.com/VitorOsouza02/DesenvolvimentoWeb
 - Gabriel https://github.com/brioncio/desenvolvimento_web
-- Juliana https://github.com/Julijolie/desenvolvimento_web/invitations
-
-Sarah https://github.com/sarahferrarir/desenvolvimento_web
+- Juliana https://github.com/Julijolie/desenvolvimento_web/
+- Sarah https://github.com/sarahferrarir/desenvolvimento_web
+- Arthur https://github.com/Arthur-azeredo/DW
+- Matheus https://github.com/mcascaes/repositorio-dw
