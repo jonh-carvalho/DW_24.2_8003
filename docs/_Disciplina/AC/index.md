@@ -1,8 +1,8 @@
 ## Entregas dos ACs
 
-* [AC1](/docs/_Disciplina/AC/ac1.md) - Entrega 04/09/2024
-* AC2 - Entrega 11/09/2024
-* AC3 - Entrega 18/09/2024
+* [AC1](_Disciplina/AC/ac1/index.html) - Entrega 04/09/2024
+* [AC2](_Disciplina/AC/ac2/index.html) - Entrega 11/09/2024
+* [AC3](_Disciplina/AC/ac3/index.html) - Entrega 18/09/2024
 
 Repositório de Avaliações ACs e APs
 
