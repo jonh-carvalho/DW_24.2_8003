@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Flexbox - DW</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">DW</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Desenvolvimento Web</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Disciplina <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../aulas/">Aulas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../github/">Versionamento</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../mkdocs/">MkDocs</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">AC</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../AC/">Index</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../AC/ac1/">Ac1</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../AC/ac2/">Ac2</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../AC/ac3/">Ac3</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Exercícios</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../Exerc%C3%ADcios/PosicionamentoLandingPage/">PosicionamentoLandingPage</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Roteiros</a>
+    <ul class="dropdown-menu">
+        
+            
+<li class="active">
+    <a href="./">Flexbox</a>
+</li>
+
+        
+            
+<li >
+    <a href="../posicionamento/">Posicionamento</a>
+</li>
+
+        
+            
+<li >
+    <a href="../tagsemantica/">Aula: Tags Semânticas em HTML</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Ferramentas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../_Ferramentas/validadores/">Validadores</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../_Ferramentas/w3c/">W3C Web Standards</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../_Ferramentas/w3schools/">W3Schools</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../Exerc%C3%ADcios/PosicionamentoLandingPage/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../posicionamento/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/flexbox.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#flexbox-css">Flexbox CSS</a></li>
+            <li class="second-level"><a href="#objetivo">Objetivo</a></li>
+                
+        <li class="first-level "><a href="#1-introducao-ao-flexbox">1. Introdução ao Flexbox</a></li>
+        <li class="first-level "><a href="#2-elementos-principais-do-flexbox">2. Elementos principais do Flexbox</a></li>
+        <li class="first-level "><a href="#3-propriedades-do-conteiner-flex">3. Propriedades do Contêiner Flex</a></li>
+            <li class="second-level"><a href="#31-flex-direction">3.1 flex-direction</a></li>
+                
+            <li class="second-level"><a href="#32-justify-content">3.2 justify-content</a></li>
+                
+            <li class="second-level"><a href="#33-align-items">3.3 align-items</a></li>
+                
+            <li class="second-level"><a href="#34-flex-wrap">3.4 flex-wrap</a></li>
+                
+        <li class="first-level "><a href="#4-propriedades-dos-itens-flex">4. Propriedades dos Itens Flex</a></li>
+            <li class="second-level"><a href="#41-flex-grow">4.1 flex-grow</a></li>
+                
+            <li class="second-level"><a href="#42-flex-shrink">4.2 flex-shrink</a></li>
+                
+            <li class="second-level"><a href="#43-flex-basis">4.3 flex-basis</a></li>
+                
+            <li class="second-level"><a href="#44-align-self">4.4 align-self</a></li>
+                
+        <li class="first-level "><a href="#5-exemplo-pratico-completo">5. Exemplo Prático Completo</a></li>
+        <li class="first-level "><a href="#6-atividade-proposta">6. Atividade Proposta</a></li>
+        <li class="first-level "><a href="#sites">Sites</a></li>
+            <li class="second-level"><a href="#-flexbox-froggy">- Flexbox Froggy</a></li>
+                
+                <li class="third-level"><a href="#-css-tricks-a-complete-guide-to-flexbox">- CSS Tricks: A Complete Guide to Flexbox</a></li>
+            <li class="second-level"><a href="#-flexbox-defense">- Flexbox Defense</a></li>
+                
+            <li class="second-level"><a href="#-flexbox-playground">- Flexbox Playground</a></li>
+                
+            <li class="second-level"><a href="#-flexy-boxes">- Flexy Boxes</a></li>
+                
+            <li class="second-level"><a href="#-what-the-flexbox">- What The Flexbox?!</a></li>
+                
+        <li class="first-level "><a href="#7-conclusao">7. Conclusão</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h3 id="flexbox-css">Flexbox CSS</h3>
+<h4 id="objetivo">Objetivo</h4>
+<p>Esse roteiro utiliza o modelo de layout Flexbox para organizar e alinhar elementos dentro de uma página HTML de maneira eficiente e flexível.</p>
+<hr />
+<h3 id="1-introducao-ao-flexbox">1. <strong>Introdução ao Flexbox</strong></h3>
+<p>O Flexbox é um módulo de layout que permite distribuir o espaço de forma mais dinâmica e alinhar os itens dentro de um contêiner, mesmo que o tamanho dos itens seja desconhecido ou dinâmico.</p>
+<h3 id="2-elementos-principais-do-flexbox">2. <strong>Elementos principais do Flexbox</strong></h3>
+<ul>
+<li><strong>Contêiner Flex</strong>: O elemento pai que utiliza o <code>display: flex;</code>. Ele define o contexto flexível para os filhos (itens flex).</li>
+<li><strong>Itens Flex</strong>: Elementos filhos dentro do contêiner flexível que são organizados de acordo com as regras do Flexbox.</li>
+</ul>
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">.container {
+  display: flex;
+}
+.item {
+  background-color: lightblue;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #000;
+}
+</code></pre>
+<h3 id="3-propriedades-do-conteiner-flex">3. <strong>Propriedades do Contêiner Flex</strong></h3>
+<p>Essas propriedades afetam o comportamento de seus itens filhos.</p>
+<h4 id="31-flex-direction">3.1 <code>flex-direction</code></h4>
+<p>Define a direção dos itens no contêiner.</p>
+<ul>
+<li><code>row</code> (padrão): Alinha os itens horizontalmente.</li>
+<li><code>row-reverse</code>: Alinha os itens horizontalmente na direção inversa.</li>
+<li><code>column</code>: Alinha os itens verticalmente.</li>
+<li><code>column-reverse</code>: Alinha os itens verticalmente na direção inversa.</li>
+</ul>
+<pre><code class="language-css">.container {
+  display: flex;
+  flex-direction: row;
+}
+</code></pre>
+<h4 id="32-justify-content">3.2 <code>justify-content</code></h4>
+<p>Alinha os itens no eixo principal (horizontal por padrão).</p>
+<ul>
+<li><code>flex-start</code>: Alinha os itens ao início do contêiner.</li>
+<li><code>flex-end</code>: Alinha os itens ao final do contêiner.</li>
+<li><code>center</code>: Centraliza os itens.</li>
+<li><code>space-between</code>: Deixa espaço igual entre os itens.</li>
+<li><code>space-around</code>: Deixa espaço ao redor dos itens.</li>
+</ul>
+<pre><code class="language-css">.container {
+  display: flex;
+  justify-content: center;
+}
+</code></pre>
+<h4 id="33-align-items">3.3 <code>align-items</code></h4>
+<p>Alinha os itens no eixo cruzado (vertical por padrão).</p>
+<ul>
+<li><code>flex-start</code>: Alinha os itens no início do eixo cruzado.</li>
+<li><code>flex-end</code>: Alinha os itens no final do eixo cruzado.</li>
+<li><code>center</code>: Centraliza os itens no eixo cruzado.</li>
+<li><code>stretch</code>: Os itens se estendem para preencher o contêiner.</li>
+<li><code>baseline</code>: Alinha os itens de acordo com suas linhas de base.</li>
+</ul>
+<pre><code class="language-css">.container {
+  display: flex;
+  align-items: center;
+}
+</code></pre>
+<h4 id="34-flex-wrap">3.4 <code>flex-wrap</code></h4>
+<p>Permite que os itens do contêiner "quebrem" linha se não couberem.</p>
+<ul>
+<li><code>nowrap</code> (padrão): Todos os itens permanecem em uma única linha.</li>
+<li><code>wrap</code>: Itens quebram em múltiplas linhas, se necessário.</li>
+<li><code>wrap-reverse</code>: Itens quebram em múltiplas linhas na direção inversa.</li>
+</ul>
+<pre><code class="language-css">.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+</code></pre>
+<h3 id="4-propriedades-dos-itens-flex">4. <strong>Propriedades dos Itens Flex</strong></h3>
+<h4 id="41-flex-grow">4.1 <code>flex-grow</code></h4>
+<p>Define como um item pode crescer dentro do contêiner flex. Um valor maior permite que o item cresça mais em relação aos outros.</p>
+<pre><code class="language-css">.item {
+  flex-grow: 1; /* Todos os itens terão o mesmo crescimento */
+}
+</code></pre>
+<h4 id="42-flex-shrink">4.2 <code>flex-shrink</code></h4>
+<p>Controla como um item encolhe se não houver espaço suficiente no contêiner.</p>
+<pre><code class="language-css">.item {
+  flex-shrink: 1; /* Todos os itens podem encolher igualmente */
+}
+</code></pre>
+<h4 id="43-flex-basis">4.3 <code>flex-basis</code></h4>
+<p>Define o tamanho inicial de um item antes que o espaço seja distribuído entre os itens.</p>
+<pre><code class="language-css">.item {
+  flex-basis: 200px; /* Todos os itens terão inicialmente 200px */
+}
+</code></pre>
+<h4 id="44-align-self">4.4 <code>align-self</code></h4>
+<p>Permite que um item individual tenha um comportamento de alinhamento diferente dos outros.</p>
+<pre><code class="language-css">.item {
+  align-self: flex-end;
+}
+</code></pre>
+<h3 id="5-exemplo-pratico-completo">5. <strong>Exemplo Prático Completo</strong></h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Flexbox Example&lt;/title&gt;
+  &lt;style&gt;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 300px;
+      border: 2px solid black;
+    }
+    .item {
+      background-color: lightblue;
+      padding: 20px;
+      margin: 10px;
+      flex-grow: 1;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="6-atividade-proposta">6. <strong>Atividade Proposta</strong></h3>
+<p>Recrie um layout flexível usando <code>flexbox</code>, onde os elementos devem se reorganizar de acordo com o tamanho da tela. Por exemplo, três colunas de conteúdo que se ajustam em uma linha única em telas grandes e se reorganizam verticalmente em telas menores.</p>
+<h3 id="sites">Sites</h3>
+<p>Aqui estão alguns dos principais sites de demonstração e aprendizado do Flexbox CSS que ajudam a entender como ele funciona através de exemplos interativos e visuais:</p>
+<h4 id="-flexbox-froggy"><strong>- Flexbox Froggy</strong></h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://flexboxfroggy.com/">Flexbox Froggy</a></li>
+<li><strong>Descrição</strong>: Um jogo interativo que ensina as propriedades do Flexbox através de desafios. Nele, você precisa alinhar rãs em suas folhas de vitória-régia usando as propriedades de flexbox.</li>
+</ul>
+<h5 id="-css-tricks-a-complete-guide-to-flexbox"><strong>- CSS Tricks: A Complete Guide to Flexbox</strong></h5>
+<ul>
+<li><strong>URL</strong>: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks - Flexbox</a></li>
+<li><strong>Descrição</strong>: Um guia completo com explicações detalhadas sobre todas as propriedades de flexbox. Inclui diagramas visuais e exemplos práticos de código.</li>
+</ul>
+<h4 id="-flexbox-defense"><strong>- Flexbox Defense</strong></h4>
+<ul>
+<li><strong>URL</strong>: <a href="http://flexboxdefense.com/">Flexbox Defense</a></li>
+<li><strong>Descrição</strong>: Um jogo onde você defende uma base posicionando torres com flexbox. Cada torre é posicionada corretamente ao utilizar as propriedades do flexbox.</li>
+</ul>
+<h4 id="-flexbox-playground"><strong>- Flexbox Playground</strong></h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://codepen.io/enxaneta/full/adLPwv">Flexbox Playground</a></li>
+<li><strong>Descrição</strong>: Uma sandbox interativa onde você pode experimentar e visualizar as propriedades do Flexbox em tempo real. É um ótimo ambiente para testar diferentes combinações de propriedades.</li>
+</ul>
+<h4 id="-flexy-boxes"><strong>- Flexy Boxes</strong></h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://the-echoplex.net/flexyboxes/">Flexy Boxes</a></li>
+<li><strong>Descrição</strong>: Um gerador visual de layouts flexíveis. Ele permite ajustar várias opções de Flexbox e gerar o código CSS correspondente para copiar e colar.</li>
+</ul>
+<h4 id="-what-the-flexbox"><strong>- What The Flexbox?!</strong></h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://flexbox.io/">What The Flexbox?!</a></li>
+<li><strong>Descrição</strong>: Um curso em vídeo gratuito que cobre o Flexbox desde o básico até usos avançados. O curso é ideal para quem prefere aprender com vídeos e exemplos passo a passo.</li>
+</ul>
+<p>Esses recursos são ótimos para entender o Flexbox de forma prática, com interatividade e exemplos aplicados.</p>
+<h3 id="7-conclusao">7. <strong>Conclusão</strong></h3>
+<p>O Flexbox é uma ferramenta poderosa para criar layouts dinâmicos e responsivos de maneira eficiente. Ele é especialmente útil para alinhar, distribuir e organizar itens dentro de um contêiner, adaptando-se automaticamente a diferentes tamanhos de tela.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/python.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/html.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/css.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/javascript.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
