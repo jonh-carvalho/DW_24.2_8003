@@ -1,0 +1,48 @@
+.estatico {
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    position: static;
+}
+
+.relativo {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    position: relative;
+    top: 20px;
+    /* Movido 20px para baixo */
+    left: 25px;
+    /* Movido 15px para a direita */
+}
+
+
+.absoluto {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: salmon;
+}
+
+.fixo {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+}
+
+.grudento{
+    position: sticky; 
+    top: 0; /* Fica "preso" no topo após rolar */ 
+    background-color: lightcoral; 
+    padding: 10px;
+}
+
+body {
+    margin: 0;
+}
