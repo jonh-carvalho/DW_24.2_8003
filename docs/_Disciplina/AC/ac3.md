@@ -1,10 +1,8 @@
-### **Atividade: Estilizando uma página da Web básica com CSS**
+### **AC3: Estilizando uma página da Web básica com CSS**
 
 ** *Duração* : 70 minutos**
 
-***Carregue um arquivo chamado USPnumber1.USPnumber2.html (Adicione o arquivo atrasado.*USPnumber1.USPnumber2.html se atrasar).****
-
- **Objetivo** : Os alunos aplicarão seletores, propriedades e valores CSS para aprimorar o design de uma determinada página HTML básica.
+**Objetivo** : Os alunos aplicarão seletores, propriedades e valores CSS para aprimorar o design de uma determinada página HTML básica.
 
  **Instruções** :
 

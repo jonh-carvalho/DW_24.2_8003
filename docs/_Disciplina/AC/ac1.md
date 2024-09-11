@@ -1,5 +1,4 @@
-### **Atividade: Criando uma página da Web básica**
-
+### **AC1: Criando uma página da Web básica**
 
 **Objetivo** :
 Ao final desta atividade, os alunos devem ser capazes de demonstrar sua compreensão dos elementos básicos e da estrutura do HTML, criando uma página da web de perfil pessoal.
