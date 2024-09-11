@@ -8,6 +8,8 @@ Disciplina que apresenta a introdução a programação web: HTML, CSS e Javascr
 
 ## Ferramentas
 
-**Linguagens**: HTML, CSS e Javascript `<br>`
-**Tecnologias**: Visual Studio Code e Github `<br>`
+**Linguagens**: HTML, CSS e Javascript
+
+**Tecnologias**: Visual Studio Code e Github
+
 As APs deverão ser enviadas no github e publicadas no github pages.

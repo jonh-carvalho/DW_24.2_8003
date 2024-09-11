@@ -12,29 +12,29 @@ Nesse roteiro apresentamos o **posicionamento em CSS**, cobrindo os conceitos pr
 - **Descrição**: O valor padrão. O elemento segue o fluxo normal da página e não é afetado por `top`, `right`, `bottom`, `left`.
 - **Exemplo**:
 
-  ```html
-  <div class="static-box">Eu sou estático!</div>
-  ```
+```
+  <div class="static-box">Eu sou estático!</div>`
+```
 
-  ```css
+```
   .static-box {
-    width: 200px;
-    height: 100px;
-    background-color: lightblue;
-    position: static;
+  	width: 200px;
+  	height: 100px;
+  	background-color: lightblue;
+  	position: static;
   }
-  ```
+```
 
 ##### 2.2. **`relative`**
 
 - **Descrição**: O elemento é posicionado em relação à sua posição original. As propriedades `top`, `right`, `bottom`, `left` podem movê-lo, mas ele ainda ocupa o espaço original.
 - **Exemplo**:
 
-  ```html
+```html
   <div class="relative-box">Eu sou relativo!</div>
-  ```
+```
 
-  ```css
+```css
   .relative-box {
     width: 200px;
     height: 100px;
@@ -43,20 +43,20 @@ Nesse roteiro apresentamos o **posicionamento em CSS**, cobrindo os conceitos pr
     top: 20px; /* Movido 20px para baixo */
     left: 15px; /* Movido 15px para a direita */
   }
-  ```
+```
 
 ##### 2.3. **`absolute`**
 
 - **Descrição**: O elemento é removido do fluxo normal do documento e posicionado em relação ao seu elemento pai mais próximo que tenha `position` diferente de `static`. Se não houver um pai posicionado, será em relação ao `body`.
 - **Exemplo**:
 
-  ```html
+```html
   <div class="parent">
     <div class="absolute-box">Eu sou absoluto!</div>
   </div>
-  ```
+```
 
-  ```css
+```css
   .parent {
     position: relative;
     width: 300px;
@@ -72,18 +72,18 @@ Nesse roteiro apresentamos o **posicionamento em CSS**, cobrindo os conceitos pr
     height: 50px;
     background-color: salmon;
   }
-  ```
+```
 
 ##### 2.4. **`fixed`**
 
 - **Descrição**: O elemento é posicionado em relação à janela de visualização (viewport) e não se move quando a página é rolada.
 - **Exemplo**:
 
-  ```html
+```html
   <div class="fixed-box">Eu sou fixo!</div>
-  ```
+```
 
-  ```css
+```css
   .fixed-box {
     position: fixed;
     bottom: 0;
@@ -92,25 +92,25 @@ Nesse roteiro apresentamos o **posicionamento em CSS**, cobrindo os conceitos pr
     height: 50px;
     background-color: yellow;
   }
-  ```
+```
 
 ##### 2.5. **`sticky`**
 
 - **Descrição**: O elemento alterna entre o comportamento `relative` e `fixed`, dependendo da rolagem da página. Fica "preso" em uma posição quando você rola além de um certo ponto.
 - **Exemplo**:
 
-  ```html
+```html
   <div class="sticky-box">Eu sou sticky!</div>
-  ```
+```
 
-  ```css
+```css
   .sticky-box {
     position: sticky;
     top: 0; /* Fica "preso" no topo após rolar */
     background-color: lightcoral;
     padding: 10px;
   }
-  ```
+```
 
 #### 3. **Propriedades Auxiliares**
 
@@ -136,7 +136,7 @@ Nesse roteiro apresentamos o **posicionamento em CSS**, cobrindo os conceitos pr
    **CSS**:
 
 ```css
-   .fixed-nav {
+.fixed-nav {
      position: fixed;
      top: 0;
      left: 0;

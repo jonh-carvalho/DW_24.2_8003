@@ -187,7 +187,7 @@ Permite que um item individual tenha um comportamento de alinhamento diferente d
 
 Recrie um layout flexível usando `flexbox`, onde os elementos devem se reorganizar de acordo com o tamanho da tela. Por exemplo, três colunas de conteúdo que se ajustam em uma linha única em telas grandes e se reorganizam verticalmente em telas menores.
 
-### Sites 
+### Sites
 
 Aqui estão alguns dos principais sites de demonstração e aprendizado do Flexbox CSS que ajudam a entender como ele funciona através de exemplos interativos e visuais:
 
