@@ -276,54 +276,48 @@
 <li><strong>Descrição</strong>: O valor padrão. O elemento segue o fluxo normal da página e não é afetado por <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>.</li>
 <li><strong>Exemplo</strong>:</li>
 </ul>
-<p>```html
-<br />
-<div class="static-box">Eu sou estático!</div></p>
-<p>```</p>
-<p><code>css
-  .static-box {
+<pre><code>  &lt;div class=&quot;static-box&quot;&gt;Eu sou estático!&lt;/div&gt;`
+</code></pre>
+<pre><code>  .static-box {
     width: 200px;
     height: 100px;
     background-color: lightblue;
     position: static;
-  }</code></p>
+  }
+</code></pre>
 <h5 id="22-relative">2.2. <strong><code>relative</code></strong></h5>
 <ul>
 <li><strong>Descrição</strong>: O elemento é posicionado em relação à sua posição original. As propriedades <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> podem movê-lo, mas ele ainda ocupa o espaço original.</li>
 <li><strong>Exemplo</strong>:</li>
 </ul>
-<p>```html
-<br />
-<div class="relative-box">Eu sou relativo!</div></p>
-<p>```</p>
-<p><code>css
-  .relative-box {
+<pre><code class="language-html">  &lt;div class=&quot;relative-box&quot;&gt;Eu sou relativo!&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">  .relative-box {
     width: 200px;
     height: 100px;
     background-color: lightgreen;
     position: relative;
     top: 20px; /* Movido 20px para baixo */
     left: 15px; /* Movido 15px para a direita */
-  }</code></p>
+  }
+</code></pre>
 <h5 id="23-absolute">2.3. <strong><code>absolute</code></strong></h5>
 <ul>
 <li><strong>Descrição</strong>: O elemento é removido do fluxo normal do documento e posicionado em relação ao seu elemento pai mais próximo que tenha <code>position</code> diferente de <code>static</code>. Se não houver um pai posicionado, será em relação ao <code>body</code>.</li>
 <li><strong>Exemplo</strong>:</li>
 </ul>
-<p>```html
-<br />
-<div class="parent">
-    <div class="absolute-box">Eu sou absoluto!</div>
-  </div></p>
-<p>```</p>
-<p>```css
-  .parent {
+<pre><code class="language-html">  &lt;div class=&quot;parent&quot;&gt;
+    &lt;div class=&quot;absolute-box&quot;&gt;Eu sou absoluto!&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">  .parent {
     position: relative;
     width: 300px;
     height: 200px;
     background-color: lightgray;
-  }</p>
-<p>.absolute-box {
+  }
+
+  .absolute-box {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -331,41 +325,37 @@
     height: 50px;
     background-color: salmon;
   }
-  ```</p>
+</code></pre>
 <h5 id="24-fixed">2.4. <strong><code>fixed</code></strong></h5>
 <ul>
 <li><strong>Descrição</strong>: O elemento é posicionado em relação à janela de visualização (viewport) e não se move quando a página é rolada.</li>
 <li><strong>Exemplo</strong>:</li>
 </ul>
-<p>```html
-<br />
-<div class="fixed-box">Eu sou fixo!</div></p>
-<p>```</p>
-<p><code>css
-  .fixed-box {
+<pre><code class="language-html">  &lt;div class=&quot;fixed-box&quot;&gt;Eu sou fixo!&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">  .fixed-box {
     position: fixed;
     bottom: 0;
     right: 0;
     width: 100px;
     height: 50px;
     background-color: yellow;
-  }</code></p>
+  }
+</code></pre>
 <h5 id="25-sticky">2.5. <strong><code>sticky</code></strong></h5>
 <ul>
 <li><strong>Descrição</strong>: O elemento alterna entre o comportamento <code>relative</code> e <code>fixed</code>, dependendo da rolagem da página. Fica "preso" em uma posição quando você rola além de um certo ponto.</li>
 <li><strong>Exemplo</strong>:</li>
 </ul>
-<p>```html
-<br />
-<div class="sticky-box">Eu sou sticky!</div></p>
-<p>```</p>
-<p><code>css
-  .sticky-box {
+<pre><code class="language-html">  &lt;div class=&quot;sticky-box&quot;&gt;Eu sou sticky!&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">  .sticky-box {
     position: sticky;
-    top: 0; /* Fica "preso" no topo após rolar */
+    top: 0; /* Fica &quot;preso&quot; no topo após rolar */
     background-color: lightcoral;
     padding: 10px;
-  }</code></p>
+  }
+</code></pre>
 <h4 id="3-propriedades-auxiliares">3. <strong>Propriedades Auxiliares</strong></h4>
 <ul>
 <li><strong><code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code></strong>: Controlam a posição do elemento posicionado. São aplicáveis quando <code>position</code> não é <code>static</code>.</li>
@@ -385,7 +375,7 @@
    &lt;/section&gt;
 </code></pre>
 <p><strong>CSS</strong>:</p>
-<pre><code class="language-css">   .fixed-nav {
+<pre><code class="language-css">.fixed-nav {
      position: fixed;
      top: 0;
      left: 0;
