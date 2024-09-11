@@ -1,12 +1,10 @@
-Aqui está uma sugestão de aula sobre **Grid CSS**, focada em ensinar a criação de layouts responsivos e organizados:
-
-### **Título: Grid CSS - Estruturando Layouts Modernos**
+## **Grid CSS - Estruturando Layouts Modernos**
 
 #### **Objetivo:**
 
-Ensinar o uso do Grid Layout no CSS para criar layouts flexíveis e responsivos. Os alunos aprenderão a criar grades, organizar colunas e linhas, e controlar o espaçamento entre os elementos.
+Apresentamos o uso do Grid Layout no CSS para criar layouts flexíveis e responsivos e iremos criar grades, organizar colunas e linhas, e controlar o espaçamento entre os elementos.
 
-#### **Conteúdo Programático:**
+#### **Principais pontos para estudo de GRID css:**
 
 1. **Introdução ao Grid CSS**
 
@@ -39,7 +37,7 @@ Ensinar o uso do Grid Layout no CSS para criar layouts flexíveis e responsivos.
 
 ---
 
-### **Exemplo Prático 1: Grid Básico com 3 Colunas**
+#### **Exemplo Prático 1: Grid Básico com 3 Colunas**
 
 ```html
 <!DOCTYPE html>
@@ -76,7 +74,7 @@ Ensinar o uso do Grid Layout no CSS para criar layouts flexíveis e responsivos.
 
 ---
 
-### **Exemplo Prático 2: Grid Responsivo**
+#### **Exemplo Prático 2: Grid Responsivo**
 
 ```html
 <!DOCTYPE html>
