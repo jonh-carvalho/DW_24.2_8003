@@ -1,10 +1,10 @@
 ## **Grid CSS - Estruturando Layouts Modernos**
 
-#### **Objetivo:**
+**Objetivo:**
 
 Apresentamos o uso do Grid Layout no CSS para criar layouts flexíveis e responsivos e iremos criar grades, organizar colunas e linhas, e controlar o espaçamento entre os elementos.
 
-#### **Principais pontos para estudo de GRID css:**
+### **Principais pontos para estudo de GRID css:**
 
 1. **Introdução ao Grid CSS**
 
@@ -37,7 +37,7 @@ Apresentamos o uso do Grid Layout no CSS para criar layouts flexíveis e respons
 
 ---
 
-#### **Exemplo Prático 1: Grid Básico com 3 Colunas**
+### **Exemplo Prático 1: Grid Básico com 3 Colunas**
 
 ```html
 <!DOCTYPE html>
@@ -74,7 +74,7 @@ Apresentamos o uso do Grid Layout no CSS para criar layouts flexíveis e respons
 
 ---
 
-#### **Exemplo Prático 2: Grid Responsivo**
+### **Exemplo Prático 2: Grid Responsivo**
 
 ```html
 <!DOCTYPE html>

@@ -1,6 +1,7 @@
-# Aula: Tags Semânticas em HTML
+## Tags Semânticas em HTML
 
-#### Objetivo:
+### Objetivo:
+
 Nesta aula, você aprenderá sobre as tags semânticas do HTML e como usá-las para criar uma estrutura de site básica. Utilizaremos conteúdo fictício "Lorem Ipsum" para ilustrar a aplicação dessas tags.
 
 #### 1. Introdução às Tags Semânticas
@@ -8,6 +9,7 @@ Nesta aula, você aprenderá sobre as tags semânticas do HTML e como usá-las p
 Tags semânticas são elementos HTML que não apenas definem o layout de um site, mas também fornecem significado ao conteúdo. Isso melhora a acessibilidade, a usabilidade e o SEO (Search Engine Optimization) de um site.
 
 Algumas das principais tags semânticas incluem:
+
 - `<header>`: Cabeçalho do site ou de uma seção.
 - `<nav>`: Menu de navegação.
 - `<article>`: Conteúdo independente, como um post ou um artigo.
@@ -18,6 +20,7 @@ Algumas das principais tags semânticas incluem:
 #### 2. Estrutura do Site Básico
 
 Vamos criar um site simples com as seguintes seções:
+
 - Cabeçalho com o título do site.
 - Menu de navegação.
 - Um artigo principal.
@@ -87,7 +90,7 @@ Vamos criar um site simples com as seguintes seções:
     </aside>
 
     <footer>
-        <p>&copy; 2024 Meu Site Básico. Todos os direitos reservados.</p>
+        <p>© 2024 Meu Site Básico. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

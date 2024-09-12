@@ -1,4 +1,4 @@
-# Flexbox CSS
+# Flexbox
 
 ## Objetivo
 
