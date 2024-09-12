@@ -12,7 +12,7 @@ Desenvolver um site responsivo utilizando **HTML**, **CSS** e técnicas de layou
 ### Critérios de Avaliação:
 
 * Uso correto das **tags HTML5** semânticas.
-* Implementação de **layout responsivo** com Flexbox e/ou Grid.
+* Implementação de **layout responsivo** com Flexbox e/ou Grid para o nav e footer.
 * **Design** e **usabilidade** do site (estética, organização visual, navegação).
 * **Organização e clareza** do código.
 * Implementação correta de **media queries** para diferentes dispositivos.
