@@ -6,8 +6,8 @@ Desenvolver um site responsivo utilizando **HTML**, **CSS** e técnicas de layou
 
 ### Entrega:
 
-- **Prazo:** 25/09/2024]
-- Enviar o projeto para o repositório em que o professor foi adicionado como colaborador em uma pasta chamada ap1 dentro de da pasta docs, com  **HTML**, **CSS**, e **imagens** utilizados.
+- **Prazo:** 25/09/2024
+- Enviar o projeto para o repositório em que o professor foi adicionado como colaborador em uma pasta chamada ap1 dentro da pasta docs, com  **HTML**, **CSS**, e **imagens** utilizados.
 
 ### Critérios de Avaliação:
 
