@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../img/favicon.ico">
 
     
-    <title>Ac2 - DW</title>
+    <title>Posicionamento - DW</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -99,6 +99,39 @@
                         
                             
   <li class="dropdown-submenu">
+    <a tabindex="-1" href="">AC</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../AC/">Index</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../AC/ac1/">Ac1</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../AC/ac2/">Ac2</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../AC/ac3/">Ac3</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
     <a tabindex="-1" href="">Exercícios</a>
     <ul class="dropdown-menu">
         
@@ -114,78 +147,57 @@
                         
                             
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Roteiros</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../Roteiros/flexbox/">Flexbox</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../Roteiros/grid/">Grid</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../Roteiros/posicionamento/">Posicionamento</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../Roteiros/tags%20sem%C3%A2ntica/">Tags semântica</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Ac</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../">Index</a>
-</li>
-
-        
-            
-<li >
-    <a href="../ac1/">Ac1</a>
-</li>
-
-        
-            
-<li class="active">
-    <a href="./">Ac2</a>
-</li>
-
-        
-            
-<li >
-    <a href="../ac3/">Ac3</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-  <li class="dropdown-submenu">
     <a tabindex="-1" href="">Ap1</a>
     <ul class="dropdown-menu">
         
             
 <li >
     <a href="../../ap1/">Index</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Roteiros</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../flexbox/">Flexbox</a>
+</li>
+
+        
+            
+<li >
+    <a href="../grid/">Grid</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Posicionamento</a>
+</li>
+
+        
+            
+<li >
+    <a href="../siteresponsivo/">Siteresponsivo</a>
+</li>
+
+        
+            
+<li >
+    <a href="../tags%20sem%C3%A2ntica/">Tags semântica</a>
+</li>
+
+        
+            
+<li >
+    <a href="../unidadesrelativas/">Unidades Relativas</a>
 </li>
 
         
@@ -239,17 +251,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../ac1/">
+                        <a rel="prev" href="../grid/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../ac3/">
+                        <a rel="next" href="../siteresponsivo/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/ac/ac2.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/roteiros/posicionamento.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -261,48 +273,167 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#ac2-pagina-da-web-com-formularios-e-multimidia">AC2: Página da Web com Formulários e Multimídia</a></li>
+        <li class="first-level active"><a href="#1-introducao-ao-posicionamento-no-css">1. Introdução ao Posicionamento no CSS</a></li>
+        <li class="first-level "><a href="#2-valores-da-propriedade-position">2. Valores da Propriedade position</a></li>
+            <li class="second-level"><a href="#21-static-padrao">2.1. static (Padrão)</a></li>
+                
+            <li class="second-level"><a href="#22-relative">2.2. relative</a></li>
+                
+            <li class="second-level"><a href="#23-absolute">2.3. absolute</a></li>
+                
+            <li class="second-level"><a href="#24-fixed">2.4. fixed</a></li>
+                
+            <li class="second-level"><a href="#25-sticky">2.5. sticky</a></li>
+                
+        <li class="first-level "><a href="#3-propriedades-auxiliares">3. Propriedades Auxiliares</a></li>
+        <li class="first-level "><a href="#4-exercicio-pratico">4. Exercício Prático</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h3 id="ac2-pagina-da-web-com-formularios-e-multimidia"><strong>AC2: Página da Web com Formulários e Multimídia</strong></h3>
-<p><strong>Objetivo</strong> :</p>
-<p>Os alunos devem ser capazes de implementar e compreender a funcionalidade dos formulários HTML e integrar elementos multimídia em uma página da web.</p>
-<p><strong>Instruções para a página</strong> :</p>
-<ol>
-<li><strong>Título</strong> : Comece com um título, "Feedback para a página de perfil de [Seu nome]".</li>
-<li>Formulário:</li>
-<li>Dados pessoais:<ul>
-<li>Campos de entrada para (tipo de texto) e (tipo de email).<code>Name``Email</code></li>
-<li>Uma seleção suspensa para com opções como "Google", "Mídia social", "Amigo", etc.<code>How did you find my profile?</code></li>
-</ul>
-</li>
-<li>Seção de feedback:<ul>
-<li>Inclua uma área de texto para os visitantes escreverem comentários ou feedback.</li>
-<li>Use os botões de opção para "Você gostou do meu perfil?" com as opções "Sim", "Não" e "Talvez".</li>
-<li>Use caixas de seleção para "O que você gostou no perfil?" com opções como "Design", "Conteúdo", "Facilidade de uso" e "Outros".</li>
-</ul>
-</li>
-<li>Submissão:<ul>
-<li>Um botão "Enviar" para enviar o formulário.</li>
-<li>Um botão "Redefinir" para limpar o formulário.</li>
-</ul>
-</li>
-<li>Multimídia:</li>
-<li>Incorpore um videoclipe (pode ser uma introdução pessoal, uma cena de filme favorita, um videoclipe, etc.). Use uma plataforma como YouTube ou Vimeo ou crie um link direto para um arquivo de vídeo.</li>
-<li>Adicione um clipe de áudio ou uma música favorita. Você pode usar plataformas como o SoundCloud ou vincular diretamente a um arquivo de áudio.</li>
-<li><strong>Notas de rodapé</strong> : inclua uma seção na parte inferior agradecendo aos usuários por seus comentários.</li>
-</ol>
-<p><strong>Considerações adicionais</strong> :</p>
+<p>Nesse roteiro apresentamos o <strong>posicionamento em CSS</strong>, cobrindo os conceitos principais de forma clara e prática. O foco será nos diferentes valores da propriedade <code>position</code> e suas interações com outras propriedades de layout, como <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>, e <code>z-index</code>.</p>
+<h4 id="1-introducao-ao-posicionamento-no-css">1. <strong>Introdução ao Posicionamento no CSS</strong></h4>
 <ul>
-<li>Seu formulário não precisa enviar dados para um servidor. O foco está na estrutura e nos elementos da forma.</li>
-<li>Use o elemento corretamente para entradas de formulário.<code>&lt;label&gt;</code></li>
-<li>Certifique-se de que seus componentes multimídia tenham controles adequados (como reproduzir, pausar, volume).</li>
-<li>Organize adequadamente o layout para facilidade de uso.</li>
-<li>Comente suas seções de código para melhorar a legibilidade.</li>
+<li>A propriedade <code>position</code> é importante para controlar o layout dos elementos.</li>
+<li>Conceitos de fluxo de documento normal (o comportamento padrão dos elementos no HTML).</li>
 </ul>
-<p>Ao concluir essas atividades, os alunos terão experiência prática na criação de páginas da web com elementos variados, desde estruturas básicas até formulários e conteúdo multimídia.</p></div>
+<h4 id="2-valores-da-propriedade-position">2. <strong>Valores da Propriedade <code>position</code></strong></h4>
+<h5 id="21-static-padrao">2.1. <strong><code>static</code> (Padrão)</strong></h5>
+<ul>
+<li><strong>Descrição</strong>: O valor padrão. O elemento segue o fluxo normal da página e não é afetado por <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>.</li>
+<li><strong>Exemplo</strong>:</li>
+</ul>
+<pre><code>  &lt;div class=&quot;static-box&quot;&gt;Eu sou estático!&lt;/div&gt;`
+</code></pre>
+<pre><code>  .static-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    position: static;
+  }
+</code></pre>
+<h5 id="22-relative">2.2. <strong><code>relative</code></strong></h5>
+<ul>
+<li><strong>Descrição</strong>: O elemento é posicionado em relação à sua posição original. As propriedades <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> podem movê-lo, mas ele ainda ocupa o espaço original.</li>
+<li><strong>Exemplo</strong>:</li>
+</ul>
+<pre><code class="language-html">  &lt;div class=&quot;relative-box&quot;&gt;Eu sou relativo!&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">  .relative-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    position: relative;
+    top: 20px; /* Movido 20px para baixo */
+    left: 15px; /* Movido 15px para a direita */
+  }
+</code></pre>
+<h5 id="23-absolute">2.3. <strong><code>absolute</code></strong></h5>
+<ul>
+<li><strong>Descrição</strong>: O elemento é removido do fluxo normal do documento e posicionado em relação ao seu elemento pai mais próximo que tenha <code>position</code> diferente de <code>static</code>. Se não houver um pai posicionado, será em relação ao <code>body</code>.</li>
+<li><strong>Exemplo</strong>:</li>
+</ul>
+<pre><code class="language-html">  &lt;div class=&quot;parent&quot;&gt;
+    &lt;div class=&quot;absolute-box&quot;&gt;Eu sou absoluto!&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">  .parent {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+  }
+
+  .absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: salmon;
+  }
+</code></pre>
+<h5 id="24-fixed">2.4. <strong><code>fixed</code></strong></h5>
+<ul>
+<li><strong>Descrição</strong>: O elemento é posicionado em relação à janela de visualização (viewport) e não se move quando a página é rolada.</li>
+<li><strong>Exemplo</strong>:</li>
+</ul>
+<pre><code class="language-html">  &lt;div class=&quot;fixed-box&quot;&gt;Eu sou fixo!&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">  .fixed-box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+  }
+</code></pre>
+<h5 id="25-sticky">2.5. <strong><code>sticky</code></strong></h5>
+<ul>
+<li><strong>Descrição</strong>: O elemento alterna entre o comportamento <code>relative</code> e <code>fixed</code>, dependendo da rolagem da página. Fica "preso" em uma posição quando você rola além de um certo ponto.</li>
+<li><strong>Exemplo</strong>:</li>
+</ul>
+<pre><code class="language-html">  &lt;div class=&quot;sticky-box&quot;&gt;Eu sou sticky!&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">  .sticky-box {
+    position: sticky;
+    top: 0; /* Fica &quot;preso&quot; no topo após rolar */
+    background-color: lightcoral;
+    padding: 10px;
+  }
+</code></pre>
+<h4 id="3-propriedades-auxiliares">3. <strong>Propriedades Auxiliares</strong></h4>
+<ul>
+<li><strong><code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code></strong>: Controlam a posição do elemento posicionado. São aplicáveis quando <code>position</code> não é <code>static</code>.</li>
+<li><strong><code>z-index</code></strong>: Controla a ordem de sobreposição dos elementos. Elementos com valores maiores de <code>z-index</code> aparecem acima de elementos com valores menores.</li>
+</ul>
+<h4 id="4-exercicio-pratico">4. <strong>Exercício Prático</strong></h4>
+<ul>
+<li>Criar uma página com uma barra de navegação fixa (<code>fixed</code>), um conteúdo principal com um cabeçalho "sticky", e uma seção posicionada de forma relativa a um contêiner com <code>position: relative</code> e um botão posicionado de forma absoluta.</li>
+</ul>
+<p><strong>HTML</strong>:</p>
+<pre><code class="language-html">   &lt;nav class=&quot;fixed-nav&quot;&gt;Navegação&lt;/nav&gt;
+   &lt;header class=&quot;sticky-header&quot;&gt;Cabeçalho Sticky&lt;/header&gt;
+   &lt;section class=&quot;content&quot;&gt;
+     &lt;div class=&quot;relative-container&quot;&gt;
+       &lt;button class=&quot;absolute-button&quot;&gt;Eu sou absoluto&lt;/button&gt;
+     &lt;/div&gt;
+   &lt;/section&gt;
+</code></pre>
+<p><strong>CSS</strong>:</p>
+<pre><code class="language-css">.fixed-nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: #333;
+     color: white;
+     padding: 10px;
+   }
+
+   .sticky-header {
+     position: sticky;
+     top: 50px;
+     background-color: #f4f4f4;
+     padding: 15px;
+   }
+
+   .relative-container {
+     position: relative;
+     background-color: lightblue;
+     height: 300px;
+     margin: 20px;
+   }
+
+   .absolute-button {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     padding: 10px;
+   }
+</code></pre>
+<p>Isso dá uma visão abrangente do sistema de posicionamento no CSS e como ele pode ser aplicado em páginas web.</p></div>
         
         
     </div>

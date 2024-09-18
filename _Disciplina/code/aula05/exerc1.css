@@ -18,7 +18,8 @@
   .relative-container {
     position: relative;
     background-color: lightblue;
-    height: 300px;
+    top: 50px;
+    height: auto;
     margin: 20px;
   }
 
