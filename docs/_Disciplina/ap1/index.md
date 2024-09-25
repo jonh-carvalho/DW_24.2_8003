@@ -6,7 +6,7 @@ Desenvolver um site responsivo utilizando **HTML**, **CSS** e técnicas de layou
 
 ### Entrega:
 
-- **Prazo:** 25/09/2024
+- **Prazo:** 25/09/2024 até às 9:20h.
 - Enviar o projeto para o repositório em que o professor foi adicionado como colaborador em uma pasta chamada ap1 dentro da pasta docs, com  **HTML**, **CSS**, e **imagens** utilizados.
 
 ### Critérios de Avaliação:
@@ -22,34 +22,30 @@ Desenvolver um site responsivo utilizando **HTML**, **CSS** e técnicas de layou
 
 1. **Estrutura do site:**
 
-    * O site deverá conter, no mínimo, **4 páginas interligadas** (Home, Sobre, Serviços, Contato).
-    * Utilização correta de **tags semânticas** do HTML5 (ex.: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
-    * Adicione estilos globais iniciais: tamanho da fonte, família, cor de fundo, etc.
-
+   * O site deverá conter, no mínimo, **4 páginas interligadas** (Home, Sobre, Serviços, Contato).
+   * Utilização correta de **tags semânticas** do HTML5 (ex.: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
+   * Adicione estilos globais iniciais: tamanho da fonte, família, cor de fundo, etc.
 2. **Design da barra de navegação:**
 
-    * Usando flexbox ou grid, crie uma barra de navegação que:
-    * Exibe seus itens em uma linha no desktop(telas grandes.)
-    * Empilha itens verticalmente para celular(tamanhos pequenos.
-    * Tem um logotipo à esquerda e links de navegação à direita.
-
+   * Usando flexbox ou grid, crie uma barra de navegação que:
+   * Exibe seus itens em uma linha no desktop(telas grandes.)
+   * Empilha itens verticalmente para celular(tamanhos pequenos.
+   * Tem um logotipo à esquerda e links de navegação à direita.
 3. **Responsividade:**
 
-    * O site deve se adaptar corretamente a **diferentes tamanhos de tela** (desktop e smartphone).
-    * Utilização de **media queries** no CSS para ajustar o layout conforme a largura da tela.
-
+   * O site deve se adaptar corretamente a **diferentes tamanhos de tela** (desktop e smartphone).
+   * Utilização de **media queries** no CSS para ajustar o layout conforme a largura da tela.
 4. **Layout:**
 
-    * Deverá ser possível ver diferentes layouts de página dependendo do dispositivo (ex.: layout em uma coluna para mobile, e em duas ou mais colunas para desktop).
-
+   * Deverá ser possível ver diferentes layouts de página dependendo do dispositivo (ex.: layout em uma coluna para mobile, e em duas ou mais colunas para desktop).
 5. **Conteúdo:**
 
-    * Cada página deve conter conteúdo informativo fictício (utilizar **Lorem Ipsum** quando necessário).
-    * Incluir **imagens** e **vídeos** relevantes e de alta qualidade. Certifique-se de que as imagens sejam redimensionáveis e não distorçam em diferentes resoluções.
-    * Uma **navegação clara** entre as páginas deve ser possível por meio de um menu no `<nav>`, que deve ser responsivo.
-    * Na página inicial o conteúdo principal deve usar a estrutura abaixo. Usando o sistema de layout de sua escolha:
-    * Crie um layout de três colunas.
-    * Garanta preenchimento consistente e margem entre os elementos.
+   * Cada página deve conter conteúdo informativo fictício (utilizar **Lorem Ipsum** quando necessário).
+   * Incluir **imagens** e **vídeos** relevantes e de alta qualidade. Certifique-se de que as imagens sejam redimensionáveis e não distorçam em diferentes resoluções.
+   * Uma **navegação clara** entre as páginas deve ser possível por meio de um menu no `<nav>`, que deve ser responsivo.
+   * Na página inicial o conteúdo principal deve usar a estrutura abaixo. Usando o sistema de layout de sua escolha:
+   * Crie um layout de três colunas.
+   * Garanta preenchimento consistente e margem entre os elementos.
 
 ```html
 <main>
@@ -90,7 +86,7 @@ Desenvolver um site responsivo utilizando **HTML**, **CSS** e técnicas de layou
 7.**Design de rodapé:**
 
 * Usando flexbox ou grid:
-        * Crie um rodapé que tenha três seções: Sobre, Links e ícones de mídia social.
+  * Crie um rodapé que tenha três seções: Sobre, Links e ícones de mídia social.
 
 8.**Estilo e Design:**
 
