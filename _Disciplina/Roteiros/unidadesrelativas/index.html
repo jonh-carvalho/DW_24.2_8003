@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../img/favicon.ico">
 
     
-    <title>Ac1 - DW</title>
+    <title>Unidades Relativas - DW</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -99,39 +99,6 @@
                         
                             
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">AC</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../">Index</a>
-</li>
-
-        
-            
-<li class="active">
-    <a href="./">Ac1</a>
-</li>
-
-        
-            
-<li >
-    <a href="../ac2/">Ac2</a>
-</li>
-
-        
-            
-<li >
-    <a href="../ac3/">Ac3</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-  <li class="dropdown-submenu">
     <a tabindex="-1" href="">Exercícios</a>
     <ul class="dropdown-menu">
         
@@ -147,12 +114,42 @@
                         
                             
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Ap1</a>
+    <a tabindex="-1" href="">Roteiros</a>
     <ul class="dropdown-menu">
         
             
 <li >
-    <a href="../../ap1/">Index</a>
+    <a href="../flexbox/">Flexbox</a>
+</li>
+
+        
+            
+<li >
+    <a href="../grid/">Grid</a>
+</li>
+
+        
+            
+<li >
+    <a href="../posicionamento/">Posicionamento</a>
+</li>
+
+        
+            
+<li >
+    <a href="../siteresponsivo/">Responsividade</a>
+</li>
+
+        
+            
+<li >
+    <a href="../tags%20sem%C3%A2ntica/">Tags semântica</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Unidades Relativas</a>
 </li>
 
         
@@ -162,42 +159,45 @@
                         
                             
   <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Roteiros</a>
+    <a tabindex="-1" href="">Ac</a>
     <ul class="dropdown-menu">
         
             
 <li >
-    <a href="../../roteiros/flexbox/">Flexbox</a>
+    <a href="../../ac/">Index</a>
 </li>
 
         
             
 <li >
-    <a href="../../roteiros/grid/">Grid</a>
+    <a href="../../ac/ac1/">Ac1</a>
 </li>
 
         
             
 <li >
-    <a href="../../roteiros/posicionamento/">Posicionamento</a>
+    <a href="../../ac/ac2/">Ac2</a>
 </li>
 
         
             
 <li >
-    <a href="../../roteiros/siteresponsivo/">Responsividade</a>
+    <a href="../../ac/ac3/">Ac3</a>
 </li>
 
         
-            
-<li >
-    <a href="../../roteiros/tags%20sem%C3%A2ntica/">Tags semântica</a>
-</li>
+    </ul>
+  </li>
 
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Ap1</a>
+    <ul class="dropdown-menu">
         
             
 <li >
-    <a href="../../roteiros/unidadesrelativas/">Unidades Relativas</a>
+    <a href="../../ap1/">Index</a>
 </li>
 
         
@@ -251,17 +251,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../">
+                        <a rel="prev" href="../tags%20sem%C3%A2ntica/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../ac2/">
+                        <a rel="next" href="../../ac/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/AC/ac1.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/unidadesrelativas.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -273,32 +273,163 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#ac1-criando-uma-pagina-da-web-basica">AC1: Criando uma página da Web básica</a></li>
+        <li class="first-level active"><a href="#unidades-relativas">Unidades Relativas</a></li>
+            <li class="second-level"><a href="#1-em-relativo-ao-tamanho-da-fonte">1. em (relativo ao tamanho da fonte)</a></li>
+                
+            <li class="second-level"><a href="#2-rem-relativo-ao-tamanho-da-fonte-raiz">2. rem (relativo ao tamanho da fonte raiz)</a></li>
+                
+            <li class="second-level"><a href="#3-porcentagem">3. % (porcentagem)</a></li>
+                
+            <li class="second-level"><a href="#4-vh-e-vw-viewport-height-e-viewport-width">4. vh e vw (viewport height e viewport width)</a></li>
+                
+            <li class="second-level"><a href="#5-min-width-max-width-min-height-max-height">5. min-width, max-width, min-height, max-height</a></li>
+                
+            <li class="second-level"><a href="#exemplo-pratico-de-site-responsivo">Exemplo Prático de Site Responsivo</a></li>
+                
+            <li class="second-level"><a href="#consideracoes-finais">Considerações Finais</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h3 id="ac1-criando-uma-pagina-da-web-basica"><strong>AC1: Criando uma página da Web básica</strong></h3>
-<p><strong>Objetivo</strong> :
-Ao final desta atividade, os alunos devem ser capazes de demonstrar sua compreensão dos elementos básicos e da estrutura do HTML, criando uma página da web de perfil pessoal.</p>
-<p><strong>Instruções para a página</strong> :</p>
-<ol>
-<li><strong>Cabeçalho</strong> : Inclua um título no topo com seu nome e um subtítulo com uma breve descrição de você.</li>
-<li><strong>Imagem</strong> : Incorpore uma foto de perfil ou qualquer imagem representativa.</li>
-<li><strong>Parágrafo</strong> : Escreva um pequeno parágrafo apresentando a si mesmo, sua formação, interesses ou quaisquer curiosidades.</li>
-<li>Listas:</li>
-<li>Crie uma lista ordenada de seus 3 livros/filmes/músicas favoritos.</li>
-<li>Crie uma lista não ordenada de 3 hobbies ou interesses.</li>
-<li><strong>Hiperlinks</strong> : Adicione pelo menos dois links externos - um para o seu site favorito e outro para um artigo ou recurso interessante que você leu recentemente.</li>
-<li><strong>Imagens</strong> : Adicione uma nova seção com duas atividades que você gosta. Escreva um pequeno texto e adicione uma imagem da atividade com link para um site sobre ela.</li>
-<li><strong>Notas de rodapé</strong> : Na parte inferior, inclua uma pequena seção de notas de rodapé com créditos para quaisquer imagens ou conteúdo que você usou.</li>
-</ol>
-<p><strong>Considerações adicionais</strong> :</p>
+<h1 id="unidades-relativas">Unidades Relativas</h1>
+<p>As <strong>unidades relativas</strong> são essenciais no design responsivo, pois se adaptam a diferentes tamanhos de tela, oferecendo flexibilidade e escalabilidade no layout. Vamos explorar as principais unidades relativas utilizadas no CSS:</p>
+<h4 id="1-em-relativo-ao-tamanho-da-fonte">1. <strong><code>em</code></strong> (relativo ao tamanho da fonte)</h4>
+<p>A unidade <code>em</code> é relativa ao tamanho da fonte do elemento pai. Se o tamanho da fonte do elemento pai for <code>16px</code>, por exemplo, <code>1em</code> será equivalente a <code>16px</code>. </p>
 <ul>
-<li>Certifique-se de que seu documento tenha uma declaração DOCTYPE adequada e inclua tags essenciais como , e .<code>&lt;html&gt;``&lt;head&gt;``&lt;body&gt;</code></li>
-<li>Use comentários para rotular cada seção.</li>
-<li>Verifique se o código está recuado corretamente para facilitar a leitura.</li>
-</ul></div>
+<li>
+<p>Exemplo:
+    ```css
+    body {
+        font-size: 16px;
+    }</p>
+<p>h1 {
+    font-size: 2em; /<em> 32px </em>/
+}</p>
+<p>p {
+    font-size: 1em; /<em> 16px </em>/
+}
+```</p>
+</li>
+</ul>
+<h4 id="2-rem-relativo-ao-tamanho-da-fonte-raiz">2. <strong><code>rem</code></strong> (relativo ao tamanho da fonte raiz)</h4>
+<p>A unidade <code>rem</code> é relativa ao tamanho da fonte da raiz do documento, geralmente o elemento <code>html</code>. É útil para manter a consistência no design, pois sempre se refere ao tamanho de fonte definido no <code>html</code>.</p>
+<ul>
+<li>
+<p>Exemplo:
+    ```css
+    html {
+        font-size: 16px; /<em> 1rem = 16px </em>/
+    }</p>
+<p>h1 {
+    font-size: 2rem; /<em> 32px </em>/
+}</p>
+<p>p {
+    font-size: 1rem; /<em> 16px </em>/
+}
+```</p>
+</li>
+</ul>
+<h4 id="3-porcentagem">3. <strong><code>%</code></strong> (porcentagem)</h4>
+<p>As porcentagens são usadas para definir tamanhos relativos ao elemento pai. Elas podem ser aplicadas a margens, larguras, alturas, etc.</p>
+<ul>
+<li>Exemplo:
+    <code>css
+    div {
+        width: 50%; /* 50% da largura do elemento pai */
+        height: 100%; /* 100% da altura do elemento pai */
+    }</code></li>
+</ul>
+<h4 id="4-vh-e-vw-viewport-height-e-viewport-width">4. <strong><code>vh</code> e <code>vw</code></strong> (viewport height e viewport width)</h4>
+<p>As unidades <code>vh</code> e <code>vw</code> são relativas à altura e largura da <strong>viewport</strong> (janela visível). <code>1vh</code> equivale a 1% da altura da viewport, e <code>1vw</code> equivale a 1% da largura da viewport.</p>
+<ul>
+<li>Exemplo:
+    <code>css
+    section {
+        width: 100vw; /* 100% da largura da viewport */
+        height: 50vh; /* 50% da altura da viewport */
+    }</code></li>
+</ul>
+<h4 id="5-min-width-max-width-min-height-max-height">5. <strong><code>min-width</code>, <code>max-width</code>, <code>min-height</code>, <code>max-height</code></strong></h4>
+<p>Essas propriedades controlam o tamanho mínimo e máximo dos elementos, tornando-os mais responsivos em diferentes telas.</p>
+<ul>
+<li>Exemplo:
+    <code>css
+    div {
+        max-width: 100%; /* Não excede 100% da largura da tela */
+        min-height: 300px; /* Altura mínima de 300px */
+    }</code></li>
+</ul>
+<h4 id="exemplo-pratico-de-site-responsivo">Exemplo Prático de Site Responsivo</h4>
+<p>Aqui está um exemplo prático aplicando algumas dessas unidades para criar um site responsivo:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Exemplo Responsivo&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .box {
+            background-color: #f4f4f4;
+            margin: 1rem 0;
+            padding: 2em;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100vw;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Site Responsivo&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;box&quot;&gt;
+            &lt;p&gt;Esta é uma caixa que usa unidades relativas para se adaptar a diferentes tamanhos de tela.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;box&quot;&gt;
+            &lt;p&gt;A largura da página está definida em porcentagens, e o espaçamento em `rem` e `em`.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;Rodapé do site&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="consideracoes-finais">Considerações Finais</h4>
+<p>Ao combinar essas unidades relativas, você pode criar layouts que se adaptam a diferentes tamanhos de tela, tornando seu site mais responsivo e acessível em dispositivos móveis. É importante testar os tamanhos e espaçamentos em várias resoluções para garantir uma boa experiência de usuário.</p>
+<p>Se precisar de mais detalhes ou exemplos específicos, posso ajudar a refinar o conteúdo!</p></div>
         
         
     </div>
