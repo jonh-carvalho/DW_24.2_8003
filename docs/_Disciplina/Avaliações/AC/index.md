@@ -14,5 +14,5 @@ Repositório de Avaliações ACs e APs
 - [Gabriel](https://github.com/brioncio/desenvolvimento_web)
 - [Juliana](https://github.com/Julijolie/desenvolvimento_web/)
 - [Sarah](https://github.com/sarahferrarir/desenvolvimento_web)
-- [Arthur](https://github.com/Arthur-azeredo/DW)
+- [Arthur](https://github.com/Arthur-azeredo/DW) - não estou adicionado como colaborador.
 - [Matheus](https://github.com/mcascaes/repositorio-dw)
