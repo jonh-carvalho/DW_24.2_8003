@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../img/favicon.ico">
 
     
-    <title>Flexbox - DW</title>
+    <title>Grid - DW</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -181,14 +181,14 @@
     <ul class="dropdown-menu">
         
             
-<li class="active">
-    <a href="./">Flexbox</a>
+<li >
+    <a href="../flexbox/">Flexbox</a>
 </li>
 
         
             
-<li >
-    <a href="../grid/">Grid</a>
+<li class="active">
+    <a href="./">Grid</a>
 </li>
 
         
@@ -207,6 +207,12 @@
             
 <li >
     <a href="../tags%20sem%C3%A2ntica/">Tags semântica</a>
+</li>
+
+        
+            
+<li >
+    <a href="../teset/">Arrays</a>
 </li>
 
         
@@ -266,17 +272,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../Exerc%C3%ADcios/PosicionamentoLandingPage/">
+                        <a rel="prev" href="../flexbox/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../grid/">
+                        <a rel="next" href="../posicionamento/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/roteiros/flexbox.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/grid.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -288,199 +294,195 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#flexbox">Flexbox</a></li>
-            <li class="second-level"><a href="#objetivo">Objetivo</a></li>
+        <li class="first-level active"><a href="#grid-css-estruturando-layouts-modernos">Grid CSS - Estruturando Layouts Modernos</a></li>
+            <li class="second-level"><a href="#principais-pontos-para-estudo-de-grid-css">Principais pontos para estudo de GRID css:</a></li>
                 
-                <li class="third-level"><a href="#1-introducao-ao-flexbox">1. Introdução ao Flexbox</a></li>
-                <li class="third-level"><a href="#2-elementos-principais-do-flexbox">2. Elementos principais do Flexbox</a></li>
-                <li class="third-level"><a href="#3-propriedades-do-conteiner-flex">3. Propriedades do Contêiner Flex</a></li>
-                <li class="third-level"><a href="#4-propriedades-dos-itens-flex">4. Propriedades dos Itens Flex</a></li>
-                <li class="third-level"><a href="#5-exemplo-pratico-completo">5. Exemplo Prático Completo</a></li>
-                <li class="third-level"><a href="#6-atividade-proposta">6. Atividade Proposta</a></li>
-                <li class="third-level"><a href="#sites">Sites</a></li>
-                <li class="third-level"><a href="#7-conclusao">7. Conclusão</a></li>
+            <li class="second-level"><a href="#exemplo-pratico-1-grid-basico-com-3-colunas">Exemplo Prático 1: Grid Básico com 3 Colunas</a></li>
+                
+            <li class="second-level"><a href="#exemplo-pratico-2-grid-responsivo">Exemplo Prático 2: Grid Responsivo</a></li>
+                
+            <li class="second-level"><a href="#sites-com-exemplos-e-demonstracoes">Sites com exemplos e demonstrações:</a></li>
+                
+                <li class="third-level"><a href="#-css-tricks-a-complete-guide-to-grid">- CSS-Tricks - A Complete Guide to Grid</a></li>
+            <li class="second-level"><a href="#-grid-by-example">- Grid by Example</a></li>
+                
+            <li class="second-level"><a href="#-css-grid-garden">- CSS Grid Garden</a></li>
+                
+            <li class="second-level"><a href="#-mdn-web-docs-css-grid-layout">- MDN Web Docs - CSS Grid Layout</a></li>
+                
+            <li class="second-level"><a href="#-grid-layout-generator">- Grid Layout Generator</a></li>
+                
+            <li class="second-level"><a href="#-css-grid-generator">- CSS Grid Generator</a></li>
+                
+            <li class="second-level"><a href="#-learn-css-grid">- Learn CSS Grid</a></li>
+                
+            <li class="second-level"><a href="#exercicios">Exercícios:</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="flexbox">Flexbox</h1>
-<h2 id="objetivo">Objetivo</h2>
-<p>Esse roteiro utiliza o modelo de layout Flexbox para organizar e alinhar elementos dentro de uma página HTML de maneira eficiente e flexível.</p>
+<h2 id="grid-css-estruturando-layouts-modernos"><strong>Grid CSS - Estruturando Layouts Modernos</strong></h2>
+<p><strong>Objetivo:</strong></p>
+<p>Apresentamos o uso do Grid Layout no CSS para criar layouts flexíveis e responsivos e iremos criar grades, organizar colunas e linhas, e controlar o espaçamento entre os elementos.</p>
+<h3 id="principais-pontos-para-estudo-de-grid-css"><strong>Principais pontos para estudo de GRID css:</strong></h3>
+<ol>
+<li>
+<p><strong>Introdução ao Grid CSS</strong></p>
+</li>
+<li>
+<p>O que é Grid Layout?</p>
+</li>
+<li>Diferença entre Grid e Flexbox</li>
+<li>Casos de uso do Grid</li>
+<li>
+<p><strong>Elementos Básicos do Grid</strong></p>
+</li>
+<li>
+<p>Definindo um container de grid: <code>display: grid;</code></p>
+</li>
+<li>Definindo colunas e linhas com <code>grid-template-columns</code> e <code>grid-template-rows</code></li>
+<li>Ajustando o espaçamento com <code>gap</code></li>
+<li>
+<p><strong>Posicionamento no Grid</strong></p>
+</li>
+<li>
+<p>Posicionando itens com <code>grid-column</code> e <code>grid-row</code></p>
+</li>
+<li>Usando <code>grid-area</code> para criar áreas nomeadas</li>
+<li>Span e o conceito de mesclar colunas/linhas (<code>grid-column: span</code>)</li>
+<li>
+<p><strong>Alinhamento e Justificação</strong></p>
+</li>
+<li>
+<p>Controlando o alinhamento dos itens dentro do grid com <code>justify-items</code>, <code>align-items</code>, <code>place-items</code></p>
+</li>
+<li>Controlando a distribuição do grid: <code>justify-content</code> e <code>align-content</code></li>
+<li>
+<p><strong>Grid Responsivo</strong></p>
+</li>
+<li>
+<p>Uso de <code>repeat()</code>, <code>minmax()</code>, <code>auto-fit</code> e <code>auto-fill</code> para grids dinâmicos</p>
+</li>
+<li>Usando media queries para layouts responsivos</li>
+<li>
+<p><strong>Exemplos Práticos</strong></p>
+</li>
+<li>
+<p>Layout básico com 3 colunas</p>
+</li>
+<li>Galeria de imagens responsiva</li>
+<li>Layout de blog com header, main e footer</li>
+</ol>
 <hr />
-<h3 id="1-introducao-ao-flexbox">1. <strong>Introdução ao Flexbox</strong></h3>
-<p>O Flexbox é um módulo de layout que permite distribuir o espaço de forma mais dinâmica e alinhar os itens dentro de um contêiner, mesmo que o tamanho dos itens seja desconhecido ou dinâmico.</p>
-<h3 id="2-elementos-principais-do-flexbox">2. <strong>Elementos principais do Flexbox</strong></h3>
-<ul>
-<li><strong>Contêiner Flex</strong>: O elemento pai que utiliza o <code>display: flex;</code>. Ele define o contexto flexível para os filhos (itens flex).</li>
-<li><strong>Itens Flex</strong>: Elementos filhos dentro do contêiner flexível que são organizados de acordo com as regras do Flexbox.</li>
-</ul>
-<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
-  &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
-  &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<pre><code class="language-css">.container {
-  display: flex;
-}
-.item {
-  background-color: lightblue;
-  padding: 10px;
-  margin: 5px;
-  border: 1px solid #000;
-}
-</code></pre>
-<h3 id="3-propriedades-do-conteiner-flex">3. <strong>Propriedades do Contêiner Flex</strong></h3>
-<p>Essas propriedades afetam o comportamento de seus itens filhos.</p>
-<h4 id="31-flex-direction">3.1 <code>flex-direction</code></h4>
-<p>Define a direção dos itens no contêiner.</p>
-<ul>
-<li><code>row</code> (padrão): Alinha os itens horizontalmente.</li>
-<li><code>row-reverse</code>: Alinha os itens horizontalmente na direção inversa.</li>
-<li><code>column</code>: Alinha os itens verticalmente.</li>
-<li><code>column-reverse</code>: Alinha os itens verticalmente na direção inversa.</li>
-</ul>
-<pre><code class="language-css">.container {
-  display: flex;
-  flex-direction: row;
-}
-</code></pre>
-<h4 id="32-justify-content">3.2 <code>justify-content</code></h4>
-<p>Alinha os itens no eixo principal (horizontal por padrão).</p>
-<ul>
-<li><code>flex-start</code>: Alinha os itens ao início do contêiner.</li>
-<li><code>flex-end</code>: Alinha os itens ao final do contêiner.</li>
-<li><code>center</code>: Centraliza os itens.</li>
-<li><code>space-between</code>: Deixa espaço igual entre os itens.</li>
-<li><code>space-around</code>: Deixa espaço ao redor dos itens.</li>
-</ul>
-<pre><code class="language-css">.container {
-  display: flex;
-  justify-content: center;
-}
-</code></pre>
-<h4 id="33-align-items">3.3 <code>align-items</code></h4>
-<p>Alinha os itens no eixo cruzado (vertical por padrão).</p>
-<ul>
-<li><code>flex-start</code>: Alinha os itens no início do eixo cruzado.</li>
-<li><code>flex-end</code>: Alinha os itens no final do eixo cruzado.</li>
-<li><code>center</code>: Centraliza os itens no eixo cruzado.</li>
-<li><code>stretch</code>: Os itens se estendem para preencher o contêiner.</li>
-<li><code>baseline</code>: Alinha os itens de acordo com suas linhas de base.</li>
-</ul>
-<pre><code class="language-css">.container {
-  display: flex;
-  align-items: center;
-}
-</code></pre>
-<h4 id="34-flex-wrap">3.4 <code>flex-wrap</code></h4>
-<p>Permite que os itens do contêiner "quebrem" linha se não couberem.</p>
-<ul>
-<li><code>nowrap</code> (padrão): Todos os itens permanecem em uma única linha.</li>
-<li><code>wrap</code>: Itens quebram em múltiplas linhas, se necessário.</li>
-<li><code>wrap-reverse</code>: Itens quebram em múltiplas linhas na direção inversa.</li>
-</ul>
-<pre><code class="language-css">.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-</code></pre>
-<h3 id="4-propriedades-dos-itens-flex">4. <strong>Propriedades dos Itens Flex</strong></h3>
-<h4 id="41-flex-grow">4.1 <code>flex-grow</code></h4>
-<p>Define como um item pode crescer dentro do contêiner flex. Um valor maior permite que o item cresça mais em relação aos outros.</p>
-<pre><code class="language-css">.item {
-  flex-grow: 1; /* Todos os itens terão o mesmo crescimento */
-}
-</code></pre>
-<h4 id="42-flex-shrink">4.2 <code>flex-shrink</code></h4>
-<p>Controla como um item encolhe se não houver espaço suficiente no contêiner.</p>
-<pre><code class="language-css">.item {
-  flex-shrink: 1; /* Todos os itens podem encolher igualmente */
-}
-</code></pre>
-<h4 id="43-flex-basis">4.3 <code>flex-basis</code></h4>
-<p>Define o tamanho inicial de um item antes que o espaço seja distribuído entre os itens.</p>
-<pre><code class="language-css">.item {
-  flex-basis: 200px; /* Todos os itens terão inicialmente 200px */
-}
-</code></pre>
-<h4 id="44-align-self">4.4 <code>align-self</code></h4>
-<p>Permite que um item individual tenha um comportamento de alinhamento diferente dos outros.</p>
-<pre><code class="language-css">.item {
-  align-self: flex-end;
-}
-</code></pre>
-<h3 id="5-exemplo-pratico-completo">5. <strong>Exemplo Prático Completo</strong></h3>
+<h3 id="exemplo-pratico-1-grid-basico-com-3-colunas"><strong>Exemplo Prático 1: Grid Básico com 3 Colunas</strong></h3>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;Flexbox Example&lt;/title&gt;
+  &lt;title&gt;Exemplo Grid CSS&lt;/title&gt;
   &lt;style&gt;
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      height: 300px;
-      border: 2px solid black;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
     }
     .item {
       background-color: lightblue;
       padding: 20px;
-      margin: 10px;
-      flex-grow: 1;
+      text-align: center;
     }
   &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;grid-container&quot;&gt;
     &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
     &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
     &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 5&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 6&lt;/div&gt;
   &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h3 id="6-atividade-proposta">6. <strong>Atividade Proposta</strong></h3>
-<p>Recrie um layout flexível usando <code>flexbox</code>, onde os elementos devem se reorganizar de acordo com o tamanho da tela. Por exemplo, três colunas de conteúdo que se ajustam em uma linha única em telas grandes e se reorganizam verticalmente em telas menores.</p>
-<h3 id="sites">Sites</h3>
-<p>Aqui estão alguns dos principais sites de demonstração e aprendizado do Flexbox CSS que ajudam a entender como ele funciona através de exemplos interativos e visuais:</p>
-<h4 id="-flexbox-froggy"><strong>- Flexbox Froggy</strong></h4>
+<hr />
+<h3 id="exemplo-pratico-2-grid-responsivo"><strong>Exemplo Prático 2: Grid Responsivo</strong></h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Grid Responsivo&lt;/title&gt;
+  &lt;style&gt;
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .item {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<hr />
+<h3 id="sites-com-exemplos-e-demonstracoes"><strong>Sites com exemplos e demonstrações</strong>:</h3>
+<h4 id="-css-tricks-a-complete-guide-to-grid"><strong>- CSS-Tricks - A Complete Guide to Grid</strong></h4>
 <ul>
-<li><strong>URL</strong>: <a href="https://flexboxfroggy.com/">Flexbox Froggy</a></li>
-<li><strong>Descrição</strong>: Um jogo interativo que ensina as propriedades do Flexbox através de desafios. Nele, você precisa alinhar rãs em suas folhas de vitória-régia usando as propriedades de flexbox.</li>
+<li>URL: <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS-Tricks</a></li>
+<li>Descrição: Um guia abrangente que explica todos os conceitos do CSS Grid, com exemplos visuais e explicações detalhadas de cada propriedade. Inclui muitos exemplos de layout com grids.</li>
 </ul>
-<h5 id="-css-tricks-a-complete-guide-to-flexbox"><strong>- CSS Tricks: A Complete Guide to Flexbox</strong></h5>
+<h3 id="-grid-by-example"><strong>- Grid by Example</strong></h3>
 <ul>
-<li><strong>URL</strong>: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks - Flexbox</a></li>
-<li><strong>Descrição</strong>: Um guia completo com explicações detalhadas sobre todas as propriedades de flexbox. Inclui diagramas visuais e exemplos práticos de código.</li>
+<li>URL: <a href="https://gridbyexample.com/">Grid by Example</a></li>
+<li>Descrição: Um site dedicado ao CSS Grid criado por Rachel Andrew. Oferece exemplos práticos, templates e vídeos explicativos. É um excelente recurso para entender como o Grid pode ser utilizado em diversos layouts.</li>
 </ul>
-<h4 id="-flexbox-defense"><strong>- Flexbox Defense</strong></h4>
+<h3 id="-css-grid-garden"><strong>- CSS Grid Garden</strong></h3>
 <ul>
-<li><strong>URL</strong>: <a href="http://flexboxdefense.com/">Flexbox Defense</a></li>
-<li><strong>Descrição</strong>: Um jogo onde você defende uma base posicionando torres com flexbox. Cada torre é posicionada corretamente ao utilizar as propriedades do flexbox.</li>
+<li>URL: <a href="https://cssgridgarden.com/">CSS Grid Garden</a></li>
+<li>Descrição: Um jogo interativo onde você aprende CSS Grid jogando. Ele é projetado para ensinar as propriedades do Grid de uma forma divertida e prática, ajudando a memorizar os conceitos enquanto joga.</li>
 </ul>
-<h4 id="-flexbox-playground"><strong>- Flexbox Playground</strong></h4>
+<h3 id="-mdn-web-docs-css-grid-layout"><strong>- MDN Web Docs - CSS Grid Layout</strong></h3>
 <ul>
-<li><strong>URL</strong>: <a href="https://codepen.io/enxaneta/full/adLPwv">Flexbox Playground</a></li>
-<li><strong>Descrição</strong>: Uma sandbox interativa onde você pode experimentar e visualizar as propriedades do Flexbox em tempo real. É um ótimo ambiente para testar diferentes combinações de propriedades.</li>
+<li>URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">MDN Web Docs</a></li>
+<li>Descrição: A documentação oficial do Mozilla Developer Network (MDN) sobre o Grid Layout. Oferece exemplos detalhados de uso, com explicações técnicas das propriedades e comportamentos do Grid.</li>
 </ul>
-<h4 id="-flexy-boxes"><strong>- Flexy Boxes</strong></h4>
+<h3 id="-grid-layout-generator"><strong>- Grid Layout Generator</strong></h3>
 <ul>
-<li><strong>URL</strong>: <a href="https://the-echoplex.net/flexyboxes/">Flexy Boxes</a></li>
-<li><strong>Descrição</strong>: Um gerador visual de layouts flexíveis. Ele permite ajustar várias opções de Flexbox e gerar o código CSS correspondente para copiar e colar.</li>
+<li>URL: <a href="https://grid.layoutit.com/">Grid Layout Generator</a></li>
+<li>Descrição: Uma ferramenta visual que permite criar layouts de Grid interativamente. Você pode desenhar seu grid, definir linhas e colunas, e gerar o código CSS automaticamente. Ideal para experimentar e gerar protótipos rapidamente.</li>
 </ul>
-<h4 id="-what-the-flexbox"><strong>- What The Flexbox?!</strong></h4>
+<h3 id="-css-grid-generator"><strong>- CSS Grid Generator</strong></h3>
 <ul>
-<li><strong>URL</strong>: <a href="https://flexbox.io/">What The Flexbox?!</a></li>
-<li><strong>Descrição</strong>: Um curso em vídeo gratuito que cobre o Flexbox desde o básico até usos avançados. O curso é ideal para quem prefere aprender com vídeos e exemplos passo a passo.</li>
+<li>URL: <a href="https://cssgrid-generator.netlify.app/">CSS Grid Generator</a></li>
+<li>Descrição: Um gerador de grids online, onde você pode arrastar e criar seu layout. Ele gera o código CSS necessário com base nas configurações que você seleciona, tornando fácil criar grids complexos.</li>
 </ul>
-<p>Esses recursos são ótimos para entender o Flexbox de forma prática, com interatividade e exemplos aplicados.</p>
-<h3 id="7-conclusao">7. <strong>Conclusão</strong></h3>
-<p>O Flexbox é uma ferramenta poderosa para criar layouts dinâmicos e responsivos de maneira eficiente. Ele é especialmente útil para alinhar, distribuir e organizar itens dentro de um contêiner, adaptando-se automaticamente a diferentes tamanhos de tela.</p></div>
+<h3 id="-learn-css-grid"><strong>- Learn CSS Grid</strong></h3>
+<ul>
+<li>URL: <a href="https://learncssgrid.com/">Learn CSS Grid</a></li>
+<li>Descrição: Um site educacional que ensina CSS Grid com uma abordagem prática e visual. Ele inclui uma série de tutoriais e exemplos, focados em ensinar os conceitos passo a passo.</li>
+</ul>
+<p>Esses sites são ótimos para aprender, praticar e experimentar com o CSS Grid em diversos níveis de complexidade.</p>
+<h3 id="exercicios"><strong>Exercícios:</strong></h3>
+<ol>
+<li>Crie um layout com 4 colunas e 3 linhas, e adicione diferentes cores aos elementos.</li>
+<li>Use o Grid para criar um layout de página com cabeçalho, barra lateral, conteúdo principal e rodapé.</li>
+<li>Ajuste o layout criado para que seja responsivo utilizando <code>minmax()</code> e <code>auto-fit</code>.</li>
+</ol>
+<p>Essa aula pode ser complementada com explicações teóricas e desafios práticos que incentivem a experimentação dos alunos com o Grid CSS.</p></div>
         
         
     </div>
