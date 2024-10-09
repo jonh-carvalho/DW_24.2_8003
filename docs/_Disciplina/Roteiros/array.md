@@ -560,6 +560,6 @@ textarea.onkeyup = function () {
 
 ## Conclusão
 
-Depois de ler este artigo, nós temos certeza que você concordará que arrays parecem muito úteis; você verá elas surgirem em todo lugar em JavaScript, frequentemente associadas com laços para fazer a mesma coisa para cada item de uma array. Nós estaremos ensinando a você todo o básico que há para saber sobre laços no próximo módulo, mas por agora você deve se dar uma palmada de incentivo e dar uma bem merecida parada; você trabalhou durante todo os artigos neste módulo!
+Depois de ler este artigo, nós temos certeza que você concordará que arrays parecem muito úteis; você verá elas surgirem em todo lugar em JavaScript, frequentemente associadas com laços para fazer a mesma coisa para cada item de uma array. Nós estaremos ensinando a você todo o básico que há para saber sobre laços no próximo módulo, mas por agora você deve se dar uma  palmada de incentivo e dar uma bem merecida parada; você trabalhou durante todo os artigos neste módulo!
 
 A única coisa que resta a fazer é trabalhar na avaliação deste módulo, a qual vai testar seu entendimento dos artigos anteriores a este.
