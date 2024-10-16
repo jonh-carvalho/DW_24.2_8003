@@ -174,7 +174,7 @@ a = str+str1
 console.log(a)    
 */
 
-// Objetos - atributos e métodos
+/* Objetos - atributos e métodos
 let professor = {
     name: "Jonh",
     age: 52,
@@ -190,3 +190,16 @@ professor.pro()
 professor.pre()
 console.log(professor.name)
 console.log(professor.age)
+*/
+
+// Create Read Update Delete
+var student =  { 
+    name : "David Rayy", 
+    sclass : "VI", 
+    rollno : 12  };
+
+console.log(student);
+delete student.rollno;
+console.log(student);
+student.rollno = 15;
+console.log(student);
