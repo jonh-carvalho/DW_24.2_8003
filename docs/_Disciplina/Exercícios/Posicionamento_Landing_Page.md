@@ -1,4 +1,4 @@
-# Posisicionamento - Landing Page
+## Posisicionamento - Landing Page
 
 Aplique as técnicas de **posicionamento CSS** em uma **landing page** que usa tags semânticas de layout. Esse exemplo vai incorporar o uso de `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, juntamente com os tipos de posicionamento: `static`, `relative`, `absolute`, `fixed`, e `sticky`.
 
