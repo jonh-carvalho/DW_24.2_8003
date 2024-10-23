@@ -1,0 +1,228 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "The new Map() Method"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// Create a Map\r\nconst fruits = new Map([\r\n    [\"apples\", 500],\r\n    [\"bananas\", 300],\r\n    [\"oranges\", 200]\r\n  ]);\r\n  fruits"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "Map(3) {",
+                                "  \u001b[32m'apples'\u001b[39m => \u001b[33m500\u001b[39m,",
+                                "  \u001b[32m'bananas'\u001b[39m => \u001b[33m300\u001b[39m,",
+                                "  \u001b[32m'oranges'\u001b[39m => \u001b[33m200\u001b[39m",
+                                "}"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "fruits.set(\"grapes\", 100);\r\nfruits"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "Map(4) {",
+                                "  \u001b[32m'apples'\u001b[39m => \u001b[33m500\u001b[39m,",
+                                "  \u001b[32m'bananas'\u001b[39m => \u001b[33m300\u001b[39m,",
+                                "  \u001b[32m'oranges'\u001b[39m => \u001b[33m200\u001b[39m,",
+                                "  \u001b[32m'grapes'\u001b[39m => \u001b[33m100\u001b[39m",
+                                "}"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "fruits.get(\"apples\");"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "\u001b[33m500\u001b[39m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Dobrar todos os números de um array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const numeros = [1,2,3,4,5,6,7,8,9,10];\r\nconst numerosMap = new Map(numeros.map((num) => [num, num * 2]));\r\nnumerosMap"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "Map(10) {",
+                                "  \u001b[33m1\u001b[39m => \u001b[33m2\u001b[39m,",
+                                "  \u001b[33m2\u001b[39m => \u001b[33m4\u001b[39m,",
+                                "  \u001b[33m3\u001b[39m => \u001b[33m6\u001b[39m,",
+                                "  \u001b[33m4\u001b[39m => \u001b[33m8\u001b[39m,",
+                                "  \u001b[33m5\u001b[39m => \u001b[33m10\u001b[39m,",
+                                "  \u001b[33m6\u001b[39m => \u001b[33m12\u001b[39m,",
+                                "  \u001b[33m7\u001b[39m => \u001b[33m14\u001b[39m,",
+                                "  \u001b[33m8\u001b[39m => \u001b[33m16\u001b[39m,",
+                                "  \u001b[33m9\u001b[39m => \u001b[33m18\u001b[39m,",
+                                "  \u001b[33m10\u001b[39m => \u001b[33m20\u001b[39m",
+                                "}"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const nomes  = [\"João\", \"Maria\", \"José\", \"Ana\"];\r\nconst nomesMap = new Map(nomes.map((nome) => [nome, nome.toLocaleUpperCase()]));\r\nnomesMap"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "Map(4) {",
+                                "  \u001b[32m'João'\u001b[39m => \u001b[32m'JOÃO'\u001b[39m,",
+                                "  \u001b[32m'Maria'\u001b[39m => \u001b[32m'MARIA'\u001b[39m,",
+                                "  \u001b[32m'José'\u001b[39m => \u001b[32m'JOSÉ'\u001b[39m,",
+                                "  \u001b[32m'Ana'\u001b[39m => \u001b[32m'ANA'\u001b[39m",
+                                "}"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "const quadrados = numeros.map((num) => num * num);\r\nquadrados"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "[",
+                                "  \u001b[33m1\u001b[39m,",
+                                "  \u001b[33m4\u001b[39m,",
+                                "  \u001b[33m9\u001b[39m,",
+                                "  \u001b[33m16\u001b[39m,",
+                                "  \u001b[33m25\u001b[39m,",
+                                "  \u001b[33m36\u001b[39m,",
+                                "  \u001b[33m49\u001b[39m,",
+                                "  \u001b[33m64\u001b[39m,",
+                                "  \u001b[33m81\u001b[39m,",
+                                "  \u001b[33m100\u001b[39m",
+                                "]"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
