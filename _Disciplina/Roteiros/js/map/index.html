@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../../img/favicon.ico">
 
     
-    <title>Flexbox - DW</title>
+    <title>Map - DW</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -198,32 +198,32 @@
     <ul class="dropdown-menu">
         
             
-<li class="active">
-    <a href="./">Flexbox</a>
+<li >
+    <a href="../../css/flexbox/">Flexbox</a>
 </li>
 
         
             
 <li >
-    <a href="../grid/">Grid</a>
+    <a href="../../css/grid/">Grid</a>
 </li>
 
         
             
 <li >
-    <a href="../posicionamento/">Posicionamento</a>
+    <a href="../../css/posicionamento/">Posicionamento</a>
 </li>
 
         
             
 <li >
-    <a href="../siteresponsivo/">Responsividade</a>
+    <a href="../../css/siteresponsivo/">Responsividade</a>
 </li>
 
         
             
 <li >
-    <a href="../unidadesrelativas/">Unidades Relativas</a>
+    <a href="../../css/unidadesrelativas/">Unidades Relativas</a>
 </li>
 
         
@@ -253,19 +253,19 @@
         
             
 <li >
-    <a href="../../js/array/">Arrays</a>
+    <a href="../array/">Arrays</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/chartmap/">Chartmap</a>
+    <a href="../chartmap/">Chartmap</a>
 </li>
 
         
             
-<li >
-    <a href="../../js/map/">Map</a>
+<li class="active">
+    <a href="./">Map</a>
 </li>
 
         
@@ -323,17 +323,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../../Exerc%C3%ADcios/Posicionamento_Landing_Page/">
+                        <a rel="prev" href="../chartmap/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../grid/">
+                        <a rel="next" href="../../../../_Ferramentas/Sites%20Importantes/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/css/flexbox.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/js/map.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -345,199 +345,175 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#flexbox">Flexbox</a></li>
-            <li class="second-level"><a href="#objetivo">Objetivo</a></li>
+        <li class="first-level active"><a href="#o-comando-map-em-javascript">O Comando Map em JavaScript</a></li>
+        <li class="first-level "><a href="#introducao">Introdução</a></li>
+        <li class="first-level "><a href="#objetivos-da-aula">Objetivos da Aula</a></li>
+        <li class="first-level "><a href="#conteudo-da-aula">Conteúdo da Aula</a></li>
+            <li class="second-level"><a href="#1-o-que-e-o-map">1. O que é o map()?</a></li>
                 
-                <li class="third-level"><a href="#1-introducao-ao-flexbox">1. Introdução ao Flexbox</a></li>
-                <li class="third-level"><a href="#2-elementos-principais-do-flexbox">2. Elementos principais do Flexbox</a></li>
-                <li class="third-level"><a href="#3-propriedades-do-conteiner-flex">3. Propriedades do Contêiner Flex</a></li>
-                <li class="third-level"><a href="#4-propriedades-dos-itens-flex">4. Propriedades dos Itens Flex</a></li>
-                <li class="third-level"><a href="#5-exemplo-pratico-completo">5. Exemplo Prático Completo</a></li>
-                <li class="third-level"><a href="#6-atividade-proposta">6. Atividade Proposta</a></li>
-                <li class="third-level"><a href="#sites">Sites</a></li>
-                <li class="third-level"><a href="#7-conclusao">7. Conclusão</a></li>
+            <li class="second-level"><a href="#2-sintaxe-do-map">2. Sintaxe do map()</a></li>
+                
+            <li class="second-level"><a href="#3-exemplos-basicos">3. Exemplos Básicos</a></li>
+                
+            <li class="second-level"><a href="#4-usos-comuns">4. Usos Comuns</a></li>
+                
+            <li class="second-level"><a href="#5-map-com-arrow-functions">5. map() com Arrow Functions</a></li>
+                
+        <li class="first-level "><a href="#atividades-praticas">Atividades Práticas</a></li>
+        <li class="first-level "><a href="#recursos-adicionais">Recursos Adicionais</a></li>
+        <li class="first-level "><a href="#exemplos-praticos">Exemplos Práticos</a></li>
+        <li class="first-level "><a href="#exemplos-praticos-e-relevantes-para-o-metodo-map-em-javascript">Exemplos Práticos e Relevantes para o Método map() em JavaScript</a></li>
+            <li class="second-level"><a href="#cenarios-e-exemplos">Cenários e Exemplos</a></li>
+                
+                <li class="third-level"><a href="#1-manipulacao-de-dados-de-usuarios">1. Manipulação de Dados de Usuários</a></li>
+                <li class="third-level"><a href="#2-formatacao-de-dados-para-exibicao">2. Formatação de Dados para Exibição</a></li>
+                <li class="third-level"><a href="#3-criacao-de-elementos-html">3. Criação de Elementos HTML</a></li>
+                <li class="third-level"><a href="#4-processamento-de-dados-de-formularios">4. Processamento de Dados de Formulários</a></li>
+                <li class="third-level"><a href="#5-transformacao-de-unidades-de-medida">5. Transformação de Unidades de Medida</a></li>
+                <li class="third-level"><a href="#6-criacao-de-novos-objetos-a-partir-de-arrays">6. Criação de Novos Objetos a Partir de Arrays</a></li>
+            <li class="second-level"><a href="#atividades-praticas_1">Atividades Práticas</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="flexbox">Flexbox</h1>
-<h2 id="objetivo">Objetivo</h2>
-<p>Esse roteiro utiliza o modelo de layout Flexbox para organizar e alinhar elementos dentro de uma página HTML de maneira eficiente e flexível.</p>
-<hr />
-<h3 id="1-introducao-ao-flexbox">1. <strong>Introdução ao Flexbox</strong></h3>
-<p>O Flexbox é um módulo de layout que permite distribuir o espaço de forma mais dinâmica e alinhar os itens dentro de um contêiner, mesmo que o tamanho dos itens seja desconhecido ou dinâmico.</p>
-<h3 id="2-elementos-principais-do-flexbox">2. <strong>Elementos principais do Flexbox</strong></h3>
+<h3 id="o-comando-map-em-javascript">O Comando Map em JavaScript</h3>
+<h3 id="introducao">Introdução</h3>
+<p>O método <code>map()</code> é uma ferramenta poderosa em JavaScript que permite transformar cada elemento de um array em um novo elemento, criando um novo array com os resultados. É uma forma eficiente de aplicar uma função a cada item de um array, sem modificar o array original.</p>
+<h3 id="objetivos-da-aula">Objetivos da Aula</h3>
 <ul>
-<li><strong>Contêiner Flex</strong>: O elemento pai que utiliza o <code>display: flex;</code>. Ele define o contexto flexível para os filhos (itens flex).</li>
-<li><strong>Itens Flex</strong>: Elementos filhos dentro do contêiner flexível que são organizados de acordo com as regras do Flexbox.</li>
+<li>Compreender o conceito de <code>map()</code>;</li>
+<li>Aprender a sintaxe e a utilização do <code>map()</code>;</li>
+<li>Realizar operações comuns com <code>map()</code>;</li>
+<li>Diferenciar <code>map()</code> de outros métodos como <code>forEach()</code>;</li>
+<li>Aplicar <code>map()</code> em exemplos práticos.</li>
 </ul>
-<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
-  &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
-  &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<pre><code class="language-css">.container {
-  display: flex;
-}
-.item {
-  background-color: lightblue;
-  padding: 10px;
-  margin: 5px;
-  border: 1px solid #000;
-}
-</code></pre>
-<h3 id="3-propriedades-do-conteiner-flex">3. <strong>Propriedades do Contêiner Flex</strong></h3>
-<p>Essas propriedades afetam o comportamento de seus itens filhos.</p>
-<h4 id="31-flex-direction">3.1 <code>flex-direction</code></h4>
-<p>Define a direção dos itens no contêiner.</p>
+<h3 id="conteudo-da-aula">Conteúdo da Aula</h3>
+<h4 id="1-o-que-e-o-map">1. O que é o <code>map()</code>?</h4>
 <ul>
-<li><code>row</code> (padrão): Alinha os itens horizontalmente.</li>
-<li><code>row-reverse</code>: Alinha os itens horizontalmente na direção inversa.</li>
-<li><code>column</code>: Alinha os itens verticalmente.</li>
-<li><code>column-reverse</code>: Alinha os itens verticalmente na direção inversa.</li>
+<li>Definição e propósito do método.</li>
+<li>Como o <code>map()</code> funciona internamente.</li>
+<li>Comparação com outros métodos como <code>forEach()</code>.</li>
 </ul>
-<pre><code class="language-css">.container {
-  display: flex;
-  flex-direction: row;
-}
-</code></pre>
-<h4 id="32-justify-content">3.2 <code>justify-content</code></h4>
-<p>Alinha os itens no eixo principal (horizontal por padrão).</p>
+<h4 id="2-sintaxe-do-map">2. Sintaxe do <code>map()</code></h4>
 <ul>
-<li><code>flex-start</code>: Alinha os itens ao início do contêiner.</li>
-<li><code>flex-end</code>: Alinha os itens ao final do contêiner.</li>
-<li><code>center</code>: Centraliza os itens.</li>
-<li><code>space-between</code>: Deixa espaço igual entre os itens.</li>
-<li><code>space-around</code>: Deixa espaço ao redor dos itens.</li>
+<li>Estrutura básica do método.</li>
+<li>Parâmetros da função de callback: elemento atual, índice, array original.</li>
+<li>Retorno da função de callback.</li>
 </ul>
-<pre><code class="language-css">.container {
-  display: flex;
-  justify-content: center;
-}
-</code></pre>
-<h4 id="33-align-items">3.3 <code>align-items</code></h4>
-<p>Alinha os itens no eixo cruzado (vertical por padrão).</p>
+<h4 id="3-exemplos-basicos">3. Exemplos Básicos</h4>
 <ul>
-<li><code>flex-start</code>: Alinha os itens no início do eixo cruzado.</li>
-<li><code>flex-end</code>: Alinha os itens no final do eixo cruzado.</li>
-<li><code>center</code>: Centraliza os itens no eixo cruzado.</li>
-<li><code>stretch</code>: Os itens se estendem para preencher o contêiner.</li>
-<li><code>baseline</code>: Alinha os itens de acordo com suas linhas de base.</li>
+<li>Dobrar todos os números de um array.</li>
+<li>Transformar um array de nomes em letras maiúsculas.</li>
+<li>Criar um novo array com os quadrados dos números.</li>
 </ul>
-<pre><code class="language-css">.container {
-  display: flex;
-  align-items: center;
-}
-</code></pre>
-<h4 id="34-flex-wrap">3.4 <code>flex-wrap</code></h4>
-<p>Permite que os itens do contêiner "quebrem" linha se não couberem.</p>
+<h4 id="4-usos-comuns">4. Usos Comuns</h4>
 <ul>
-<li><code>nowrap</code> (padrão): Todos os itens permanecem em uma única linha.</li>
-<li><code>wrap</code>: Itens quebram em múltiplas linhas, se necessário.</li>
-<li><code>wrap-reverse</code>: Itens quebram em múltiplas linhas na direção inversa.</li>
+<li>Criar novos arrays a partir de dados existentes.</li>
+<li>Aplicar formatações a elementos de um array.</li>
+<li>Extrair informações específicas de um array de objetos.</li>
 </ul>
-<pre><code class="language-css">.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-</code></pre>
-<h3 id="4-propriedades-dos-itens-flex">4. <strong>Propriedades dos Itens Flex</strong></h3>
-<h4 id="41-flex-grow">4.1 <code>flex-grow</code></h4>
-<p>Define como um item pode crescer dentro do contêiner flex. Um valor maior permite que o item cresça mais em relação aos outros.</p>
-<pre><code class="language-css">.item {
-  flex-grow: 1; /* Todos os itens terão o mesmo crescimento */
-}
-</code></pre>
-<h4 id="42-flex-shrink">4.2 <code>flex-shrink</code></h4>
-<p>Controla como um item encolhe se não houver espaço suficiente no contêiner.</p>
-<pre><code class="language-css">.item {
-  flex-shrink: 1; /* Todos os itens podem encolher igualmente */
-}
-</code></pre>
-<h4 id="43-flex-basis">4.3 <code>flex-basis</code></h4>
-<p>Define o tamanho inicial de um item antes que o espaço seja distribuído entre os itens.</p>
-<pre><code class="language-css">.item {
-  flex-basis: 200px; /* Todos os itens terão inicialmente 200px */
-}
-</code></pre>
-<h4 id="44-align-self">4.4 <code>align-self</code></h4>
-<p>Permite que um item individual tenha um comportamento de alinhamento diferente dos outros.</p>
-<pre><code class="language-css">.item {
-  align-self: flex-end;
-}
-</code></pre>
-<h3 id="5-exemplo-pratico-completo">5. <strong>Exemplo Prático Completo</strong></h3>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;Flexbox Example&lt;/title&gt;
-  &lt;style&gt;
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      height: 300px;
-      border: 2px solid black;
-    }
-    .item {
-      background-color: lightblue;
-      padding: 20px;
-      margin: 10px;
-      flex-grow: 1;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
-    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
-    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h3 id="6-atividade-proposta">6. <strong>Atividade Proposta</strong></h3>
-<p>Recrie um layout flexível usando <code>flexbox</code>, onde os elementos devem se reorganizar de acordo com o tamanho da tela. Por exemplo, três colunas de conteúdo que se ajustam em uma linha única em telas grandes e se reorganizam verticalmente em telas menores.</p>
-<h3 id="sites">Sites</h3>
-<p>Aqui estão alguns dos principais sites de demonstração e aprendizado do Flexbox CSS que ajudam a entender como ele funciona através de exemplos interativos e visuais:</p>
-<h4 id="-flexbox-froggy"><strong>- Flexbox Froggy</strong></h4>
+<h4 id="5-map-com-arrow-functions">5. <code>map()</code> com Arrow Functions</h4>
 <ul>
-<li><strong>URL</strong>: <a href="https://flexboxfroggy.com/">Flexbox Froggy</a></li>
-<li><strong>Descrição</strong>: Um jogo interativo que ensina as propriedades do Flexbox através de desafios. Nele, você precisa alinhar rãs em suas folhas de vitória-régia usando as propriedades de flexbox.</li>
+<li>Como utilizar arrow functions para simplificar o código.</li>
+<li>Exemplos práticos.</li>
 </ul>
-<h5 id="-css-tricks-a-complete-guide-to-flexbox"><strong>- CSS Tricks: A Complete Guide to Flexbox</strong></h5>
+<h3 id="atividades-praticas">Atividades Práticas</h3>
 <ul>
-<li><strong>URL</strong>: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks - Flexbox</a></li>
-<li><strong>Descrição</strong>: Um guia completo com explicações detalhadas sobre todas as propriedades de flexbox. Inclui diagramas visuais e exemplos práticos de código.</li>
+<li><strong>Exercícios:</strong></li>
+<li>Crie um array de números e utilize <code>map()</code> para obter um novo array com os números multiplicados por 2.</li>
+<li>Transforme um array de objetos (pessoas) em um novo array contendo apenas os nomes.</li>
+<li>Crie um array de strings e utilize <code>map()</code> para converter cada string em um elemento HTML (e.g., <code>&lt;li&gt;</code>).</li>
+<li><strong>Projeto:</strong></li>
+<li>Crie uma aplicação simples que permita ao usuário adicionar itens a uma lista de compras. Utilize <code>map()</code> para exibir a lista formatada em HTML.</li>
 </ul>
-<h4 id="-flexbox-defense"><strong>- Flexbox Defense</strong></h4>
+<h3 id="recursos-adicionais">Recursos Adicionais</h3>
 <ul>
-<li><strong>URL</strong>: <a href="http://flexboxdefense.com/">Flexbox Defense</a></li>
-<li><strong>Descrição</strong>: Um jogo onde você defende uma base posicionando torres com flexbox. Cada torre é posicionada corretamente ao utilizar as propriedades do flexbox.</li>
+<li><strong>Documentação MDN:</strong> A documentação oficial do JavaScript oferece exemplos e explicações detalhadas sobre o método <code>map()</code>.</li>
+<li><strong>Exercícios interativos:</strong> Sites como Exercism e Codewars oferecem desafios para praticar os conceitos aprendidos.</li>
 </ul>
-<h4 id="-flexbox-playground"><strong>- Flexbox Playground</strong></h4>
+<h3 id="exemplos-praticos">Exemplos Práticos</h3>
+<pre><code class="language-javascript">// Dobrar todos os números de um array
+const numeros = [1, 2, 3, 4, 5];
+const numerosDobrados = numeros.map(numero =&gt; numero * 2);
+
+// Transformar um array de nomes em letras maiúsculas
+const nomes = ['ana', 'joão', 'maria'];
+const nomesMaiusculos = nomes.map(nome =&gt; nome.toUpperCase());
+
+// Criar um novo array com os quadrados dos números
+const quadrados = numeros.map(numero =&gt; numero * numero);
+</code></pre>
+<h2 id="exemplos-praticos-e-relevantes-para-o-metodo-map-em-javascript">Exemplos Práticos e Relevantes para o Método <code>map()</code> em JavaScript</h2>
+<h3 id="cenarios-e-exemplos">Cenários e Exemplos</h3>
+<h4 id="1-manipulacao-de-dados-de-usuarios">1. <strong>Manipulação de Dados de Usuários</strong></h4>
 <ul>
-<li><strong>URL</strong>: <a href="https://codepen.io/enxaneta/full/adLPwv">Flexbox Playground</a></li>
-<li><strong>Descrição</strong>: Uma sandbox interativa onde você pode experimentar e visualizar as propriedades do Flexbox em tempo real. É um ótimo ambiente para testar diferentes combinações de propriedades.</li>
+<li><strong>Exemplo:</strong> Transformar um array de objetos representando usuários em um novo array contendo apenas os nomes.</li>
 </ul>
-<h4 id="-flexy-boxes"><strong>- Flexy Boxes</strong></h4>
+<pre><code class="language-javascript">const usuarios = [
+    { nome: 'Ana', idade: 30 },
+    { nome: 'João', idade: 25 },
+    { nome: 'Maria', idade: 35 }
+];
+
+const nomes = usuarios.map(usuario =&gt; usuario.nome);
+console.log(nomes); // Output: ['Ana', 'João', 'Maria']
+</code></pre>
+<h4 id="2-formatacao-de-dados-para-exibicao">2. <strong>Formatação de Dados para Exibição</strong></h4>
 <ul>
-<li><strong>URL</strong>: <a href="https://the-echoplex.net/flexyboxes/">Flexy Boxes</a></li>
-<li><strong>Descrição</strong>: Um gerador visual de layouts flexíveis. Ele permite ajustar várias opções de Flexbox e gerar o código CSS correspondente para copiar e colar.</li>
+<li><strong>Exemplo:</strong> Formatar um array de preços para exibir com o símbolo de real e duas casas decimais.</li>
 </ul>
-<h4 id="-what-the-flexbox"><strong>- What The Flexbox?!</strong></h4>
+<pre><code class="language-javascript">const precos = [10.99, 25.49, 15.99];
+const precosFormatados = precos.map(preco =&gt; `R$ ${preco.toFixed(2)}`);
+console.log(precosFormatados); // Output: ['R$ 10.99', 'R$ 25.49', 'R$ 15.99']
+</code></pre>
+<h4 id="3-criacao-de-elementos-html">3. <strong>Criação de Elementos HTML</strong></h4>
 <ul>
-<li><strong>URL</strong>: <a href="https://flexbox.io/">What The Flexbox?!</a></li>
-<li><strong>Descrição</strong>: Um curso em vídeo gratuito que cobre o Flexbox desde o básico até usos avançados. O curso é ideal para quem prefere aprender com vídeos e exemplos passo a passo.</li>
+<li><strong>Exemplo:</strong> Criar uma lista não ordenada (ul) com os itens de um array.</li>
 </ul>
-<p>Esses recursos são ótimos para entender o Flexbox de forma prática, com interatividade e exemplos aplicados.</p>
-<h3 id="7-conclusao">7. <strong>Conclusão</strong></h3>
-<p>O Flexbox é uma ferramenta poderosa para criar layouts dinâmicos e responsivos de maneira eficiente. Ele é especialmente útil para alinhar, distribuir e organizar itens dentro de um contêiner, adaptando-se automaticamente a diferentes tamanhos de tela.</p></div>
+<pre><code class="language-javascript">const itens = ['maçã', 'banana', 'laranja'];
+const listaHtml = itens.map(item =&gt; `&lt;li&gt;${item}&lt;/li&gt;`).join('');
+console.log(listaHtml);
+</code></pre>
+<h4 id="4-processamento-de-dados-de-formularios">4. <strong>Processamento de Dados de Formulários</strong></h4>
+<ul>
+<li><strong>Exemplo:</strong> Extrair os valores de um formulário e criar um objeto com os dados.</li>
+</ul>
+<pre><code class="language-javascript">const formulario = document.querySelector('form');
+const dadosFormulario = new FormData(formulario);
+const dadosObjeto = [...dadosFormulario.entries()].map(([chave, valor]) =&gt; ({ [chave]: valor }));
+console.log(dadosObjeto);
+</code></pre>
+<h4 id="5-transformacao-de-unidades-de-medida">5. <strong>Transformação de Unidades de Medida</strong></h4>
+<ul>
+<li><strong>Exemplo:</strong> Converter uma lista de temperaturas em Celsius para Fahrenheit.</li>
+</ul>
+<pre><code class="language-javascript">const temperaturasCelsius = [0, 10, 20, 30];
+const temperaturasFahrenheit = temperaturasCelsius.map(celsius =&gt; (celsius * 9/5) + 32);
+</code></pre>
+<h4 id="6-criacao-de-novos-objetos-a-partir-de-arrays">6. <strong>Criação de Novos Objetos a Partir de Arrays</strong></h4>
+<ul>
+<li><strong>Exemplo:</strong> Criar um array de objetos com propriedades chave-valor a partir de dois arrays.</li>
+</ul>
+<pre><code class="language-javascript">const nomes = ['Ana', 'João', 'Maria'];
+const idades = [30, 25, 35];
+const pessoas = nomes.map((nome, index) =&gt; ({ nome, idade: idades[index] }));
+</code></pre>
+<h3 id="atividades-praticas_1">Atividades Práticas</h3>
+<ul>
+<li><strong>Criar um catálogo de produtos:</strong> Dado um array de objetos representando produtos (nome, preço, categoria), criar um novo array com os produtos de uma categoria específica.</li>
+<li><strong>Transformar uma lista de datas em um novo formato:</strong> Converter um array de strings representando datas no formato "YYYY-MM-DD" para o formato "DD/MM/YYYY".</li>
+<li><strong>Validar um formulário:</strong> Utilizar <code>map()</code> para verificar se todos os campos obrigatórios de um formulário foram preenchidos.</li>
+<li><strong>Criar um gráfico simples:</strong> Gerar um array de coordenadas a partir de um conjunto de dados e utilizá-lo para criar um gráfico de linhas básico.</li>
+</ul>
+<p><strong>Dicas Adicionais:</strong></p>
+<ul>
+<li><strong>Enfatize a imutabilidade:</strong> O <code>map()</code> cria um novo array, não modificando o original.</li>
+<li><strong>Explore diferentes cenários:</strong> Apresente exemplos que envolvam diferentes tipos de dados e estruturas.</li>
+<li><strong>Incentive a experimentação:</strong> Deixe os alunos explorarem diferentes formas de utilizar o <code>map()</code>.</li>
+<li><strong>Relacione com outros métodos:</strong> Mostre como o <code>map()</code> pode ser combinado com outros métodos como <code>filter</code> e <code>reduce</code> para realizar operações mais complexas.</li>
+</ul>
+<p>Com esses exemplos e atividades, seus alunos terão uma base sólida para utilizar o <code>map()</code> em seus projetos JavaScript.</p></div>
         
         
     </div>
