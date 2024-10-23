@@ -276,6 +276,91 @@
         {
             "language": "markdown",
             "source": [
+                "# Union"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const setA = new Set([1,2,3,4])\r\nconst setB = new Set([3,4,5,6])\r\n\r\nfunction union(setA, setB){\r\n    const unionSet = new Set(setA)\r\n    setB.forEach(value => unionSet.add(value))\r\n    return unionSet\r\n}\r\nunion(setA, setB)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "Set(6) {",
+                                "  \u001b[33m1\u001b[39m,",
+                                "  \u001b[33m2\u001b[39m,",
+                                "  \u001b[33m3\u001b[39m,",
+                                "  \u001b[33m4\u001b[39m,",
+                                "  \u001b[33m5\u001b[39m,",
+                                "  \u001b[33m6\u001b[39m",
+                                "}"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const setA = new Set([1,2,3,4])\r\nconst setB = new Set([3,4,5,6])\r\n\r\nfunction union(setA, setB){\r\n    const unionSet = new Set([...setA, ...setB])\r\n    return unionSet\r\n  \r\n}\r\nunion(setA, setB)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "Set(2) {",
+                                "  Set(4) {",
+                                "    \u001b[33m1\u001b[39m,",
+                                "    \u001b[33m2\u001b[39m,",
+                                "    \u001b[33m3\u001b[39m,",
+                                "    \u001b[33m4\u001b[39m",
+                                "  },",
+                                "  Set(4) {",
+                                "    \u001b[33m3\u001b[39m,",
+                                "    \u001b[33m4\u001b[39m,",
+                                "    \u001b[33m5\u001b[39m,",
+                                "    \u001b[33m6\u001b[39m",
+                                "  }",
+                                "}"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "\r\n#### 8. Aplicações Práticas\r\n* Removendo duplicados de um array.\r\n* Criando uma lista única de valores.\r\n* Verificando se dois arrays possuem elementos em comum.\r\n* Implementando um algoritmo de busca único.\r\n\r\n### Atividades Práticas\r\n\r\n* **Exercícios:**\r\n    * Crie um set com os números pares de 1 a 10.\r\n    * Adicione os números ímpares de 1 a 5 ao set.\r\n    * Remova o número 3 do set.\r\n    * Verifique se o número 7 existe no set.\r\n    * Crie um novo set com os dias da semana e encontre a interseção com um set de feriados.\r\n    * \r\n* **Projeto:**\r\n    * Desenvolva uma aplicação que permita adicionar e remover itens de uma lista de compras, garantindo que não haja itens duplicados.\r\n\r\n### Recursos Adicionais\r\n\r\n* **Documentação MDN:** A documentação oficial do JavaScript oferece exemplos e explicações detalhadas sobre os métodos dos sets.\r\n* **Exercícios interativos:** Sites como Exercism e Codewars oferecem desafios para praticar os conceitos aprendidos.\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
             ],
             "outputs": []
