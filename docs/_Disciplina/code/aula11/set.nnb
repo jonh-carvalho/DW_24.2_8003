@@ -1,0 +1,198 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Sets em JavaScript\r\n\r\n### Introdução\r\n\r\nOs conjuntos (Sets) em JavaScript são estruturas de dados que armazenam valores únicos. Ao contrário dos arrays, que podem ter elementos duplicados, os sets garantem que cada elemento apareça apenas uma vez. Essa característica os torna úteis em diversas situações, como remoção de duplicados, criação de listas únicas e verificação de existência de elementos.\r\n\r\n### Objetivos da Aula\r\n\r\n* Compreender o conceito de conjuntos em JavaScript.\r\n* Aprender a criar e inicializar conjuntos.\r\n* Dominar os métodos mais comuns para manipular conjuntos.\r\n* Aplicar conjuntos em situações práticas para resolver problemas comuns.\r\n\r\n### Conteúdo da Aula\r\n\r\n#### 1. O que são Sets?\r\n* Definição e comparação com arrays.\r\n* Vantagens de utilizar sets.\r\n* Exemplos de uso em situações do dia a dia.\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// Imagine uma lista de convidados para uma festa. Um Set seria ideal para garantir que cada convidado apareça apenas uma vez, evitando duplicações.\r\nconst convidados = new Set([\"Ana\", \"João\", \"Maria\", \"João\"])\r\nconvidados "
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "Set(3) {",
+                                "  \u001b[32m'Ana'\u001b[39m,",
+                                "  \u001b[32m'João'\u001b[39m,",
+                                "  \u001b[32m'Maria'\u001b[39m",
+                                "}"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\n#### 2. Criando e Inicializando Sets\r\n* Sintaxe básica para criar um novo set.\r\n* Inicializando um set com valores iniciais.\r\n* Convertendo um array em um set.\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// Criar um set com os números primos menores que 10.\r\n\r\nconst primos = new Set([2, 3, 5]);\r\nprimos"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "Set(3) {",
+                                "  \u001b[33m2\u001b[39m,",
+                                "  \u001b[33m3\u001b[39m,",
+                                "  \u001b[33m5\u001b[39m",
+                                "}"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\n#### 3. Adicionando Elementos\r\n* Método `add()` para adicionar um novo elemento.\r\n* O que acontece ao tentar adicionar um elemento já existente?\r\n  \r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// Adicionar novos números primos ao set e mostrar números.\r\nprimos.add(7);\r\n\r\nprimos;"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.error",
+                            "value": {
+                                "name": "ReferenceError",
+                                "message": "primos is not defined",
+                                "stack": "    at <Cell 6> [2, 0]\n    at <Cell 6> [5, 46]\n    at Script.runInContext (node:vm:148:12)\n    at Script.runInNewContext (node:vm:153:17)\n    at Object.runInNewContext (node:vm:309:38)\n    at C (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:113345)\n    at t.execCode (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:114312)\n    at k.<anonymous> (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:142156)\n    at k.emit (node:events:519:28)\n    at k.emit (node:domain:488:12)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\n#### 4. Removendo Elementos\r\n* Método `delete()` para remover um elemento específico.\r\n* Método `clear()` para remover todos os elementos.\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "primos.delete(7);\r\nprimos;"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.error",
+                            "value": {
+                                "name": "ReferenceError",
+                                "message": "primos is not defined",
+                                "stack": "    at <Cell 8> [1, 0]\n    at <Cell 8> [5, 46]\n    at Script.runInContext (node:vm:148:12)\n    at Script.runInNewContext (node:vm:153:17)\n    at Object.runInNewContext (node:vm:309:38)\n    at C (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:113345)\n    at t.execCode (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:114312)\n    at k.<anonymous> (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:142156)\n    at k.emit (node:events:519:28)\n    at k.emit (node:domain:488:12)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "primos.clear();\r\nprimos;"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.error",
+                            "value": {
+                                "name": "ReferenceError",
+                                "message": "primos is not defined",
+                                "stack": "    at <Cell 9> [1, 0]\n    at <Cell 9> [5, 46]\n    at Script.runInContext (node:vm:148:12)\n    at Script.runInNewContext (node:vm:153:17)\n    at Object.runInNewContext (node:vm:309:38)\n    at C (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:113345)\n    at t.execCode (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:114312)\n    at k.<anonymous> (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:142156)\n    at k.emit (node:events:519:28)\n    at k.emit (node:domain:488:12)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\n#### 5. Verificando Existência de Elementos\r\n* Método `has()` para verificar se um elemento existe no set.\r\n\r\n#### 6. Iterando sobre os Elementos\r\n* Utilizando um loop `for...of` para percorrer os elementos do set.\r\n* Usando o método `forEach()` para executar uma função para cada elemento.\r\n\r\n#### 7. Operações com Sets\r\n* Interseção de sets: `intersection()`\r\n* União de sets: `union()`\r\n* Diferença entre sets: `difference()`\r\n* Subconjunto: `isSubsetOf()`\r\n* Superconjunto: `isSupersetOf()`\r\n\r\n#### 8. Aplicações Práticas\r\n* Removendo duplicados de um array.\r\n* Criando uma lista única de valores.\r\n* Verificando se dois arrays possuem elementos em comum.\r\n* Implementando um algoritmo de busca único.\r\n\r\n### Atividades Práticas\r\n\r\n* **Exercícios:**\r\n    * Crie um set com os números pares de 1 a 10.\r\n    * Adicione os números ímpares de 1 a 5 ao set.\r\n    * Remova o número 3 do set.\r\n    * Verifique se o número 7 existe no set.\r\n    * Crie um novo set com os dias da semana e encontre a interseção com um set de feriados.\r\n    * \r\n* **Projeto:**\r\n    * Desenvolva uma aplicação que permita adicionar e remover itens de uma lista de compras, garantindo que não haja itens duplicados.\r\n\r\n### Recursos Adicionais\r\n\r\n* **Documentação MDN:** A documentação oficial do JavaScript oferece exemplos e explicações detalhadas sobre os métodos dos sets.\r\n* **Exercícios interativos:** Sites como Exercism e Codewars oferecem desafios para praticar os conceitos aprendidos.\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+            ],
+            "outputs": []
+        }
+    ]
+}
