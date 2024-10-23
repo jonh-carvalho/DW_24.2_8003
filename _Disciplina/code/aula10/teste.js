@@ -7,4 +7,6 @@ var student =  {
     
   console.log(student);
   delete student.rollno;
-  console.log(student);
+  console.log(student.rollno);
+  student.rollno = 15;
+  console.log(student)
