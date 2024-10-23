@@ -220,7 +220,63 @@
         {
             "language": "markdown",
             "source": [
-                "\r\n#### 6. Iterando sobre os Elementos\r\n* Utilizando um loop `for...of` para percorrer os elementos do set.\r\n* Usando o método `forEach()` para executar uma função para cada elemento.\r\n\r\n#### 7. Operações com Sets\r\n* Interseção de sets: `intersection()`\r\n* União de sets: `union()`\r\n* Diferença entre sets: `difference()`\r\n* Subconjunto: `isSubsetOf()`\r\n* Superconjunto: `isSupersetOf()`\r\n\r\n#### 8. Aplicações Práticas\r\n* Removendo duplicados de um array.\r\n* Criando uma lista única de valores.\r\n* Verificando se dois arrays possuem elementos em comum.\r\n* Implementando um algoritmo de busca único.\r\n\r\n### Atividades Práticas\r\n\r\n* **Exercícios:**\r\n    * Crie um set com os números pares de 1 a 10.\r\n    * Adicione os números ímpares de 1 a 5 ao set.\r\n    * Remova o número 3 do set.\r\n    * Verifique se o número 7 existe no set.\r\n    * Crie um novo set com os dias da semana e encontre a interseção com um set de feriados.\r\n    * \r\n* **Projeto:**\r\n    * Desenvolva uma aplicação que permita adicionar e remover itens de uma lista de compras, garantindo que não haja itens duplicados.\r\n\r\n### Recursos Adicionais\r\n\r\n* **Documentação MDN:** A documentação oficial do JavaScript oferece exemplos e explicações detalhadas sobre os métodos dos sets.\r\n* **Exercícios interativos:** Sites como Exercism e Codewars oferecem desafios para praticar os conceitos aprendidos.\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+                "\r\n#### 6. Iterando sobre os Elementos\r\n* Utilizando um loop `for...of` para percorrer os elementos do set.\r\n* Usando o método `forEach()` para executar uma função para cada elemento.\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "for (const primo of primos){ \r\n    console.log(primo)\r\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "2",
+                                "3",
+                                "5",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\n#### 7. Operações com Sets\r\n* Interseção de sets: `intersection()`\r\n* União de sets: `union()`\r\n* Diferença entre sets: `difference()`\r\n* Subconjunto: `isSubsetOf()`\r\n* Superconjunto: `isSupersetOf()`\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const setA = new Set([1,2,3,4])\r\nconst setB = new Set([3,4,5,6])\r\nconst intersecao = new Set([...setA].filter(x => setB.has(x)))\r\nconsole.log(intersecao)\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Set(0) {}",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\n#### 8. Aplicações Práticas\r\n* Removendo duplicados de um array.\r\n* Criando uma lista única de valores.\r\n* Verificando se dois arrays possuem elementos em comum.\r\n* Implementando um algoritmo de busca único.\r\n\r\n### Atividades Práticas\r\n\r\n* **Exercícios:**\r\n    * Crie um set com os números pares de 1 a 10.\r\n    * Adicione os números ímpares de 1 a 5 ao set.\r\n    * Remova o número 3 do set.\r\n    * Verifique se o número 7 existe no set.\r\n    * Crie um novo set com os dias da semana e encontre a interseção com um set de feriados.\r\n    * \r\n* **Projeto:**\r\n    * Desenvolva uma aplicação que permita adicionar e remover itens de uma lista de compras, garantindo que não haja itens duplicados.\r\n\r\n### Recursos Adicionais\r\n\r\n* **Documentação MDN:** A documentação oficial do JavaScript oferece exemplos e explicações detalhadas sobre os métodos dos sets.\r\n* **Exercícios interativos:** Sites como Exercism e Codewars oferecem desafios para praticar os conceitos aprendidos.\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
             ],
             "outputs": []
         }
