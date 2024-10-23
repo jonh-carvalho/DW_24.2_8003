@@ -4,4 +4,4 @@ const person = {
     city: "Rio"
 }
 document.getElementById("demo").innerHTML = 
-person.name + "," + person.age + ","+ person.city
+person.name + "," + person.age + ","+ person.city;
