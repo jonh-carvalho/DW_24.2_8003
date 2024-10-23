@@ -11,3 +11,6 @@ theme:
     - css
     - javascript
 repo_url: "https://github.com/jonh-carvalho/DW_24.2_8003"
+plugins:
+  - mkdocs-jupyter:
+      execute: True
