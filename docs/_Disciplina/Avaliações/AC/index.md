@@ -3,6 +3,9 @@
 * AC1 - Entrega 04/09/2024
 * AC2 - Entrega 11/09/2024
 * AC3 - Entrega 18/09/2024
+* AC4 - Entrega 22/10/2024
+* AC5 - Entrega 06/11/2024
+* AC6 - Entrega 13/11/2024
 
 Repositório de Avaliações ACs e APs
 
