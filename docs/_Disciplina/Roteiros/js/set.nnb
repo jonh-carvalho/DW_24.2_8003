@@ -107,12 +107,15 @@
                 {
                     "items": [
                         {
-                            "mime": "application/vnd.code.notebook.error",
-                            "value": {
-                                "name": "ReferenceError",
-                                "message": "primos is not defined",
-                                "stack": "    at <Cell 6> [2, 0]\n    at <Cell 6> [5, 46]\n    at Script.runInContext (node:vm:148:12)\n    at Script.runInNewContext (node:vm:153:17)\n    at Object.runInNewContext (node:vm:309:38)\n    at C (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:113345)\n    at t.execCode (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:114312)\n    at k.<anonymous> (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:142156)\n    at k.emit (node:events:519:28)\n    at k.emit (node:domain:488:12)"
-                            }
+                            "mime": "text/plain",
+                            "value": [
+                                "Set(4) {",
+                                "  \u001b[33m2\u001b[39m,",
+                                "  \u001b[33m3\u001b[39m,",
+                                "  \u001b[33m5\u001b[39m,",
+                                "  \u001b[33m7\u001b[39m",
+                                "}"
+                            ]
                         }
                     ]
                 }
@@ -145,12 +148,14 @@
                 {
                     "items": [
                         {
-                            "mime": "application/vnd.code.notebook.error",
-                            "value": {
-                                "name": "ReferenceError",
-                                "message": "primos is not defined",
-                                "stack": "    at <Cell 8> [1, 0]\n    at <Cell 8> [5, 46]\n    at Script.runInContext (node:vm:148:12)\n    at Script.runInNewContext (node:vm:153:17)\n    at Object.runInNewContext (node:vm:309:38)\n    at C (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:113345)\n    at t.execCode (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:114312)\n    at k.<anonymous> (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:142156)\n    at k.emit (node:events:519:28)\n    at k.emit (node:domain:488:12)"
-                            }
+                            "mime": "text/plain",
+                            "value": [
+                                "Set(3) {",
+                                "  \u001b[33m2\u001b[39m,",
+                                "  \u001b[33m3\u001b[39m,",
+                                "  \u001b[33m5\u001b[39m",
+                                "}"
+                            ]
                         }
                     ]
                 }
@@ -176,12 +181,10 @@
                 {
                     "items": [
                         {
-                            "mime": "application/vnd.code.notebook.error",
-                            "value": {
-                                "name": "ReferenceError",
-                                "message": "primos is not defined",
-                                "stack": "    at <Cell 9> [1, 0]\n    at <Cell 9> [5, 46]\n    at Script.runInContext (node:vm:148:12)\n    at Script.runInNewContext (node:vm:153:17)\n    at Object.runInNewContext (node:vm:309:38)\n    at C (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:113345)\n    at t.execCode (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:114312)\n    at k.<anonymous> (c:\\Users\\JonhEdsonRibeirodeCa\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:142156)\n    at k.emit (node:events:519:28)\n    at k.emit (node:domain:488:12)"
-                            }
+                            "mime": "text/plain",
+                            "value": [
+                                "Set(0) {}"
+                            ]
                         }
                     ]
                 }
