@@ -17,46 +17,126 @@ Plano
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário com JavaScript</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
 </head>
 <body>
     <h1>Formulário de Contato</h1>
+
     <form id="contactForm">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" required></textarea>
-        <br>
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        
         <button type="submit">Enviar</button>
     </form>
-    <div id="result"></div>
 
     <script src="script.js"></script>
 </body>
 </html>
 ```
 
-```js
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
+```css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-    // Obter valores dos campos
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+h1 {
+    text-align: center;
+    color: #333;
+}
 
-    // Validação simples
-    if (name === '' || email === '' || message === '') {
-        document.getElementById('result').innerText = 'Por favor, preencha todos os campos.';
-        document.getElementById('result').style.color = 'red';
-    } else {
-        document.getElementById('result').innerText = 'Formulário enviado com sucesso!';
-        document.getElementById('result').style.color = 'green';
-    }
-});
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#spinner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#imagePreview {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+```
 
 #### Explicação
 
@@ -64,46 +144,37 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 - JavaScript: Adiciona um ouvinte de evento para o envio do formulário, valida os campos e exibe uma mensagem de erro ou sucesso.
 
-### How can I access the values of form inputs using JavaScript?
+## Questões
 
-You can access the values of form inputs using JavaScript by selecting the input elements and then using the .value property. 
+1\. Como você pode acessar os valores dos inputs do formulário?
 
-````js
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the form from submitting
+2\. Atualizar o conteúdo de uma página web com o conteúdo do campos(escrever na página sem clicar no botão)?
 
-    // Accessing the values of the form inputs
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+3\. Validar cada entrada do formulário antes de enviar o form? [Nome obrigatório, Email no formato, Mensagem obrigatória]
 
-    // Displaying the values in the console (for demonstration purposes)
-    console.log('Email:', email);
-    console.log('Message:', message);
+4\. Redefinir as entradas do formulário após enviar o formulário?
 
-    // You can add further processing or validation here
-});
-```
+5\. Desativar o botão enviar até que todas as entradas do formulário sejam preenchidas?
 
-#### Explanation
+6\. Mostrar um botão giratório(spinner) de carregamento enquanto o formulário está sendo enviado?
 
-- Event Listener: Adds an event listener to the form's submit event to prevent the default form submission.
-- Accessing Values: Uses document.getElementById to select the input elements by their IDs and then accesses their values using the .value property.
-- Console Output: Logs the values to the console for demonstration purposes. You can replace this with further processing or validation as needed.
+7\. Eibir uma mensagem de sucesso após o envio do formulário e depois redirecionar para outra página?
 
+8\. Adicionar Validação de Tamanho da Mensagem
+Objetivo: Adicionar validação para garantir que a mensagem tenha pelo menos 100 caracteres.
 
+9\. Adicionar Feedback Visual para Campos Inválidos
+Objetivo: Adicionar feedback visual (como bordas vermelhas) aos campos que não passam na validação.
 
+10\. Adicionar um Campo de Telefone com Máscara. [ (país) (ddd) xxxxx-xxxx ]
 
-GitHub Copilot
-Passo 1: Adicionar um Campo de Arquivo ao Formulário
-Adicione um campo de arquivo ao formulário HTML para permitir o upload de imagens.
+11\. Adicionar um Campo de Seleção de Assunto. [Elogio, Reclamação e Sugestão]
+- Exiba uma mensagem de erro se nenhum assunto for selecionado.
 
-Passo 2: Modificar o JavaScript para Exibir a Pré-visualização do Arquivo Selecionado
-Atualize o JavaScript para exibir uma pré-visualização da imagem selecionada.
+12\. Adicionar um Campo de Arquivo ao Formulário para permitir o upload de imagens. 
 
-Explicação
-Campo de Arquivo: Adiciona um campo de arquivo ao formulário HTML para permitir o upload de imagens.
-Pré-visualização da Imagem: Adiciona um elemento div para exibir a pré-visualização da imagem.
-Event Listener para o Campo de Arquivo: Adiciona um ouvinte de evento change ao campo de arquivo para exibir a pré-visualização da imagem selecionada.
-FileReader: Usa FileReader para ler o arquivo de imagem e exibir a pré-visualização.
-Limpar Pré-visualização: Limpa a pré-visualização da imagem quando o formulário é enviado e redefinido.
-Este exemplo demonstra como adicionar um campo de arquivo de imagem ao formulário e exibir uma pré-visualização do arquivo selecionado.
+- Modifique o JavaScript para Exibir a Pré-visualização do Arquivo Selecionado
+
+- FileReader: Usa FileReader para ler o arquivo de imagem e exibir a pré-visualização.
+
+- Limpar Pré-visualização: Limpa a pré-visualização da imagem quando o formulário é enviado e redefinido.
