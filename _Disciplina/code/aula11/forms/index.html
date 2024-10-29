@@ -8,27 +8,27 @@
     
 </head>
 <body>
-    <script src="./js/validation.js"></script>
+    
     <div class="container">
         <h2>Sign Up</h2>
-        <form id="signupForm" method="return validateForm()" method="post">
+        <form id="signupForm" onsubmit="return validateForm()">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" autocomplete="on">
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" autocomplete="on">
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" >
 
             <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword">
+            <input type="password" id="confirmPassword" name="confirmPassword" >
 
             <button type="submit">Submit</button>
             <p id="error-message"></p>
         </form>
     </div>
-    
+    <script src="js/validation.js"></script>
     
 </body>
 </html>
