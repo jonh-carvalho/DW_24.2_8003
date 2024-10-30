@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../../img/favicon.ico">
 
     
-    <title>Forms - DW</title>
+    <title>03 ChartMap - DW</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -259,7 +259,31 @@
         
             
 <li >
-    <a href="../06_Http/">06 Http</a>
+    <a href="../01_Arrays/">Arrays</a>
+</li>
+
+        
+            
+<li >
+    <a href="../02_Maps_Sets/">02 Maps Sets</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">03 ChartMap</a>
+</li>
+
+        
+            
+<li >
+    <a href="../04_Forms/">04 Forms</a>
+</li>
+
+        
+            
+<li >
+    <a href="../05_Http/">05 Http</a>
 </li>
 
         
@@ -271,31 +295,7 @@
         
             
 <li >
-    <a href="../07_Lendo%20Json/">07 Lendo Json</a>
-</li>
-
-        
-            
-<li >
-    <a href="../array/">Arrays</a>
-</li>
-
-        
-            
-<li >
-    <a href="../chartmap/">Chartmap</a>
-</li>
-
-        
-            
-<li class="active">
-    <a href="./">Forms</a>
-</li>
-
-        
-            
-<li >
-    <a href="../map/">Map</a>
+    <a href="../08_Lendo%20Json/">08 Lendo Json</a>
 </li>
 
         
@@ -348,17 +348,17 @@
 
             <ul class="nav navbar-nav navbar-right">
                     <li >
-                        <a rel="prev" href="../chartmap/">
+                        <a rel="prev" href="../02_Maps_Sets/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../map/">
+                        <a rel="next" href="../04_Forms/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/js/forms.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/js/03_ChartMap.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -370,157 +370,83 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#1-indexhtml-html">1. index.html (HTML)</a></li>
-        <li class="first-level "><a href="#2-stylecss-css">2. style.css (CSS)</a></li>
-        <li class="first-level "><a href="#3-validationjs-javascript">3. validation.js (JavaScript)</a></li>
-        <li class="first-level "><a href="#funcionamento">Funcionamento:</a></li>
+        <li class="first-level active"><a href="#criando-um-grafico-de-linhas-simples-com-javascript-e-o-metodo-map">Criando um Gráfico de Linhas Simples com JavaScript e o Método map()</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<p>Site simples em HTML e CSS com validação de formulário usando JavaScript:</p>
-<h3 id="1-indexhtml-html">1. <code>index.html</code> (HTML)</h3>
+<h3 id="criando-um-grafico-de-linhas-simples-com-javascript-e-o-metodo-map">Criando um Gráfico de Linhas Simples com JavaScript e o Método <code>map()</code></h3>
+<p><strong>Entendendo o Problema:</strong></p>
+<p>Queremos transformar um conjunto de dados em um formato que possa ser utilizado para desenhar um gráfico de linhas. Para isso, vamos utilizar o método <code>map()</code> para gerar um array de coordenadas (x, y) a partir dos nossos dados.</p>
+<p><strong>Bibliotecas para Visualização:</strong></p>
+<p>Existem diversas bibliotecas JavaScript que facilitam a criação de gráficos, como:</p>
+<ul>
+<li><strong>Chart.js:</strong> Popular por sua facilidade de uso e customização.</li>
+<li><strong>D3.js:</strong> Uma biblioteca mais poderosa e flexível, ideal para gráficos complexos.</li>
+<li><strong>Plotly.js:</strong> Uma biblioteca interativa com diversos tipos de gráficos.</li>
+</ul>
+<p><strong>Exemplo com Chart.js:</strong></p>
+<p>Vamos supor que temos um array de dados representando a temperatura ao longo de uma semana:</p>
+<pre><code class="language-javascript">const temperaturas = [18, 22, 25, 20, 19, 23, 24];
+</code></pre>
+<p>Para criar um gráfico de linhas com Chart.js, precisamos de um elemento HTML <code>&lt;canvas&gt;</code> e um conjunto de dados no formato adequado. Utilizaremos o <code>map()</code> para transformar o array de temperaturas em um array de objetos, onde cada objeto representa um ponto no gráfico:</p>
+<pre><code class="language-javascript">const ctx = document.getElementById('myChart').getContext('2d');
+
+const labels = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'Temperatura (°C)',
+    data: temperaturas,
+    borderColor: 'rgb(75, 192, 192)',
+    fill: false
+  }]
+};
+
+const myChart = new Chart(ctx, {
+  type: 'line',
+  data: data,
+  options: {}
+});
+</code></pre>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
+&lt;html&gt;
 &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Form Validation Example&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+  &lt;title&gt;Gráfico de Linhas com Chart.js&lt;/title&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/chart.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        &lt;h2&gt;Sign Up&lt;/h2&gt;
-        &lt;form id=&quot;signupForm&quot; onsubmit=&quot;return validateForm()&quot;&gt;
-            &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
-            &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; required&gt;
+  &lt;canvas id=&quot;myChart&quot;&gt;&lt;/canvas&gt;
 
-            &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
-            &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
-
-            &lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;
-            &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;
-
-            &lt;label for=&quot;confirmPassword&quot;&gt;Confirm Password:&lt;/label&gt;
-            &lt;input type=&quot;password&quot; id=&quot;confirmPassword&quot; name=&quot;confirmPassword&quot; required&gt;
-
-            &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
-            &lt;p id=&quot;error-message&quot;&gt;&lt;/p&gt;
-        &lt;/form&gt;
-    &lt;/div&gt;
-
-    &lt;script src=&quot;js/validation.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    // JavaScript (já mostrado anteriormente)
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h3 id="2-stylecss-css">2. <code>style.css</code> (CSS)</h3>
-<pre><code class="language-css">* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 500px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-input {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-#error-message {
-    color: red;
-    text-align: center;
-    margin-top: 10px;
-}
-</code></pre>
-<h3 id="3-validationjs-javascript">3. <code>validation.js</code> (JavaScript)</h3>
-<pre><code class="language-javascript">function validateForm() {
-    let name = document.getElementById(&quot;name&quot;).value;
-    let email = document.getElementById(&quot;email&quot;).value;
-    let password = document.getElementById(&quot;password&quot;).value;
-    let confirmPassword = document.getElementById(&quot;confirmPassword&quot;).value;
-    let errorMessage = document.getElementById(&quot;error-message&quot;);
-
-    // Reset error message
-    errorMessage.textContent = &quot;&quot;;
-
-    // Basic validation checks
-    if (name === &quot;&quot;) {
-        errorMessage.textContent = &quot;Name is required&quot;;
-        return false;
-    }
-
-    if (!validateEmail(email)) {
-        errorMessage.textContent = &quot;Invalid email address&quot;;
-        return false;
-    }
-
-    if (password.length &lt; 6) {
-        errorMessage.textContent = &quot;Password must be at least 6 characters long&quot;;
-        return false;
-    }
-
-    if (password !== confirmPassword) {
-        errorMessage.textContent = &quot;Passwords do not match&quot;;
-        return false;
-    }
-
-    return true;
-}
-
-// Email validation function
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-}
-</code></pre>
-<h3 id="funcionamento">Funcionamento:</h3>
-<ol>
-<li><strong>HTML</strong>: O formulário possui campos de nome, e-mail, senha e confirmação de senha.</li>
-<li><strong>CSS</strong>: Aplica um estilo simples para o layout e elementos.</li>
-<li><strong>JavaScript</strong>: A função <code>validateForm()</code> valida os campos antes de permitir o envio do formulário. Verifica se o nome está preenchido, se o e-mail é válido, se a senha tem pelo menos 6 caracteres, e se as senhas coincidem.</li>
-</ol></div>
+<p><strong>Explicando o Código:</strong></p>
+<ul>
+<li><strong>Criamos um canvas:</strong> O elemento <code>&lt;canvas&gt;</code> é onde o gráfico será desenhado.</li>
+<li><strong>Definimos os rótulos:</strong> O array <code>labels</code> contém os rótulos para cada ponto do eixo x (dias da semana).</li>
+<li><strong>Transformamos os dados:</strong> O <code>map()</code> é usado para criar um novo array de objetos, onde cada objeto possui as propriedades <code>x</code> (índice) e <code>y</code> (temperatura). No entanto, para o Chart.js, não precisamos criar explicitamente as coordenadas x, pois os rótulos já servem como essa informação.</li>
+<li><strong>Configuramos o gráfico:</strong> Criamos um novo objeto Chart, definindo o tipo do gráfico (linha), os dados e as opções de configuração.</li>
+</ul>
+<p><strong>Personalizando o Gráfico:</strong></p>
+<p>O Chart.js oferece diversas opções para personalizar o gráfico, como cores, espessura das linhas, marcadores, etc. Consulte a documentação oficial para mais detalhes: <a href="https://www.google.com/url?sa=E&amp;source=gmail&amp;q=https://www.chartjs.org/docs/latest/">https://www.chartjs.org/docs/latest/</a></p>
+<p><strong>Outros Exemplos:</strong></p>
+<ul>
+<li><strong>Gráfico de barras:</strong> Substitua <code>type: 'line'</code> por <code>type: 'bar'</code>.</li>
+<li><strong>Gráfico de pizza:</strong> Utilize <code>type: 'pie'</code>.</li>
+<li><strong>Múltiplas séries:</strong> Adicione mais datasets ao objeto <code>data</code> para comparar diferentes conjuntos de dados.</li>
+</ul>
+<p><strong>Desafio:</strong></p>
+<p>Adapte o exemplo acima para criar um gráfico de linhas que mostre a evolução do preço de uma ação ao longo de um mês. Você pode gerar dados aleatórios para simular os preços.</p>
+<p><strong>Recursos Adicionais:</strong></p>
+<ul>
+<li><strong>Documentação Chart.js:</strong> <a href="https://www.google.com/url?sa=E&amp;source=gmail&amp;q=https://www.chartjs.org/docs/latest/">https://www.chartjs.org/docs/latest/</a></li>
+</ul>
+<p>Com o <code>map()</code> e bibliotecas como Chart.js, você pode criar gráficos personalizados e informativos para visualizar seus dados de forma eficaz.</p></div>
         
         
     </div>

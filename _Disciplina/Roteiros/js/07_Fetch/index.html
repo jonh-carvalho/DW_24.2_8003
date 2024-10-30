@@ -259,7 +259,31 @@
         
             
 <li >
-    <a href="../06_Http/">06 Http</a>
+    <a href="../01_Arrays/">Arrays</a>
+</li>
+
+        
+            
+<li >
+    <a href="../02_Maps_Sets/">02 Maps Sets</a>
+</li>
+
+        
+            
+<li >
+    <a href="../03_ChartMap/">03 ChartMap</a>
+</li>
+
+        
+            
+<li >
+    <a href="../04_Forms/">04 Forms</a>
+</li>
+
+        
+            
+<li >
+    <a href="../05_Http/">05 Http</a>
 </li>
 
         
@@ -271,31 +295,7 @@
         
             
 <li >
-    <a href="../07_Lendo%20Json/">07 Lendo Json</a>
-</li>
-
-        
-            
-<li >
-    <a href="../array/">Arrays</a>
-</li>
-
-        
-            
-<li >
-    <a href="../chartmap/">Chartmap</a>
-</li>
-
-        
-            
-<li >
-    <a href="../forms/">Forms</a>
-</li>
-
-        
-            
-<li >
-    <a href="../map/">Map</a>
+    <a href="../08_Lendo%20Json/">08 Lendo Json</a>
 </li>
 
         
@@ -348,12 +348,12 @@
 
             <ul class="nav navbar-nav navbar-right">
                     <li >
-                        <a rel="prev" href="../06_Http/">
+                        <a rel="prev" href="../05_Http/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../07_Lendo%20Json/">
+                        <a rel="next" href="../08_Lendo%20Json/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
@@ -372,9 +372,10 @@
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#caracteristicas-principais-do-fetch">Características principais do fetch:</a></li>
         <li class="first-level "><a href="#exemplo-basico-de-uso-do-fetch">Exemplo básico de uso do fetch:</a></li>
-        <li class="first-level "><a href="#um-exemplo-de-como-usar-o-fetch-com-a-api-do-jsonplaceholder-uma-api-publica-para-testes-e-prototipagem">Um exemplo de como usar o fetch com a API do JSONPlaceholder, uma API pública para testes e prototipagem:</a></li>
-        <li class="first-level "><a href="#exemplo-de-requisicao-get">Exemplo de requisição GET</a></li>
-        <li class="first-level "><a href="#exemplo-de-requisicao-post">Exemplo de requisição POST</a></li>
+            <li class="second-level"><a href="#um-exemplo-de-como-usar-o-fetch-com-a-api-do-jsonplaceholder-uma-api-publica-para-testes-e-prototipagem">Um exemplo de como usar o fetch com a API do JSONPlaceholder, uma API pública para testes e prototipagem:</a></li>
+                
+                <li class="third-level"><a href="#exemplo-de-requisicao-get">Exemplo de requisição GET</a></li>
+                <li class="third-level"><a href="#exemplo-de-requisicao-post">Exemplo de requisição POST</a></li>
         <li class="first-level "><a href="#explicacao">Explicação:</a></li>
     </ul>
 </div></div>
@@ -395,8 +396,8 @@
   .catch(error =&gt; console.error('Erro:', error));  // Lida com erros
 </code></pre>
 <p>Neste exemplo, o <code>fetch</code> faz uma requisição <code>GET</code> para a URL fornecida, processa a resposta como JSON, e lida com possíveis erros.</p>
-<h3 id="um-exemplo-de-como-usar-o-fetch-com-a-api-do-jsonplaceholder-uma-api-publica-para-testes-e-prototipagem">Um exemplo de como usar o <code>fetch</code> com a API do JSONPlaceholder, uma API pública para testes e prototipagem:</h3>
-<h3 id="exemplo-de-requisicao-get">Exemplo de requisição <code>GET</code></h3>
+<h4 id="um-exemplo-de-como-usar-o-fetch-com-a-api-do-jsonplaceholder-uma-api-publica-para-testes-e-prototipagem">Um exemplo de como usar o <code>fetch</code> com a API do JSONPlaceholder, uma API pública para testes e prototipagem:</h4>
+<h5 id="exemplo-de-requisicao-get">Exemplo de requisição <code>GET</code></h5>
 <p>Neste exemplo, vamos buscar uma lista de posts da API usando o <code>fetch</code>.</p>
 <pre><code class="language-javascript">// Fazendo uma requisição GET para obter posts da API JSONPlaceholder
 fetch('https://jsonplaceholder.typicode.com/posts')
@@ -411,7 +412,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   })
   .catch(error =&gt; console.error('Erro:', error));  // Lida com erros
 </code></pre>
-<h3 id="exemplo-de-requisicao-post">Exemplo de requisição <code>POST</code></h3>
+<h5 id="exemplo-de-requisicao-post">Exemplo de requisição <code>POST</code></h5>
 <p>Neste exemplo, vamos enviar um novo post para a API com uma requisição <code>POST</code>.</p>
 <pre><code class="language-javascript">// Enviando dados para criar um novo post
 fetch('https://jsonplaceholder.typicode.com/posts', {
