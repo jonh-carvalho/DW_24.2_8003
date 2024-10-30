@@ -415,7 +415,7 @@
 <li><strong>Ler dados de um arquivo JSON local:</strong>
    Para carregar dados JSON armazenados localmente (por exemplo, <code>data.json</code>), podemos usar <code>fetch()</code>:</li>
 </ol>
-<p><code>javascript
+<p><code>js
    fetch('data.json')
      .then(response =&gt; response.json())
      .then(data =&gt; {
@@ -426,7 +426,7 @@
 <li><strong>Ler dados de uma API (requisição HTTP):</strong>
    Se os dados estão em uma API, podemos usar o <code>fetch()</code> da mesma forma:</li>
 </ol>
-<p><code>javascript
+<p><code>js
    fetch('https://api.exemplo.com/dados')
      .then(response =&gt; response.json())
      .then(data =&gt; {
@@ -437,7 +437,7 @@
 <li><strong>Ler dados de um arquivo CSV (usando bibliotecas):</strong>
    Para CSV, uma biblioteca como o <a href="https://www.papaparse.com/">PapaParse</a> pode ser muito útil:</li>
 </ol>
-<p><code>javascript
+<p><code>js
    Papa.parse('data.csv', {
      download: true,
      header: true,
@@ -449,7 +449,7 @@
 <p>Para ler e manipular dados armazenados em uma variável JSON em JavaScript, primeiro é importante que o conteúdo JSON esteja em um formato válido. Em JavaScript, normalmente, usamos objetos JavaScript (similar ao JSON) para armazenar dados. Aqui está um exemplo básico:</p>
 <h3 id="exemplo-1-json-como-objeto-javascript">Exemplo 1: JSON como Objeto JavaScript</h3>
 <p>Se você já tem os dados armazenados como um objeto JavaScript, pode acessar diretamente os valores com a notação de ponto ou colchetes:</p>
-<pre><code class="language-javascript">// Dados JSON armazenados em uma variável
+<pre><code class="language-js">// Dados JSON armazenados em uma variável
 const jsonData = {
   &quot;nome&quot;: &quot;Maria&quot;,
   &quot;idade&quot;: 30,
@@ -466,7 +466,7 @@ console.log(jsonData.endereco.cidade); // São Paulo
 </code></pre>
 <h3 id="exemplo-2-json-como-string">Exemplo 2: JSON como String</h3>
 <p>Se os dados JSON estão em formato de string, você precisa transformá-los em um objeto usando <code>JSON.parse()</code> antes de acessá-los.</p>
-<pre><code class="language-javascript">// Dados JSON como string
+<pre><code class="language-js">// Dados JSON como string
 const jsonString = '{&quot;nome&quot;: &quot;Carlos&quot;, &quot;idade&quot;: 25, &quot;cidade&quot;: &quot;Rio de Janeiro&quot;}';
 
 // Transformando em objeto JavaScript
@@ -478,7 +478,7 @@ console.log(jsonData.idade); // 25
 </code></pre>
 <h3 id="exemplo-3-convertendo-objeto-para-string-json">Exemplo 3: Convertendo Objeto para String JSON</h3>
 <p>Caso queira fazer o contrário (converter um objeto em uma string JSON), você pode usar <code>JSON.stringify()</code>:</p>
-<pre><code class="language-javascript">const data = {
+<pre><code class="language-js">const data = {
   nome: &quot;Ana&quot;,
   idade: 28
 };
@@ -534,7 +534,7 @@ console.log(jsonString); // {&quot;nome&quot;:&quot;Ana&quot;,&quot;idade&quot;:
 </code></pre>
 <h3 id="passo-3-criando-o-javascript-scriptjs">Passo 3: Criando o JavaScript (<code>script.js</code>)</h3>
 <p>O código abaixo lê os dados das três formas descritas: de uma variável JavaScript, de uma string JSON e de um arquivo JSON.</p>
-<pre><code class="language-javascript">// Exemplo 1: Lendo dados de um objeto JavaScript
+<pre><code class="language-js">// Exemplo 1: Lendo dados de um objeto JavaScript
 const jsonDataObject = {
   &quot;nome&quot;: &quot;Maria&quot;,
   &quot;idade&quot;: 30,
@@ -589,7 +589,7 @@ fetch('data.json')
 </code></pre>
 <h3 id="passo-5-atualizando-o-javascript-scriptjs">Passo 5: Atualizando o JavaScript (<code>script.js</code>)</h3>
 <p>Adicione uma nova variável contendo vários objetos JSON e exiba-a no HTML.</p>
-<pre><code class="language-javascript">// Exemplo 4: Lendo dados de uma lista de objetos JSON
+<pre><code class="language-js">// Exemplo 4: Lendo dados de uma lista de objetos JSON
 const jsonArray = [
   {
     &quot;nome&quot;: &quot;Lucas&quot;,
