@@ -93,7 +93,9 @@ console.log(jsonString); // {"nome":"Ana","idade":28}
 
 Esses métodos ajudam a manipular facilmente o JSON dentro do JavaScript, permitindo uma leitura e escrita eficiente dos dados.
 
-Vou te ajudar a criar uma página web simples que lê dados em JSON de várias formas: a partir de uma variável objeto, de uma string JSON e de um arquivo JSON local. 
+### Criar uma página
+
+Vamos criar uma página web simples que lê dados em JSON de várias formas: a partir de uma variável objeto, de uma string JSON e de um arquivo JSON local. 
 
 ### Estrutura do projeto
 
@@ -200,3 +202,59 @@ fetch('data.json')
 Ao abrir o arquivo `index.html` no navegador, você verá três seções com os dados JSON exibidos de cada uma das formas. 
 
 Esse exemplo cobre as abordagens de leitura JSON em JavaScript com um visual simples e fácil de entender.
+
+## Lista de Objetos
+
+Para adicionar um exemplo em que uma variável recebe uma lista de vários objetos (array de objetos JSON), podemos estender o exemplo no JavaScript para incluir uma nova variável que contenha vários objetos. Essa nova variável será então exibida no HTML de forma semelhante às anteriores.
+
+### Passo 4: Atualizando o HTML (`index.html`)
+
+Adicione uma nova seção ao HTML para exibir os dados de vários objetos.
+
+```html
+<h2>Dados de uma Lista de Objetos JSON</h2>
+<pre id="fromArray"></pre>
+```
+
+### Passo 5: Atualizando o JavaScript (`script.js`)
+
+Adicione uma nova variável contendo vários objetos JSON e exiba-a no HTML.
+
+```javascript
+// Exemplo 4: Lendo dados de uma lista de objetos JSON
+const jsonArray = [
+  {
+    "nome": "Lucas",
+    "idade": 22,
+    "cidade": "Brasília"
+  },
+  {
+    "nome": "Ana",
+    "idade": 29,
+    "cidade": "Salvador"
+  },
+  {
+    "nome": "Pedro",
+    "idade": 35,
+    "cidade": "Recife"
+  }
+];
+
+// Exibindo dados no HTML
+document.getElementById("fromArray").textContent = JSON.stringify(jsonArray, null, 2);
+```
+
+### Explicação do Código
+
+1. **Lista de Objetos JSON**: A variável `jsonArray` armazena uma lista (array) contendo vários objetos JSON. Cada objeto representa uma pessoa com `nome`, `idade` e `cidade`.
+2. **Exibição**: Usamos `JSON.stringify` para formatar a lista de objetos com indentação de 2 espaços, e o resultado é exibido na seção `<pre id="fromArray">` do HTML.
+
+### Visualização Completa
+
+Ao abrir o arquivo `index.html`, você verá agora quatro seções:
+1. Dados de um Objeto JavaScript.
+2. Dados de uma String JSON.
+3. Dados de um Arquivo JSON.
+4. Dados de uma Lista de Objetos JSON.
+
+Essas seções exibirão cada tipo de dado JSON conforme o exemplo.
