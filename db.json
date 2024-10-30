@@ -1,0 +1,39 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Primeiro Post",
+        "body": "Conteúdo do primeiro post."
+      },
+      {
+        "id": 2,
+        "title": "Segundo Post",
+        "body": "Conteúdo do segundo post."
+      },
+      {
+        "id": 3,
+        "title": "Terceiro Post",
+        "body": "Conteúdo do terceiro post."
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "nome": "Maria",
+        "idade": 30,
+        "cidade": "São Paulo"
+      },
+      {
+        "id": 2,
+        "nome": "Carlos",
+        "idade": 25,
+        "cidade": "Rio de Janeiro"
+      },
+      {
+        "id": 3,
+        "nome": "Ana",
+        "idade": 28,
+        "cidade": "Salvador"
+      }
+    ]
+  }
