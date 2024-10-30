@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../../img/favicon.ico">
 
     
-    <title>Unidades Relativas - DW</title>
+    <title>07 Fetch - DW</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -205,31 +205,31 @@
         
             
 <li >
-    <a href="../flexbox/">Flexbox</a>
+    <a href="../../css/flexbox/">Flexbox</a>
 </li>
 
         
             
 <li >
-    <a href="../grid/">Grid</a>
+    <a href="../../css/grid/">Grid</a>
 </li>
 
         
             
 <li >
-    <a href="../posicionamento/">Posicionamento</a>
+    <a href="../../css/posicionamento/">Posicionamento</a>
 </li>
 
         
             
 <li >
-    <a href="../siteresponsivo/">Responsividade</a>
+    <a href="../../css/siteresponsivo/">Responsividade</a>
 </li>
 
         
             
-<li class="active">
-    <a href="./">Unidades Relativas</a>
+<li >
+    <a href="../../css/unidadesrelativas/">Unidades Relativas</a>
 </li>
 
         
@@ -259,43 +259,43 @@
         
             
 <li >
-    <a href="../../js/06_Http/">06 Http</a>
+    <a href="../06_Http/">06 Http</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">07 Fetch</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/07_Fetch/">07 Fetch</a>
+    <a href="../07_Lendo%20Json/">07 Lendo Json</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/07_Lendo%20Json/">07 Lendo Json</a>
+    <a href="../array/">Arrays</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/array/">Arrays</a>
+    <a href="../chartmap/">Chartmap</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/chartmap/">Chartmap</a>
+    <a href="../forms/">Forms</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/forms/">Forms</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../js/map/">Map</a>
+    <a href="../map/">Map</a>
 </li>
 
         
@@ -348,17 +348,17 @@
 
             <ul class="nav navbar-nav navbar-right">
                     <li >
-                        <a rel="prev" href="../siteresponsivo/">
+                        <a rel="prev" href="../06_Http/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../../html/tags%20sem%C3%A2ntica/">
+                        <a rel="next" href="../07_Lendo%20Json/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/css/unidadesrelativas.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/js/07_Fetch.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -370,163 +370,78 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#unidades-relativas">Unidades Relativas</a></li>
-            <li class="second-level"><a href="#1-em-relativo-ao-tamanho-da-fonte">1. em (relativo ao tamanho da fonte)</a></li>
-                
-            <li class="second-level"><a href="#2-rem-relativo-ao-tamanho-da-fonte-raiz">2. rem (relativo ao tamanho da fonte raiz)</a></li>
-                
-            <li class="second-level"><a href="#3-porcentagem">3. % (porcentagem)</a></li>
-                
-            <li class="second-level"><a href="#4-vh-e-vw-viewport-height-e-viewport-width">4. vh e vw (viewport height e viewport width)</a></li>
-                
-            <li class="second-level"><a href="#5-min-width-max-width-min-height-max-height">5. min-width, max-width, min-height, max-height</a></li>
-                
-            <li class="second-level"><a href="#exemplo-pratico-de-site-responsivo">Exemplo Prático de Site Responsivo</a></li>
-                
-            <li class="second-level"><a href="#consideracoes-finais">Considerações Finais</a></li>
-                
+        <li class="first-level active"><a href="#caracteristicas-principais-do-fetch">Características principais do fetch:</a></li>
+        <li class="first-level "><a href="#exemplo-basico-de-uso-do-fetch">Exemplo básico de uso do fetch:</a></li>
+        <li class="first-level "><a href="#um-exemplo-de-como-usar-o-fetch-com-a-api-do-jsonplaceholder-uma-api-publica-para-testes-e-prototipagem">Um exemplo de como usar o fetch com a API do JSONPlaceholder, uma API pública para testes e prototipagem:</a></li>
+        <li class="first-level "><a href="#exemplo-de-requisicao-get">Exemplo de requisição GET</a></li>
+        <li class="first-level "><a href="#exemplo-de-requisicao-post">Exemplo de requisição POST</a></li>
+        <li class="first-level "><a href="#explicacao">Explicação:</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="unidades-relativas">Unidades Relativas</h1>
-<p>As <strong>unidades relativas</strong> são essenciais no design responsivo, pois se adaptam a diferentes tamanhos de tela, oferecendo flexibilidade e escalabilidade no layout. Vamos explorar as principais unidades relativas utilizadas no CSS:</p>
-<h4 id="1-em-relativo-ao-tamanho-da-fonte">1. <strong><code>em</code></strong> (relativo ao tamanho da fonte)</h4>
-<p>A unidade <code>em</code> é relativa ao tamanho da fonte do elemento pai. Se o tamanho da fonte do elemento pai for <code>16px</code>, por exemplo, <code>1em</code> será equivalente a <code>16px</code>. </p>
-<ul>
-<li>
-<p>Exemplo:
-    ```css
-    body {
-        font-size: 16px;
-    }</p>
-<p>h1 {
-    font-size: 2em; /<em> 32px </em>/
-}</p>
-<p>p {
-    font-size: 1em; /<em> 16px </em>/
-}
-```</p>
-</li>
-</ul>
-<h4 id="2-rem-relativo-ao-tamanho-da-fonte-raiz">2. <strong><code>rem</code></strong> (relativo ao tamanho da fonte raiz)</h4>
-<p>A unidade <code>rem</code> é relativa ao tamanho da fonte da raiz do documento, geralmente o elemento <code>html</code>. É útil para manter a consistência no design, pois sempre se refere ao tamanho de fonte definido no <code>html</code>.</p>
-<ul>
-<li>
-<p>Exemplo:
-    ```css
-    html {
-        font-size: 16px; /<em> 1rem = 16px </em>/
-    }</p>
-<p>h1 {
-    font-size: 2rem; /<em> 32px </em>/
-}</p>
-<p>p {
-    font-size: 1rem; /<em> 16px </em>/
-}
-```</p>
-</li>
-</ul>
-<h4 id="3-porcentagem">3. <strong><code>%</code></strong> (porcentagem)</h4>
-<p>As porcentagens são usadas para definir tamanhos relativos ao elemento pai. Elas podem ser aplicadas a margens, larguras, alturas, etc.</p>
-<ul>
-<li>Exemplo:
-    <code>css
-    div {
-        width: 50%; /* 50% da largura do elemento pai */
-        height: 100%; /* 100% da altura do elemento pai */
-    }</code></li>
-</ul>
-<h4 id="4-vh-e-vw-viewport-height-e-viewport-width">4. <strong><code>vh</code> e <code>vw</code></strong> (viewport height e viewport width)</h4>
-<p>As unidades <code>vh</code> e <code>vw</code> são relativas à altura e largura da <strong>viewport</strong> (janela visível). <code>1vh</code> equivale a 1% da altura da viewport, e <code>1vw</code> equivale a 1% da largura da viewport.</p>
-<ul>
-<li>Exemplo:
-    <code>css
-    section {
-        width: 100vw; /* 100% da largura da viewport */
-        height: 50vh; /* 50% da altura da viewport */
-    }</code></li>
-</ul>
-<h4 id="5-min-width-max-width-min-height-max-height">5. <strong><code>min-width</code>, <code>max-width</code>, <code>min-height</code>, <code>max-height</code></strong></h4>
-<p>Essas propriedades controlam o tamanho mínimo e máximo dos elementos, tornando-os mais responsivos em diferentes telas.</p>
-<ul>
-<li>Exemplo:
-    <code>css
-    div {
-        max-width: 100%; /* Não excede 100% da largura da tela */
-        min-height: 300px; /* Altura mínima de 300px */
-    }</code></li>
-</ul>
-<h4 id="exemplo-pratico-de-site-responsivo">Exemplo Prático de Site Responsivo</h4>
-<p>Aqui está um exemplo prático aplicando algumas dessas unidades para criar um site responsivo:</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;pt-BR&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Exemplo Responsivo&lt;/title&gt;
-    &lt;style&gt;
-        body {
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-
-        .box {
-            background-color: #f4f4f4;
-            margin: 1rem 0;
-            padding: 2em;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
-            bottom: 0;
-            width: 100vw;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Site Responsivo&lt;/h1&gt;
-    &lt;/header&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;box&quot;&gt;
-            &lt;p&gt;Esta é uma caixa que usa unidades relativas para se adaptar a diferentes tamanhos de tela.&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;box&quot;&gt;
-            &lt;p&gt;A largura da página está definida em porcentagens, e o espaçamento em `rem` e `em`.&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;footer&gt;
-        &lt;p&gt;Rodapé do site&lt;/p&gt;
-    &lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<p><code>fetch</code> é uma API nativa do JavaScript que permite realizar requisições HTTP de forma simples e moderna. Ela é usada principalmente para buscar (ou "fetch") recursos de um servidor, como dados de uma API, arquivos ou outros tipos de conteúdo. O <code>fetch</code> retorna uma <em>Promise</em>, o que significa que ele trabalha de forma assíncrona, permitindo que o JavaScript continue a executar outras operações enquanto a requisição está em andamento.</p>
+<h3 id="caracteristicas-principais-do-fetch">Características principais do <code>fetch</code>:</h3>
+<ol>
+<li><strong>Simplicidade</strong>: Comparado ao antigo <code>XMLHttpRequest</code>, o <code>fetch</code> possui uma sintaxe muito mais fácil de usar.</li>
+<li><strong>Promessas (Promises)</strong>: O <code>fetch</code> retorna uma <code>Promise</code>, o que facilita o tratamento de operações assíncronas.</li>
+<li><strong>Suporte a múltiplos métodos HTTP</strong>: Pode ser usado para diferentes tipos de requisições, como <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>, etc.</li>
+<li><strong>Configuração flexível</strong>: Permite configurar cabeçalhos, enviar dados no corpo da requisição, e muito mais.</li>
+</ol>
+<h3 id="exemplo-basico-de-uso-do-fetch">Exemplo básico de uso do <code>fetch</code>:</h3>
+<pre><code class="language-javascript">fetch('https://api.exemplo.com/dados')
+  .then(response =&gt; response.json())  // Converte a resposta para JSON
+  .then(data =&gt; console.log(data))    // Exibe os dados no console
+  .catch(error =&gt; console.error('Erro:', error));  // Lida com erros
 </code></pre>
-<h4 id="consideracoes-finais">Considerações Finais</h4>
-<p>Ao combinar essas unidades relativas, você pode criar layouts que se adaptam a diferentes tamanhos de tela, tornando seu site mais responsivo e acessível em dispositivos móveis. É importante testar os tamanhos e espaçamentos em várias resoluções para garantir uma boa experiência de usuário.</p>
-<p>Se precisar de mais detalhes ou exemplos específicos, posso ajudar a refinar o conteúdo!</p></div>
+<p>Neste exemplo, o <code>fetch</code> faz uma requisição <code>GET</code> para a URL fornecida, processa a resposta como JSON, e lida com possíveis erros.</p>
+<h3 id="um-exemplo-de-como-usar-o-fetch-com-a-api-do-jsonplaceholder-uma-api-publica-para-testes-e-prototipagem">Um exemplo de como usar o <code>fetch</code> com a API do JSONPlaceholder, uma API pública para testes e prototipagem:</h3>
+<h3 id="exemplo-de-requisicao-get">Exemplo de requisição <code>GET</code></h3>
+<p>Neste exemplo, vamos buscar uma lista de posts da API usando o <code>fetch</code>.</p>
+<pre><code class="language-javascript">// Fazendo uma requisição GET para obter posts da API JSONPlaceholder
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then(response =&gt; {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();  // Converte a resposta para JSON
+  })
+  .then(posts =&gt; {
+    console.log(posts);  // Exibe os posts no console
+  })
+  .catch(error =&gt; console.error('Erro:', error));  // Lida com erros
+</code></pre>
+<h3 id="exemplo-de-requisicao-post">Exemplo de requisição <code>POST</code></h3>
+<p>Neste exemplo, vamos enviar um novo post para a API com uma requisição <code>POST</code>.</p>
+<pre><code class="language-javascript">// Enviando dados para criar um novo post
+fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    title: 'Meu novo post',
+    body: 'Este é o conteúdo do post',
+    userId: 1
+  }),
+})
+  .then(response =&gt; {
+    if (!response.ok) {
+      throw new Error('Erro na requisição: ' + response.status);
+    }
+    return response.json();  // Converte a resposta para JSON
+  })
+  .then(post =&gt; {
+    console.log('Post criado:', post);  // Exibe o post criado
+  })
+  .catch(error =&gt; console.error('Erro:', error));  // Lida com erros
+</code></pre>
+<h3 id="explicacao">Explicação:</h3>
+<ul>
+<li><strong>GET</strong>: O primeiro exemplo faz uma requisição para obter uma lista de posts, e a resposta é convertida para JSON e exibida no console.</li>
+<li><strong>POST</strong>: No segundo exemplo, criamos um novo post com os campos <code>title</code>, <code>body</code> e <code>userId</code>, enviando esses dados como JSON no corpo da requisição.</li>
+</ul>
+<p>A API do JSONPlaceholder é ótima para testes rápidos e experimentação com <code>fetch</code>.</p></div>
         
         
     </div>

@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../../img/favicon.ico">
 
     
-    <title>Unidades Relativas - DW</title>
+    <title>06 Http - DW</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -205,31 +205,31 @@
         
             
 <li >
-    <a href="../flexbox/">Flexbox</a>
+    <a href="../../css/flexbox/">Flexbox</a>
 </li>
 
         
             
 <li >
-    <a href="../grid/">Grid</a>
+    <a href="../../css/grid/">Grid</a>
 </li>
 
         
             
 <li >
-    <a href="../posicionamento/">Posicionamento</a>
+    <a href="../../css/posicionamento/">Posicionamento</a>
 </li>
 
         
             
 <li >
-    <a href="../siteresponsivo/">Responsividade</a>
+    <a href="../../css/siteresponsivo/">Responsividade</a>
 </li>
 
         
             
-<li class="active">
-    <a href="./">Unidades Relativas</a>
+<li >
+    <a href="../../css/unidadesrelativas/">Unidades Relativas</a>
 </li>
 
         
@@ -258,44 +258,44 @@
     <ul class="dropdown-menu">
         
             
-<li >
-    <a href="../../js/06_Http/">06 Http</a>
+<li class="active">
+    <a href="./">06 Http</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/07_Fetch/">07 Fetch</a>
+    <a href="../07_Fetch/">07 Fetch</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/07_Lendo%20Json/">07 Lendo Json</a>
+    <a href="../07_Lendo%20Json/">07 Lendo Json</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/array/">Arrays</a>
+    <a href="../array/">Arrays</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/chartmap/">Chartmap</a>
+    <a href="../chartmap/">Chartmap</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/forms/">Forms</a>
+    <a href="../forms/">Forms</a>
 </li>
 
         
             
 <li >
-    <a href="../../js/map/">Map</a>
+    <a href="../map/">Map</a>
 </li>
 
         
@@ -348,17 +348,17 @@
 
             <ul class="nav navbar-nav navbar-right">
                     <li >
-                        <a rel="prev" href="../siteresponsivo/">
+                        <a rel="prev" href="../../html/tags%20sem%C3%A2ntica/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../../html/tags%20sem%C3%A2ntica/">
+                        <a rel="next" href="../07_Fetch/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/css/unidadesrelativas.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/js/06_Http.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -370,163 +370,148 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#unidades-relativas">Unidades Relativas</a></li>
-            <li class="second-level"><a href="#1-em-relativo-ao-tamanho-da-fonte">1. em (relativo ao tamanho da fonte)</a></li>
+        <li class="first-level active"><a href="#1-introducao-ao-protocolo-http">1. Introdução ao Protocolo HTTP</a></li>
+        <li class="first-level "><a href="#http-a-base-da-comunicacao-na-web">HTTP: A Base da Comunicação na Web</a></li>
+            <li class="second-level"><a href="#como-funciona">Como funciona?</a></li>
                 
-            <li class="second-level"><a href="#2-rem-relativo-ao-tamanho-da-fonte-raiz">2. rem (relativo ao tamanho da fonte raiz)</a></li>
+            <li class="second-level"><a href="#por-que-o-http-e-importante">Por que o HTTP é importante?</a></li>
                 
-            <li class="second-level"><a href="#3-porcentagem">3. % (porcentagem)</a></li>
+            <li class="second-level"><a href="#http-vs-https">HTTP vs. HTTPS</a></li>
                 
-            <li class="second-level"><a href="#4-vh-e-vw-viewport-height-e-viewport-width">4. vh e vw (viewport height e viewport width)</a></li>
+            <li class="second-level"><a href="#2-metodos-http">2. Métodos HTTP</a></li>
                 
-            <li class="second-level"><a href="#5-min-width-max-width-min-height-max-height">5. min-width, max-width, min-height, max-height</a></li>
+            <li class="second-level"><a href="#3-status-http">3. Status HTTP</a></li>
                 
-            <li class="second-level"><a href="#exemplo-pratico-de-site-responsivo">Exemplo Prático de Site Responsivo</a></li>
-                
-            <li class="second-level"><a href="#consideracoes-finais">Considerações Finais</a></li>
+                <li class="third-level"><a href="#1xx-informacional">1xx – Informacional</a></li>
+                <li class="third-level"><a href="#2xx-sucesso">2xx – Sucesso</a></li>
+                <li class="third-level"><a href="#3xx-redirecionamento">3xx – Redirecionamento</a></li>
+                <li class="third-level"><a href="#4xx-erro-do-cliente">4xx – Erro do Cliente</a></li>
+                <li class="third-level"><a href="#5xx-erro-do-servidor">5xx – Erro do Servidor</a></li>
+            <li class="second-level"><a href="#4-exemplo-pratico-de-requisicao-http">4. Exemplo Prático de Requisição HTTP</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="unidades-relativas">Unidades Relativas</h1>
-<p>As <strong>unidades relativas</strong> são essenciais no design responsivo, pois se adaptam a diferentes tamanhos de tela, oferecendo flexibilidade e escalabilidade no layout. Vamos explorar as principais unidades relativas utilizadas no CSS:</p>
-<h4 id="1-em-relativo-ao-tamanho-da-fonte">1. <strong><code>em</code></strong> (relativo ao tamanho da fonte)</h4>
-<p>A unidade <code>em</code> é relativa ao tamanho da fonte do elemento pai. Se o tamanho da fonte do elemento pai for <code>16px</code>, por exemplo, <code>1em</code> será equivalente a <code>16px</code>. </p>
-<ul>
-<li>
-<p>Exemplo:
-    ```css
-    body {
-        font-size: 16px;
-    }</p>
-<p>h1 {
-    font-size: 2em; /<em> 32px </em>/
-}</p>
-<p>p {
-    font-size: 1em; /<em> 16px </em>/
-}
-```</p>
-</li>
-</ul>
-<h4 id="2-rem-relativo-ao-tamanho-da-fonte-raiz">2. <strong><code>rem</code></strong> (relativo ao tamanho da fonte raiz)</h4>
-<p>A unidade <code>rem</code> é relativa ao tamanho da fonte da raiz do documento, geralmente o elemento <code>html</code>. É útil para manter a consistência no design, pois sempre se refere ao tamanho de fonte definido no <code>html</code>.</p>
-<ul>
-<li>
-<p>Exemplo:
-    ```css
-    html {
-        font-size: 16px; /<em> 1rem = 16px </em>/
-    }</p>
-<p>h1 {
-    font-size: 2rem; /<em> 32px </em>/
-}</p>
-<p>p {
-    font-size: 1rem; /<em> 16px </em>/
-}
-```</p>
-</li>
-</ul>
-<h4 id="3-porcentagem">3. <strong><code>%</code></strong> (porcentagem)</h4>
-<p>As porcentagens são usadas para definir tamanhos relativos ao elemento pai. Elas podem ser aplicadas a margens, larguras, alturas, etc.</p>
-<ul>
-<li>Exemplo:
-    <code>css
-    div {
-        width: 50%; /* 50% da largura do elemento pai */
-        height: 100%; /* 100% da altura do elemento pai */
-    }</code></li>
-</ul>
-<h4 id="4-vh-e-vw-viewport-height-e-viewport-width">4. <strong><code>vh</code> e <code>vw</code></strong> (viewport height e viewport width)</h4>
-<p>As unidades <code>vh</code> e <code>vw</code> são relativas à altura e largura da <strong>viewport</strong> (janela visível). <code>1vh</code> equivale a 1% da altura da viewport, e <code>1vw</code> equivale a 1% da largura da viewport.</p>
-<ul>
-<li>Exemplo:
-    <code>css
-    section {
-        width: 100vw; /* 100% da largura da viewport */
-        height: 50vh; /* 50% da altura da viewport */
-    }</code></li>
-</ul>
-<h4 id="5-min-width-max-width-min-height-max-height">5. <strong><code>min-width</code>, <code>max-width</code>, <code>min-height</code>, <code>max-height</code></strong></h4>
-<p>Essas propriedades controlam o tamanho mínimo e máximo dos elementos, tornando-os mais responsivos em diferentes telas.</p>
-<ul>
-<li>Exemplo:
-    <code>css
-    div {
-        max-width: 100%; /* Não excede 100% da largura da tela */
-        min-height: 300px; /* Altura mínima de 300px */
-    }</code></li>
-</ul>
-<h4 id="exemplo-pratico-de-site-responsivo">Exemplo Prático de Site Responsivo</h4>
-<p>Aqui está um exemplo prático aplicando algumas dessas unidades para criar um site responsivo:</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;pt-BR&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Exemplo Responsivo&lt;/title&gt;
-    &lt;style&gt;
-        body {
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-        }
+<p>Aqui está uma sugestão para preparar a aula sobre métodos e status HTTP:</p>
+<h3 id="1-introducao-ao-protocolo-http">1. Introdução ao Protocolo HTTP</h3>
+<h2 id="http-a-base-da-comunicacao-na-web">HTTP: A Base da Comunicação na Web</h2>
+<p><strong>HTTP</strong> é a sigla para <strong>Hypertext Transfer Protocol</strong> ou, em português, <strong>Protocolo de Transferência de Hipertexto</strong>. É o protocolo fundamental que permite a comunicação entre navegadores web (como o Chrome, Firefox, Safari) e servidores web (onde estão hospedados os sites).</p>
+<p><strong>Em resumo, o HTTP é como a linguagem que seu navegador e os servidores da internet usam para "conversar" e mostrar as páginas que você visita.</strong></p>
+<h3 id="como-funciona">Como funciona?</h3>
+<p>1.<strong>Você digita um endereço (URL) na barra de endereços do seu navegador.</strong></p>
+<p>2.<strong>Seu navegador envia uma solicitação HTTP para o servidor onde está hospedado o site.</strong></p>
+<p>3.<strong>O servidor processa a solicitação e envia uma resposta HTTP com o conteúdo da página.</strong></p>
+<p>4.<strong>Seu navegador recebe a resposta e exibe a página na sua tela.</strong></p>
+<p><strong>Imagine o HTTP como um garçom em um restaurante:</strong> você faz um pedido (a solicitação HTTP), o garçom leva o pedido para a cozinha (o servidor), a cozinha prepara o prato (processa a solicitação) e o garçom traz o prato para você (a resposta HTTP).</p>
+<h3 id="por-que-o-http-e-importante">Por que o HTTP é importante?</h3>
+<p><strong>*Base da World Wide Web (WWW):</strong> É o protocolo que permite a existência da internet como a conhecemos, com páginas interligadas por links.</p>
+<p><strong>*Facilita a navegação:</strong> Permite que você navegue entre diferentes páginas de um site e de diferentes sites com facilidade.</p>
+<p><strong>*Transfere diversos tipos de dados:</strong> Não se limita a texto, mas também permite a transferência de imagens, vídeos, arquivos e outros tipos de dados.</p>
+<h3 id="http-vs-https">HTTP vs. HTTPS</h3>
+<p>É comum confundir HTTP com HTTPS. A principal diferença é que o <strong>HTTPS</strong> é uma versão segura do HTTP. Ele utiliza criptografia para proteger a comunicação entre o seu navegador e o servidor, garantindo a privacidade e a integridade dos dados transmitidos. Por isso, é altamente recomendado acessar sites que utilizam HTTPS, especialmente aqueles que envolvem transações financeiras ou informações pessoais.</p>
+<p><strong>Em resumo, o HTTP é o protocolo que torna a internet possível, permitindo que você acesse e interaja com milhões de sites ao redor do mundo.</strong></p>
+<p><strong>Gostaria de saber mais sobre algum aspecto específico do HTTP?</strong> Por exemplo, você pode me perguntar sobre:</p>
+<p><strong>*Métodos HTTP:</strong> GET, POST, PUT, DELETE e outros.</p>
+<p><strong>*Cabeçalhos HTTP:</strong> informações adicionais que acompanham as solicitações e respostas.</p>
+<p><strong>*Códigos de status HTTP:</strong> como 200 (OK), 404 (Não encontrado) e 500 (Erro interno do servidor).</p>
+<p><strong>*Diferenças entre HTTP e HTTPS.</strong></p>
+<p><strong>Se tiver alguma outra dúvida, fique à vontade para perguntar!</strong></p>
+<h3 id="2-metodos-http">2. Métodos HTTP</h3>
+<p>-<strong>GET</strong>: Usado para solicitar dados de um servidor. Não altera o estado do servidor (idempotente).</p>
+<pre><code>- Exemplo: acessar uma página da web ou recuperar uma lista de produtos.
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
+```http
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
+GET /produtos HTTP/1.1
 
-        .box {
-            background-color: #f4f4f4;
-            margin: 1rem 0;
-            padding: 2em;
-            border-radius: 5px;
-        }
+Host: www.exemplo.com
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
-            bottom: 0;
-            width: 100vw;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Site Responsivo&lt;/h1&gt;
-    &lt;/header&gt;
-
-    &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;box&quot;&gt;
-            &lt;p&gt;Esta é uma caixa que usa unidades relativas para se adaptar a diferentes tamanhos de tela.&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;box&quot;&gt;
-            &lt;p&gt;A largura da página está definida em porcentagens, e o espaçamento em `rem` e `em`.&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;footer&gt;
-        &lt;p&gt;Rodapé do site&lt;/p&gt;
-    &lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+```
 </code></pre>
-<h4 id="consideracoes-finais">Considerações Finais</h4>
-<p>Ao combinar essas unidades relativas, você pode criar layouts que se adaptam a diferentes tamanhos de tela, tornando seu site mais responsivo e acessível em dispositivos móveis. É importante testar os tamanhos e espaçamentos em várias resoluções para garantir uma boa experiência de usuário.</p>
-<p>Se precisar de mais detalhes ou exemplos específicos, posso ajudar a refinar o conteúdo!</p></div>
+<p>-<strong>POST</strong>: Envia dados ao servidor para criar ou modificar um recurso.</p>
+<pre><code>- Exemplo: enviar um formulário de cadastro.
+
+```http
+
+POST /cadastro HTTP/1.1
+
+Host: www.exemplo.com
+
+Content-Type: application/json
+
+{
+
+"nome": "João",
+
+"email": "joao@example.com"
+
+}
+
+```
+</code></pre>
+<p>-<strong>PUT</strong>: Envia dados para substituir um recurso existente no servidor.</p>
+<pre><code>- Exemplo: atualizar o perfil de um usuário.
+</code></pre>
+<p>-<strong>PATCH</strong>: Semelhante ao <code>PUT</code>, mas usado para modificações parciais de um recurso.</p>
+<p>-<strong>DELETE</strong>: Remove um recurso do servidor.</p>
+<pre><code>- Exemplo: excluir uma conta de usuário.
+</code></pre>
+<p>-<strong>HEAD</strong>: Igual ao <code>GET</code>, mas sem o corpo da resposta. Usado para verificar se o recurso existe ou para recuperar metadados.</p>
+<p>-<strong>OPTIONS</strong>: Pergunta ao servidor quais métodos e opções são suportados para um determinado recurso.</p>
+<p>-<strong>TRACE</strong>: Usado para diagnóstico, retorna o conteúdo exato da requisição recebida pelo servidor.</p>
+<blockquote>
+<p><strong>Atividade prática</strong>: Utilize uma ferramenta como o Postman ou <code>curl</code> para testar os métodos HTTP.</p>
+</blockquote>
+<h3 id="3-status-http">3. Status HTTP</h3>
+<p>Os códigos de status HTTP indicam o resultado de uma requisição. Eles são divididos em cinco categorias:</p>
+<h4 id="1xx-informacional">1xx – Informacional</h4>
+<p>Indicam que a requisição foi recebida e está sendo processada.</p>
+<p>-<strong>100 Continue</strong>: O servidor está pronto para receber o corpo da requisição.</p>
+<h4 id="2xx-sucesso">2xx – Sucesso</h4>
+<p>Indicam que a requisição foi bem-sucedida.</p>
+<p>-<strong>200 OK</strong>: A requisição foi bem-sucedida.</p>
+<p>-<strong>201 Created</strong>: Um novo recurso foi criado (geralmente após um <code>POST</code>).</p>
+<p>-<strong>204 No Content</strong>: A requisição foi bem-sucedida, mas não há conteúdo para retornar.</p>
+<h4 id="3xx-redirecionamento">3xx – Redirecionamento</h4>
+<p>Indicam que o cliente precisa realizar uma ação adicional para completar a requisição.</p>
+<p>-<strong>301 Moved Permanently</strong>: O recurso foi movido permanentemente para uma nova URL.</p>
+<p>-<strong>302 Found</strong>: O recurso foi temporariamente movido para outra URL.</p>
+<h4 id="4xx-erro-do-cliente">4xx – Erro do Cliente</h4>
+<p>Indicam que houve um erro por parte do cliente.</p>
+<p>-<strong>400 Bad Request</strong>: A requisição está malformada ou inválida.</p>
+<p>-<strong>401 Unauthorized</strong>: Acesso negado, geralmente por falta de autenticação.</p>
+<p>-<strong>403 Forbidden</strong>: Acesso negado, mesmo com autenticação.</p>
+<p>-<strong>404 Not Found</strong>: O recurso solicitado não foi encontrado no servidor.</p>
+<h4 id="5xx-erro-do-servidor">5xx – Erro do Servidor</h4>
+<p>Indicam que o servidor encontrou um erro ao tentar processar a requisição.</p>
+<p>-<strong>500 Internal Server Error</strong>: Um erro genérico no servidor.</p>
+<p>-<strong>502 Bad Gateway</strong>: O servidor recebeu uma resposta inválida de outro servidor.</p>
+<p>-<strong>503 Service Unavailable</strong>: O servidor está temporariamente indisponível (sobrecarga ou manutenção).</p>
+<h3 id="4-exemplo-pratico-de-requisicao-http">4. Exemplo Prático de Requisição HTTP</h3>
+<ul>
+<li>Montar uma requisição <code>GET</code> e uma <code>POST</code> usando JavaScript com o <code>fetch</code>.</li>
+<li>Mostrar a diferença entre os métodos e como lidar com os diferentes status HTTP retornados.</li>
+</ul>
+<p>```javascript</p>
+<p>fetch('https://api.exemplo.com/recurso')</p>
+<pre><code>.then(response=&gt;{
+
+  if (!response.ok) {
+
+    thrownewError(`Erro: ${response.status}`);
+
+  }
+
+  return response.json();
+
+})
+
+.then(data=&gt; console.log(data))
+
+.catch(error=&gt; console.error(error));
+</code></pre>
+<p>```</p></div>
         
         
     </div>

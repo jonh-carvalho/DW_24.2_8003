@@ -1,0 +1,66 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## JavaScript JSON\r\n\r\nJSON é um formato para armazenar e transportar dados.\r\n\r\nO JSON é frequentemente usado quando os dados são enviados de um servidor para uma web página.\r\n\r\n### O que é JSON?\r\n\r\n- JSON significa JavaScript Object Notation\r\n- JSON é um formato leve de intercâmbio de dados\r\n- JSON é independente de idioma *\r\n- JSON é \"autodescritivo\" e fácil de entender\r\n\r\n> A sintaxe JSON é derivada da sintaxe de notação de objeto JavaScript, mas o formato JSON é apenas texto. O código para leitura e geração de dados JSON pode ser escrito em qualquer programação Idioma.\r\n\r\n#### Exemplo de JSON\r\n\r\nEssa sintaxe JSON define um objeto employees: uma matriz de 3 registros de funcionários (objetos):\r\n\r\n```js\r\n{\r\n\"employees\":[\r\n  {\"firstName\":\"John\", \"lastName\":\"Doe\"},\r\n  {\"firstName\":\"Anna\", \"lastName\":\"Smith\"},\r\n  {\"firstName\":\"Peter\", \"lastName\":\"Jones\"}\r\n]\r\n}```\r\n\r\nO formato JSON é avaliado como objetos JavaScript\r\n\r\n**O formato JSON é sintaticamente idêntico ao código para criar Objetos JavaScript.**\r\n\r\nDevido a essa semelhança, um programa JavaScript pode facilmente converter dados JSON em nativos Objetos JavaScript.\r\n\r\n### Regras de sintaxe JSON\r\n\r\n- Os dados estão em pares de nome/valor\r\n- Os dados são separados por vírgulas\r\n- Chaves seguram objetos\r\n- Os colchetes contêm matrizes\r\n\r\n### Dados JSON - Um nome e um valor\r\n\r\nOs dados JSON são gravados como pares de nome/valor, assim como o objeto JavaScript Propriedades.\r\n\r\nUm par nome/valor consiste em um nome de campo (entre aspas duplas), seguido por dois pontos, seguido por um valor:\r\n\r\n```js\r\n\"firstName\":\"John\"\r\n```\r\n\r\n**Os nomes JSON exigem aspas duplas. Nomes JavaScript não.**\r\n\r\n### Objetos JSON\r\n\r\nOs objetos JSON são gravados dentro de chaves.\r\n\r\nAssim como em JavaScript, os objetos podem conter vários pares de nome/valor:\r\n\r\n```js\r\n{\"firstName\":\"John\", \"lastName\":\"Doe\"}\r\n```\r\n\r\n### Matrizes JSON\r\n\r\nAs matrizes JSON são escritas entre colchetes.\r\n\r\nAssim como em JavaScript, um array pode conter objetos:\r\n\r\n```js\r\n\"employees\":[\r\n  {\"firstName\":\"John\", \"lastName\":\"Doe\"},\r\n  {\"firstName\":\"Anna\", \"lastName\":\"Smith\"},\r\n  {\"firstName\":\"Peter\", \"lastName\":\"Jones\"}\r\n]\r\n\r\n```\r\n\r\nNo exemplo acima, o objeto \"funcionários\" é uma matriz. Ele contém três Objetos.\r\n\r\nCada objeto é um registro de uma pessoa (com um nome e um sobrenome).\r\n\r\n### Convertendo um texto JSON em um objeto JavaScript\r\n\r\nUm uso comum do JSON é ler dados de um servidor web, e exibir os dados em uma página da web.\r\n\r\nPara simplificar, isso pode ser demonstrado usando uma string como entrada.\r\n\r\nPrimeiro, crie uma string JavaScript contendo a sintaxe JSON:\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let text = '{ \"employees\" : [' +\r\n'{ \"firstName\":\"John\" , \"lastName\":\"Doe\" },' +\r\n'{ \"firstName\":\"Anna\" , \"lastName\":\"Smith\" },' +\r\n'{ \"firstName\":\"Peter\" , \"lastName\":\"Jones\" } ]}';"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\n```js\r\nlet text = '{ \"employees\" : [' +\r\n'{ \"firstName\":\"John\" , \"lastName\":\"Doe\" },' +\r\n'{ \"firstName\":\"Anna\" , \"lastName\":\"Smith\" },' +\r\n'{ \"firstName\":\"Peter\" , \"lastName\":\"Jones\" } ]}';\r\n```\r\n\r\nEm seguida, use a função interna do JavaScript para converter a string em um objeto JavaScript:JSON.parse()\r\n\r\n```js\r\nconst obj = JSON.parse(text);\r\n```\r\n\r\nPor fim, use o novo objeto JavaScript em sua página:\r\n\r\n```html\r\n<p id=\"demo\"></p>\r\n\r\n<script>\r\ndocument.getElementById(\"demo\").innerHTML =\r\nobj.employees[1].firstName + \" \" + obj.employees[1].lastName;\r\n</script>\r\n```"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const obj = JSON.parse(text);\r\nobj.employees[1].firstName + \" \" + obj.employees[1].lastName;"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "\u001b[32m'Anna Smith'\u001b[39m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
