@@ -18,9 +18,10 @@ fetch('https://api.exemplo.com/dados')
 
 Neste exemplo, o `fetch` faz uma requisição `GET` para a URL fornecida, processa a resposta como JSON, e lida com possíveis erros.
 
-### Um exemplo de como usar o `fetch` com a API do JSONPlaceholder, uma API pública para testes e prototipagem:
+#### Um exemplo de como usar o `fetch` com a API do JSONPlaceholder, uma API pública para testes e prototipagem:
 
-### Exemplo de requisição `GET`
+##### Exemplo de requisição `GET`
+
 Neste exemplo, vamos buscar uma lista de posts da API usando o `fetch`.
 
 ```javascript
@@ -38,7 +39,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   .catch(error => console.error('Erro:', error));  // Lida com erros
 ```
 
-### Exemplo de requisição `POST`
+##### Exemplo de requisição `POST`
+
 Neste exemplo, vamos enviar um novo post para a API com uma requisição `POST`.
 
 ```javascript
@@ -67,6 +69,7 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 ```
 
 ### Explicação:
+
 - **GET**: O primeiro exemplo faz uma requisição para obter uma lista de posts, e a resposta é convertida para JSON e exibida no console.
 - **POST**: No segundo exemplo, criamos um novo post com os campos `title`, `body` e `userId`, enviando esses dados como JSON no corpo da requisição.
 

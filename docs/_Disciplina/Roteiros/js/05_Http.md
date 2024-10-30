@@ -2,7 +2,7 @@ Aqui está uma sugestão para preparar a aula sobre métodos e status HTTP:
 
 ### 1. Introdução ao Protocolo HTTP
 
-## HTTP: A Base da Comunicação na Web
+#### HTTP: A Base da Comunicação na Web
 
 **HTTP** é a sigla para **Hypertext Transfer Protocol** ou, em português, **Protocolo de Transferência de Hipertexto**. É o protocolo fundamental que permite a comunicação entre navegadores web (como o Chrome, Firefox, Safari) e servidores web (onde estão hospedados os sites).
 
@@ -82,21 +82,21 @@ Aqui está uma sugestão para preparar a aula sobre métodos e status HTTP:
 
     ```
 
-   -**PUT**: Envia dados para substituir um recurso existente no servidor.
+- **PUT**: Envia dados para substituir um recurso existente no servidor.
 
     - Exemplo: atualizar o perfil de um usuário.
 
    -**PATCH**: Semelhante ao `PUT`, mas usado para modificações parciais de um recurso.
 
-   -**DELETE**: Remove um recurso do servidor.
+- **DELETE**: Remove um recurso do servidor.
 
     - Exemplo: excluir uma conta de usuário.
 
-   -**HEAD**: Igual ao `GET`, mas sem o corpo da resposta. Usado para verificar se o recurso existe ou para recuperar metadados.
+- **HEAD**: Igual ao `GET`, mas sem o corpo da resposta. Usado para verificar se o recurso existe ou para recuperar metadados.
 
-   -**OPTIONS**: Pergunta ao servidor quais métodos e opções são suportados para um determinado recurso.
+- **OPTIONS**: Pergunta ao servidor quais métodos e opções são suportados para um determinado recurso.
 
-   -**TRACE**: Usado para diagnóstico, retorna o conteúdo exato da requisição recebida pelo servidor.
+- **TRACE**: Usado para diagnóstico, retorna o conteúdo exato da requisição recebida pelo servidor.
 
 > **Atividade prática**: Utilize uma ferramenta como o Postman ou `curl` para testar os métodos HTTP.
 
@@ -108,47 +108,47 @@ Aqui está uma sugestão para preparar a aula sobre métodos e status HTTP:
 
    Indicam que a requisição foi recebida e está sendo processada.
 
-   -**100 Continue**: O servidor está pronto para receber o corpo da requisição.
+- **100 Continue**: O servidor está pronto para receber o corpo da requisição.
 
 #### 2xx – Sucesso
 
    Indicam que a requisição foi bem-sucedida.
 
-   -**200 OK**: A requisição foi bem-sucedida.
+- **200 OK**: A requisição foi bem-sucedida.
 
-   -**201 Created**: Um novo recurso foi criado (geralmente após um `POST`).
+- **201 Created**: Um novo recurso foi criado (geralmente após um `POST`).
 
-   -**204 No Content**: A requisição foi bem-sucedida, mas não há conteúdo para retornar.
+- **204 No Content**: A requisição foi bem-sucedida, mas não há conteúdo para retornar.
 
 #### 3xx – Redirecionamento
 
    Indicam que o cliente precisa realizar uma ação adicional para completar a requisição.
 
-   -**301 Moved Permanently**: O recurso foi movido permanentemente para uma nova URL.
+- **301 Moved Permanently**: O recurso foi movido permanentemente para uma nova URL.
 
-   -**302 Found**: O recurso foi temporariamente movido para outra URL.
+- **302 Found**: O recurso foi temporariamente movido para outra URL.
 
 #### 4xx – Erro do Cliente
 
    Indicam que houve um erro por parte do cliente.
 
-   -**400 Bad Request**: A requisição está malformada ou inválida.
+- **400 Bad Request**: A requisição está malformada ou inválida.
 
-   -**401 Unauthorized**: Acesso negado, geralmente por falta de autenticação.
+- **401 Unauthorized**: Acesso negado, geralmente por falta de autenticação.
 
-   -**403 Forbidden**: Acesso negado, mesmo com autenticação.
+- **403 Forbidden**: Acesso negado, mesmo com autenticação.
 
-   -**404 Not Found**: O recurso solicitado não foi encontrado no servidor.
+- **404 Not Found**: O recurso solicitado não foi encontrado no servidor.
 
 #### 5xx – Erro do Servidor
 
    Indicam que o servidor encontrou um erro ao tentar processar a requisição.
 
-   -**500 Internal Server Error**: Um erro genérico no servidor.
+- **500 Internal Server Error**: Um erro genérico no servidor.
 
-   -**502 Bad Gateway**: O servidor recebeu uma resposta inválida de outro servidor.
+- **502 Bad Gateway**: O servidor recebeu uma resposta inválida de outro servidor.
 
-   -**503 Service Unavailable**: O servidor está temporariamente indisponível (sobrecarga ou manutenção).
+- **503 Service Unavailable**: O servidor está temporariamente indisponível (sobrecarga ou manutenção).
 
 ### 4. Exemplo Prático de Requisição HTTP
 
