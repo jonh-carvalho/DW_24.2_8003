@@ -3,7 +3,7 @@ Ler dados em JavaScript pode ser feito de várias formas dependendo da origem do
 1. **Ler dados de um arquivo JSON local:**
    Para carregar dados JSON armazenados localmente (por exemplo, `data.json`), podemos usar `fetch()`:
 
-   ```javascript
+   ```js
    fetch('data.json')
      .then(response => response.json())
      .then(data => {
@@ -15,7 +15,7 @@ Ler dados em JavaScript pode ser feito de várias formas dependendo da origem do
 2. **Ler dados de uma API (requisição HTTP):**
    Se os dados estão em uma API, podemos usar o `fetch()` da mesma forma:
 
-   ```javascript
+   ```js
    fetch('https://api.exemplo.com/dados')
      .then(response => response.json())
      .then(data => {
@@ -27,7 +27,7 @@ Ler dados em JavaScript pode ser feito de várias formas dependendo da origem do
 3. **Ler dados de um arquivo CSV (usando bibliotecas):**
    Para CSV, uma biblioteca como o [PapaParse](https://www.papaparse.com/) pode ser muito útil:
 
-   ```javascript
+   ```js
    Papa.parse('data.csv', {
      download: true,
      header: true,
@@ -44,7 +44,7 @@ Para ler e manipular dados armazenados em uma variável JSON em JavaScript, prim
 ### Exemplo 1: JSON como Objeto JavaScript
 Se você já tem os dados armazenados como um objeto JavaScript, pode acessar diretamente os valores com a notação de ponto ou colchetes:
 
-```javascript
+```js
 // Dados JSON armazenados em uma variável
 const jsonData = {
   "nome": "Maria",
@@ -64,7 +64,7 @@ console.log(jsonData.endereco.cidade); // São Paulo
 ### Exemplo 2: JSON como String
 Se os dados JSON estão em formato de string, você precisa transformá-los em um objeto usando `JSON.parse()` antes de acessá-los.
 
-```javascript
+```js
 // Dados JSON como string
 const jsonString = '{"nome": "Carlos", "idade": 25, "cidade": "Rio de Janeiro"}';
 
@@ -79,7 +79,7 @@ console.log(jsonData.idade); // 25
 ### Exemplo 3: Convertendo Objeto para String JSON
 Caso queira fazer o contrário (converter um objeto em uma string JSON), você pode usar `JSON.stringify()`:
 
-```javascript
+```js
 const data = {
   nome: "Ana",
   idade: 28
@@ -152,7 +152,7 @@ Aqui está o código HTML básico que referencia o arquivo `script.js` e tem se�
 
 O código abaixo lê os dados das três formas descritas: de uma variável JavaScript, de uma string JSON e de um arquivo JSON.
 
-```javascript
+```js
 // Exemplo 1: Lendo dados de um objeto JavaScript
 const jsonDataObject = {
   "nome": "Maria",
@@ -220,7 +220,7 @@ Adicione uma nova seção ao HTML para exibir os dados de vários objetos.
 
 Adicione uma nova variável contendo vários objetos JSON e exiba-a no HTML.
 
-```javascript
+```js
 // Exemplo 4: Lendo dados de uma lista de objetos JSON
 const jsonArray = [
   {
