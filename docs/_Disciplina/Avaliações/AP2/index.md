@@ -78,19 +78,23 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 
   - Criar uma pasta para o projeto.
   - Criar arquivos index.html, styles.css e script.js.
+  
 - Configurar o arquivo HTML:
 
   - Adicionar um formulário para buscar Pokémon pelo nome.
   - Adicionar uma área para exibir os dados do Pokémon.
   - Incluir referências aos arquivos CSS e JavaScript.
+
 - Estilizar a interface com CSS:
 
   - Adicionar estilos básicos para o formulário e a área de exibição.
+
 - Implementar a lógica com JavaScript:
 
   - Adicionar um evento de submissão ao formulário.
   - Usar fetch para fazer requisições à API do Pokémon.
   - Processar e exibir os dados recebidos na interface do usuário.
+
 - **Passo 1:** Criar a estrutura de arquivos
 
 ```bash
