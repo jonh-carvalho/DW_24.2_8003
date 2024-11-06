@@ -424,9 +424,18 @@
                 <li class="third-level"><a href="#estrutura-basica-com-header-nav-section-article-e-footer">Estrutura Básica com Header, Nav, Section, Article e Footer</a></li>
             <li class="second-level"><a href="#manipulando-html-com-javascript-criando-uma-spa-do-zero">Manipulando HTML com JavaScript: Criando uma SPA do Zero</a></li>
                 
+                <li class="third-level"><a href="#criando-elementos-html-com-javascript">Criando Elementos HTML com JavaScript</a></li>
+                <li class="third-level"><a href="#exemplo-pratico-criando-um-card-de-produto">Exemplo Prático: Criando um Card de Produto</a></li>
+                <li class="third-level"><a href="#explicacao">Explicação:</a></li>
                 <li class="third-level"><a href="#criando-uma-spa-simples">Criando uma SPA Simples</a></li>
             <li class="second-level"><a href="#criando-uma-galeria-de-cards-com-tres-colunas-e-tres-linhas-em-html-css-e-javascript">Criando uma Galeria de Cards com Três Colunas e Três Linhas em HTML, CSS e JavaScript</a></li>
                 
+                <li class="third-level"><a href="#entendendo-o-desafio">Entendendo o Desafio</a></li>
+                <li class="third-level"><a href="#estrutura-html-basica">Estrutura HTML Básica</a></li>
+                <li class="third-level"><a href="#estilizacao-com-css">Estilização com CSS</a></li>
+                <li class="third-level"><a href="#criando-os-cards-com-javascript">Criando os Cards com JavaScript</a></li>
+                <li class="third-level"><a href="#explicando-o-codigo_1">Explicando o Código:</a></li>
+                <li class="third-level"><a href="#exercicios">Exercícios</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -628,13 +637,6 @@ botao.addEventListener('click', () =&gt; {
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<ul>
-<li><strong>&lt;!DOCTYPE html&gt;:</strong> Declara o tipo de documento HTML.</li>
-<li><strong><html>:</strong> Raiz de todos os elementos HTML.</li>
-<li><strong><head>:</strong> Contém metadados da página, como o título e links para arquivos CSS.</li>
-<li><strong><body>:</strong> Contém o conteúdo visível da página.</li>
-<li><strong><script>:</strong> Inclui um script JavaScript.</li>
-</ul>
 <h3 id="criando-uma-pagina-simples">Criando uma Página Simples</h3>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -708,9 +710,9 @@ botao.addEventListener(&quot;click&quot;, function() {
 <h2 id="manipulando-html-com-javascript-criando-uma-spa-do-zero">Manipulando HTML com JavaScript: Criando uma SPA do Zero</h2>
 <p><strong>O que é uma SPA?</strong></p>
 <p>Uma Single Page Application (SPA) é um tipo de aplicação web que carrega uma única página HTML e, em vez de recarregar toda a página durante a navegação, ela atualiza dinamicamente o conteúdo com base nas interações do usuário. Isso proporciona uma experiência mais fluida e semelhante a um aplicativo desktop.</p>
-<p><strong>Criando Elementos HTML com JavaScript</strong></p>
+<h3 id="criando-elementos-html-com-javascript"><strong>Criando Elementos HTML com JavaScript</strong></h3>
 <p>Para criar elementos HTML dinamicamente com JavaScript, utilizamos o método <code>createElement()</code>. Após criar o elemento, podemos configurá-lo com atributos, adicionar conteúdo e, finalmente, inseri-lo no DOM (Document Object Model) da página.</p>
-<p><strong>Exemplo Prático: Criando um Card de Produto</strong></p>
+<h3 id="exemplo-pratico-criando-um-card-de-produto"><strong>Exemplo Prático: Criando um Card de Produto</strong></h3>
 <pre><code class="language-javascript">// Criando um novo elemento div
 const card = document.createElement('div');
 card.classList.add('card'); // Adicionando uma classe para estilização
@@ -747,7 +749,7 @@ container.appendChild(card);
     margin: 10px;
 }
 </code></pre>
-<p><strong>Explicação:</strong></p>
+<h3 id="explicacao"><strong>Explicação:</strong></h3>
 <ol>
 <li><strong>Criamos os elementos:</strong> <code>div</code>, <code>h2</code>, <code>p</code> e <code>img</code>.</li>
 <li><strong>Configuramos os elementos:</strong> Definimos o texto, a classe, a fonte da imagem e o texto alternativo.</li>
@@ -773,9 +775,9 @@ links.forEach(link =&gt; {
 });
 </code></pre>
 <h2 id="criando-uma-galeria-de-cards-com-tres-colunas-e-tres-linhas-em-html-css-e-javascript">Criando uma Galeria de Cards com Três Colunas e Três Linhas em HTML, CSS e JavaScript</h2>
-<p><strong>Entendendo o Desafio</strong></p>
+<h3 id="entendendo-o-desafio"><strong>Entendendo o Desafio</strong></h3>
 <p>Queremos construir uma galeria de cards, onde cada card contém um título, uma imagem e possivelmente outros elementos. O objetivo é organizar esses cards em uma grade de três colunas e três linhas, utilizando HTML para a estrutura, CSS para o estilo e JavaScript para adicionar interatividade (opcional).</p>
-<p><strong>Estrutura HTML Básica</strong></p>
+<h3 id="estrutura-html-basica"><strong>Estrutura HTML Básica</strong></h3>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -789,7 +791,7 @@ links.forEach(link =&gt; {
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<p><strong>Estilização com CSS</strong></p>
+<h3 id="estilizacao-com-css"><strong>Estilização com CSS</strong></h3>
 <pre><code class="language-css">.gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -806,7 +808,7 @@ links.forEach(link =&gt; {
     max-width: 100%;
 }
 </code></pre>
-<p><strong>Criando os Cards com JavaScript</strong></p>
+<h3 id="criando-os-cards-com-javascript"><strong>Criando os Cards com JavaScript</strong></h3>
 <pre><code class="language-javascript">const gallery = document.querySelector('.gallery');
 
 // Dados dos cards (pode ser obtido de uma API ou outro local)
@@ -839,7 +841,7 @@ cardsData.forEach(data =&gt; {
     gallery.appendChild(cardElement);
 });
 </code></pre>
-<p><strong>Explicando o Código:</strong></p>
+<h3 id="explicando-o-codigo_1"><strong>Explicando o Código:</strong></h3>
 <ol>
 <li><strong>HTML:</strong> Criamos um container com a classe <code>gallery</code> para agrupar os cards.</li>
 <li><strong>CSS:</strong> </li>
@@ -852,22 +854,14 @@ cardsData.forEach(data =&gt; {
 <li>A função <code>createCard</code> cria um elemento <code>div</code> com as classes e conteúdos necessários.</li>
 <li>Iteramos sobre os dados dos cards, criando um elemento <code>card</code> para cada um e adicionando-o à galeria.</li>
 </ol>
-<p><strong>Exercícios</strong></p>
+<h3 id="exercicios"><strong>Exercícios</strong></h3>
 <ul>
 <li><strong>Estilização:</strong> Modifique as classes CSS para personalizar a aparência dos cards e da galeria.</li>
 <li><strong>Conteúdo:</strong> Adicione mais dados aos cards, como descrições, botões, etc.</li>
 <li><strong>Layout:</strong> Experimente diferentes valores para <code>grid-template-columns</code> e <code>gap</code> para ajustar o layout.</li>
 <li><strong>Responsividade:</strong> Utilize media queries para adaptar a galeria a diferentes tamanhos de tela.</li>
 <li><strong>Interatividade:</strong> Adicione eventos aos cards, como hover, clique, etc., para criar efeitos visuais ou ações.</li>
-</ul>
-<p><strong>Exemplo com Mais Detalhes:</strong></p>
-<pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
-    &lt;h2&gt;Título do Card&lt;/h2&gt;
-    &lt;img src=&quot;image.jpg&quot; alt=&quot;Descrição da Imagem&quot;&gt;
-    &lt;p&gt;Descrição detalhada do card.&lt;/p&gt;
-    &lt;button&gt;Ver Mais&lt;/button&gt;
-&lt;/div&gt;
-</code></pre></div>
+</ul></div>
         
         
     </div>
