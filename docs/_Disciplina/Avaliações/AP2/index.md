@@ -75,9 +75,9 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 8\. **Plano em Pseudocódigo**
 
 - Criar a estrutura de arquivos:
-
   - Criar uma pasta para o projeto.
   - Criar arquivos index.html, styles.css e script.js.
+  
 - Configurar o arquivo HTML:
 
   - Adicionar um formulário para buscar Pokémon pelo nome.
