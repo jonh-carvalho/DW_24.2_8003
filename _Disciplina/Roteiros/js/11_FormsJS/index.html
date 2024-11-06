@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+    
+    <title>Criando uma Tabela HTML a partir de Dados JSON - DW</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../../..">DW</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Disciplina <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../aulas/">Aulas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../github/">Versionamento</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../mkdocs/">MkDocs</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Avaliações</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Avalia%C3%A7%C3%B5es/avalia/">Avaliações</a>
+</li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">AC</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Avalia%C3%A7%C3%B5es/AC/">Index</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Avalia%C3%A7%C3%B5es/AC/ac1/">Ac1</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Avalia%C3%A7%C3%B5es/AC/ac2/">Ac2</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Avalia%C3%A7%C3%B5es/AC/ac3/">Ac3</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Avalia%C3%A7%C3%B5es/AC/ac4/">Ac4</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Avalia%C3%A7%C3%B5es/AC/ac5/">Ac5</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">AP2</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Avalia%C3%A7%C3%B5es/AP2/">AP2</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Ap1</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Avalia%C3%A7%C3%B5es/ap1/">Index</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Exercícios</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Exerc%C3%ADcios/Javascript/">Javascript</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Exerc%C3%ADcios/Posicionamento_Landing_Page/">Posicionamento Landing Page</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Roteiros</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Css</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../css/flexbox/">Flexbox</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../css/grid/">Grid</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../css/posicionamento/">Posicionamento</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../css/siteresponsivo/">Responsividade</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../css/unidadesrelativas/">Unidades Relativas</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Html</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../html/tags%20sem%C3%A2ntica/">Tags semântica</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Js</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../01_Arrays/">Arrays</a>
+</li>
+
+        
+            
+<li >
+    <a href="../02_Maps_Sets/">02 Maps Sets</a>
+</li>
+
+        
+            
+<li >
+    <a href="../03_ChartMap/">03 ChartMap</a>
+</li>
+
+        
+            
+<li >
+    <a href="../04_Forms/">04 Forms</a>
+</li>
+
+        
+            
+<li >
+    <a href="../05_Http/">05 Http</a>
+</li>
+
+        
+            
+<li >
+    <a href="../07_Fetch/">07 Fetch</a>
+</li>
+
+        
+            
+<li >
+    <a href="../08_Lendo%20Json/">08 Lendo Json</a>
+</li>
+
+        
+            
+<li >
+    <a href="../09_FetchApi/">09 FetchApi</a>
+</li>
+
+        
+            
+<li >
+    <a href="../10_JsonServer/">10 JsonServer</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Criando uma Tabela HTML a partir de Dados JSON</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Ferramentas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../../_Ferramentas/Sites%20Importantes/">Sites Importantes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../_Ferramentas/validadores/">Validadores</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../_Ferramentas/w3c/">W3C Web Standards</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../../_Ferramentas/w3schools/">W3Schools</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../10_JsonServer/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../../../_Ferramentas/Sites%20Importantes/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jonh-carvalho/DW_24.2_8003/edit/master/docs/_Disciplina/Roteiros/js/11_FormsJS.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#criando-uma-tabela-html-a-partir-de-dados-json">Criando uma Tabela HTML a partir de Dados JSON</a></li>
+            <li class="second-level"><a href="#criando-uma-interface-html-com-javascript">Criando uma Interface HTML com JavaScript</a></li>
+                
+                <li class="third-level"><a href="#estrutura-basica-html">Estrutura Básica HTML</a></li>
+                <li class="third-level"><a href="#estilizando-com-css-stylescss">Estilizando com CSS (styles.css)</a></li>
+                <li class="third-level"><a href="#adicionando-interatividade-com-javascript-scriptjs">Adicionando Interatividade com JavaScript (script.js)</a></li>
+                <li class="third-level"><a href="#explicando-o-codigo">Explicando o Código</a></li>
+            <li class="second-level"><a href="#criando-uma-interface-html-com-javascript-ii">Criando uma Interface HTML com JavaScript II</a></li>
+                
+                <li class="third-level"><a href="#estrutura-basica">Estrutura Básica</a></li>
+                <li class="third-level"><a href="#criando-uma-pagina-simples">Criando uma Página Simples</a></li>
+                <li class="third-level"><a href="#adicionando-interatividade-com-javascript">Adicionando Interatividade com JavaScript</a></li>
+                <li class="third-level"><a href="#trabalhando-com-eventos">Trabalhando com Eventos</a></li>
+                <li class="third-level"><a href="#estrutura-basica-com-header-nav-section-article-e-footer">Estrutura Básica com Header, Nav, Section, Article e Footer</a></li>
+            <li class="second-level"><a href="#manipulando-html-com-javascript-criando-uma-spa-do-zero">Manipulando HTML com JavaScript: Criando uma SPA do Zero</a></li>
+                
+                <li class="third-level"><a href="#criando-uma-spa-simples">Criando uma SPA Simples</a></li>
+            <li class="second-level"><a href="#criando-uma-galeria-de-cards-com-tres-colunas-e-tres-linhas-em-html-css-e-javascript">Criando uma Galeria de Cards com Três Colunas e Três Linhas em HTML, CSS e JavaScript</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="criando-uma-tabela-html-a-partir-de-dados-json">Criando uma Tabela HTML a partir de Dados JSON</h1>
+<p>Vamos transformar a lista de produtos em uma tabela mais organizada e visualmente atraente.</p>
+<p><strong>HTML (index.html):</strong></p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Tabela de Produtos&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;table id=&quot;tabela-produtos&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th&gt;Preço&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><strong>CSS (styles.css):</strong></p>
+<pre><code class="language-css">/* Adicione seus estilos CSS aqui para personalizar a tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+</code></pre>
+<p><strong>JavaScript (script.js):</strong></p>
+<pre><code class="language-javascript">async function buscarProdutos() {
+  try {
+    const response = await fetch('produtos.json');
+    const produtos = await response.json();
+
+    const tabelaBody = document.querySelector('#tabela-produtos tbody');
+
+    produtos.forEach(produto =&gt; {
+      const novaLinha = document.createElement('tr');
+      const nomeCelula = document.createElement('td');
+      const precoCelula = document.createElement('td');
+
+      nomeCelula.textContent = produto.nome;
+      precoCelula.textContent = `R$ ${produto.preco.toFixed(2)}`;
+
+      novaLinha.appendChild(nomeCelula);
+      novaLinha.appendChild(precoCelula);
+      tabelaBody.appendChild(novaLinha);
+    });
+  } catch (error) {
+    console.error('Erro ao buscar produtos:', error);
+  }
+}
+
+buscarProdutos();
+</code></pre>
+<p><strong>Explicação das Alterações:</strong></p>
+<ul>
+<li><strong>Estrutura da tabela:</strong></li>
+<li>O HTML agora inclui uma tabela com cabeçalho (<thead>) e corpo (<tbody>).</li>
+<li>O cabeçalho define as colunas "Nome" e "Preço".</li>
+<li><strong>Inserção de dados:</strong></li>
+<li>O JavaScript cria novas linhas (<tr>) para cada produto.</li>
+<li>Dentro de cada linha, são criadas células (<td>) para o nome e preço.</li>
+<li>As células são preenchidas com os dados do produto e adicionadas à tabela.</li>
+<li><strong>CSS:</strong></li>
+<li>O CSS adiciona estilos básicos à tabela, como bordas e espaçamento entre as células.</li>
+<li>Você pode personalizar ainda mais a aparência da tabela conforme suas necessidades.</li>
+</ul>
+<p><strong>Como funciona:</strong></p>
+<ol>
+<li><strong>Busca os dados:</strong> O JavaScript busca os dados do arquivo JSON.</li>
+<li><strong>Cria a tabela:</strong> A função cria uma tabela HTML com cabeçalho e corpo.</li>
+<li><strong>Preenche a tabela:</strong> Para cada produto, uma nova linha é criada e adicionada ao corpo da tabela.</li>
+<li><strong>Exibe a tabela:</strong> A tabela completa é exibida na página.</li>
+</ol>
+<p><strong>Exercícios:</strong></p>
+<ul>
+<li><strong>Adicionar mais colunas:</strong> Se o seu JSON tiver mais informações, você pode adicionar mais colunas à tabela.</li>
+<li><strong>Formatar números:</strong> Use o método <code>.toLocaleString()</code> para formatar números de acordo com as configurações regionais.</li>
+<li><strong>Ordenar dados:</strong> Implemente uma função para ordenar os dados da tabela de acordo com um critério específico.</li>
+<li><strong>Filtrar dados:</strong> Crie um campo de busca para filtrar os produtos.</li>
+<li><strong>Estilização:</strong> Use CSS para personalizar a aparência da tabela, como cores, fontes e layout.</li>
+</ul>
+<p><strong>Exemplo com mais colunas e formatação:</strong></p>
+<pre><code class="language-javascript">// ... (código anterior)
+
+precoCelula.textContent = produto.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+</code></pre>
+<p>Isso formatará o preço como "R$ 29,99".</p>
+<h2 id="criando-uma-interface-html-com-javascript">Criando uma Interface HTML com JavaScript</h2>
+<p>Antes de começarmos a codificar, vamos entender a função de cada elemento HTML que você mencionou</p>
+<ul>
+<li><strong>header:</strong> Geralmente contém o logo, título do site e informações de contato.</li>
+<li><strong>nav:</strong> Contém os links de navegação principais (home, serviços, contato, etc.).</li>
+<li><strong>section:</strong> Define uma seção independente de um documento.</li>
+<li><strong>article:</strong> Representa um conteúdo autônomo e independente, como um post de blog ou artigo de notícia.</li>
+<li><strong>footer:</strong> Contém informações de rodapé, como copyright, links para políticas de privacidade e informações de contato adicionais.</li>
+</ul>
+<h3 id="estrutura-basica-html">Estrutura Básica HTML</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Meu Site&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Meu Site&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Serviços&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;section&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Bem-vindo!&lt;/h2&gt;
+            &lt;p&gt;Este é o conteúdo principal da minha página.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2023 Meu Site&lt;/p&gt;
+    &lt;/footer&gt;
+
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="estilizando-com-css-stylescss">Estilizando com CSS (styles.css)</h3>
+<pre><code class="language-css">/* Adicione aqui seus estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+</code></pre>
+<h3 id="adicionando-interatividade-com-javascript-scriptjs">Adicionando Interatividade com JavaScript (script.js)</h3>
+<pre><code class="language-javascript">// Adicione aqui seu código JavaScript
+// Exemplo:
+const botao = document.getElementById('meuBotao');
+
+botao.addEventListener('click', () =&gt; {
+    alert('Você clicou no botão!');
+});
+</code></pre>
+<h3 id="explicando-o-codigo">Explicando o Código</h3>
+<ul>
+<li><strong>HTML:</strong> Define a estrutura básica da página, incluindo os elementos header, nav, section, article e footer.</li>
+<li><strong>CSS:</strong> Estiliza a página, definindo cores, fontes, espaçamentos, etc.</li>
+<li><strong>JavaScript:</strong> Adiciona interatividade à página, permitindo que você manipule elementos HTML e responda a eventos do usuário.</li>
+</ul>
+<h2 id="criando-uma-interface-html-com-javascript-ii">Criando uma Interface HTML com JavaScript II</h2>
+<h3 id="estrutura-basica">Estrutura Básica</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Meu Site&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<ul>
+<li><strong>&lt;!DOCTYPE html&gt;:</strong> Declara o tipo de documento HTML.</li>
+<li><strong><html>:</strong> Raiz de todos os elementos HTML.</li>
+<li><strong><head>:</strong> Contém metadados da página, como o título e links para arquivos CSS.</li>
+<li><strong><body>:</strong> Contém o conteúdo visível da página.</li>
+<li><strong><script>:</strong> Inclui um script JavaScript.</li>
+</ul>
+<h3 id="criando-uma-pagina-simples">Criando uma Página Simples</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Minha Primeira Página&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
+    &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+    &lt;button onclick=&quot;mostrarMensagem()&quot;&gt;Clique aqui&lt;/button&gt;
+
+    &lt;script&gt;
+        function mostrarMensagem() {
+            alert(&quot;Olá, mundo!&quot;);
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Neste exemplo:</p>
+<ul>
+<li><strong>HTML:</strong> Cria um título, um parágrafo e um botão.</li>
+<li><strong>CSS:</strong> Define a fonte e o alinhamento do texto.</li>
+<li><strong>JavaScript:</strong> Cria uma função que exibe uma mensagem de alerta quando o botão é clicado.</li>
+</ul>
+<h3 id="adicionando-interatividade-com-javascript">Adicionando Interatividade com JavaScript</h3>
+<pre><code class="language-javascript">// Selecione o elemento com o ID &quot;meuParagrafo&quot;
+const paragrafo = document.getElementById(&quot;meuParagrafo&quot;);
+
+// Altere o conteúdo do parágrafo
+paragrafo.textContent = &quot;O texto foi alterado pelo JavaScript!&quot;;
+</code></pre>
+<h3 id="trabalhando-com-eventos">Trabalhando com Eventos</h3>
+<pre><code class="language-javascript">// Selecione o botão
+const botao = document.getElementById(&quot;meuBotao&quot;);
+
+// Adicione um ouvinte de eventos para o clique
+botao.addEventListener(&quot;click&quot;, function() {
+    // Código a ser executado quando o botão for clicado
+    console.log(&quot;Botão clicado!&quot;);
+});
+</code></pre>
+<h3 id="estrutura-basica-com-header-nav-section-article-e-footer">Estrutura Básica com Header, Nav, Section, Article e Footer</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Meu Site&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;article&gt;
+            &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;/footer&gt;
+    &lt;script&gt;
+        &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="manipulando-html-com-javascript-criando-uma-spa-do-zero">Manipulando HTML com JavaScript: Criando uma SPA do Zero</h2>
+<p><strong>O que é uma SPA?</strong></p>
+<p>Uma Single Page Application (SPA) é um tipo de aplicação web que carrega uma única página HTML e, em vez de recarregar toda a página durante a navegação, ela atualiza dinamicamente o conteúdo com base nas interações do usuário. Isso proporciona uma experiência mais fluida e semelhante a um aplicativo desktop.</p>
+<p><strong>Criando Elementos HTML com JavaScript</strong></p>
+<p>Para criar elementos HTML dinamicamente com JavaScript, utilizamos o método <code>createElement()</code>. Após criar o elemento, podemos configurá-lo com atributos, adicionar conteúdo e, finalmente, inseri-lo no DOM (Document Object Model) da página.</p>
+<p><strong>Exemplo Prático: Criando um Card de Produto</strong></p>
+<pre><code class="language-javascript">// Criando um novo elemento div
+const card = document.createElement('div');
+card.classList.add('card'); // Adicionando uma classe para estilização
+
+// Criando elementos internos do card
+const titulo = document.createElement('h2');
+titulo.textContent = 'Produto X';
+
+const descricao = document.createElement('p');
+descricao.textContent = 'Descrição do produto.';
+
+const imagem = document.createElement('img');
+imagem.src = 'caminho/para/imagem.jpg';
+imagem.alt = 'Imagem do produto';
+
+// Adicionando os elementos internos ao card
+card.appendChild(titulo);
+card.appendChild(descricao);
+card.appendChild(imagem);
+
+// Selecionando o elemento onde o card será inserido
+const container = document.getElementById('container');
+
+// Adicionando o card ao container
+container.appendChild(card);
+</code></pre>
+<p><strong>HTML:</strong></p>
+<pre><code class="language-html">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;
+</code></pre>
+<p><strong>CSS:</strong></p>
+<pre><code class="language-css">.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+}
+</code></pre>
+<p><strong>Explicação:</strong></p>
+<ol>
+<li><strong>Criamos os elementos:</strong> <code>div</code>, <code>h2</code>, <code>p</code> e <code>img</code>.</li>
+<li><strong>Configuramos os elementos:</strong> Definimos o texto, a classe, a fonte da imagem e o texto alternativo.</li>
+<li><strong>Adicionamos os elementos filhos:</strong> Inserimos os elementos <code>h2</code>, <code>p</code> e <code>img</code> dentro do elemento <code>div</code>.</li>
+<li><strong>Inserimos no DOM:</strong> Selecionamos o elemento com o ID <code>container</code> e adicionamos o card a ele.</li>
+</ol>
+<h3 id="criando-uma-spa-simples"><strong>Criando uma SPA Simples</strong></h3>
+<p>Para criar uma SPA simples, podemos utilizar JavaScript para:</p>
+<ul>
+<li><strong>Manipular o conteúdo:</strong> Alterar o conteúdo de elementos HTML com base em eventos do usuário.</li>
+<li><strong>Gerenciar rotas:</strong> Carregar diferentes conteúdos dependendo da URL.</li>
+<li><strong>Fazer requisições AJAX:</strong> Carregar dados de um servidor sem recarregar a página.</li>
+</ul>
+<p><strong>Exemplo de SPA com Navegação Simples:</strong></p>
+<pre><code class="language-javascript">const links = document.querySelectorAll('nav a');
+
+links.forEach(link =&gt; {
+    link.addEventListener('click', (event) =&gt; {
+        event.preventDefault();
+        const conteudo = document.getElementById('conteudo');
+        conteudo.textContent = `Você clicou em ${link.textContent}`;
+    });
+});
+</code></pre>
+<h2 id="criando-uma-galeria-de-cards-com-tres-colunas-e-tres-linhas-em-html-css-e-javascript">Criando uma Galeria de Cards com Três Colunas e Três Linhas em HTML, CSS e JavaScript</h2>
+<p><strong>Entendendo o Desafio</strong></p>
+<p>Queremos construir uma galeria de cards, onde cada card contém um título, uma imagem e possivelmente outros elementos. O objetivo é organizar esses cards em uma grade de três colunas e três linhas, utilizando HTML para a estrutura, CSS para o estilo e JavaScript para adicionar interatividade (opcional).</p>
+<p><strong>Estrutura HTML Básica</strong></p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Galeria de Cards&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;gallery&quot;&gt;
+        &lt;/div&gt;
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><strong>Estilização com CSS</strong></p>
+<pre><code class="language-css">.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+}
+</code></pre>
+<p><strong>Criando os Cards com JavaScript</strong></p>
+<pre><code class="language-javascript">const gallery = document.querySelector('.gallery');
+
+// Dados dos cards (pode ser obtido de uma API ou outro local)
+const cardsData = [
+    { title: 'Card 1', image: 'image1.jpg' },
+    { title: 'Card 2', image: 'image2.jpg' },
+    // ... e assim por diante
+];
+
+// Função para criar um card
+function createCard(data) {
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const title = document.createElement('h2');
+    title.textContent = data.title;
+
+    const image = document.createElement('img');
+    image.src = data.image;
+    image.alt = data.title;
+
+    card.appendChild(title);
+    card.appendChild(image);
+    return card;
+}
+
+// Criando os cards e adicionando à galeria
+cardsData.forEach(data =&gt; {
+    const cardElement = createCard(data);
+    gallery.appendChild(cardElement);
+});
+</code></pre>
+<p><strong>Explicando o Código:</strong></p>
+<ol>
+<li><strong>HTML:</strong> Criamos um container com a classe <code>gallery</code> para agrupar os cards.</li>
+<li><strong>CSS:</strong> </li>
+<li><code>display: grid;</code> transforma o container em um grid.</li>
+<li><code>grid-template-columns: repeat(3, 1fr);</code> cria três colunas de tamanho igual.</li>
+<li><code>gap: 20px;</code> adiciona um espaço de 20px entre os cards.</li>
+<li><strong>JavaScript:</strong></li>
+<li>Selecionamos o container da galeria.</li>
+<li>Criamos um array <code>cardsData</code> com os dados de cada card.</li>
+<li>A função <code>createCard</code> cria um elemento <code>div</code> com as classes e conteúdos necessários.</li>
+<li>Iteramos sobre os dados dos cards, criando um elemento <code>card</code> para cada um e adicionando-o à galeria.</li>
+</ol>
+<p><strong>Exercícios</strong></p>
+<ul>
+<li><strong>Estilização:</strong> Modifique as classes CSS para personalizar a aparência dos cards e da galeria.</li>
+<li><strong>Conteúdo:</strong> Adicione mais dados aos cards, como descrições, botões, etc.</li>
+<li><strong>Layout:</strong> Experimente diferentes valores para <code>grid-template-columns</code> e <code>gap</code> para ajustar o layout.</li>
+<li><strong>Responsividade:</strong> Utilize media queries para adaptar a galeria a diferentes tamanhos de tela.</li>
+<li><strong>Interatividade:</strong> Adicione eventos aos cards, como hover, clique, etc., para criar efeitos visuais ou ações.</li>
+</ul>
+<p><strong>Exemplo com Mais Detalhes:</strong></p>
+<pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
+    &lt;h2&gt;Título do Card&lt;/h2&gt;
+    &lt;img src=&quot;image.jpg&quot; alt=&quot;Descrição da Imagem&quot;&gt;
+    &lt;p&gt;Descrição detalhada do card.&lt;/p&gt;
+    &lt;button&gt;Ver Mais&lt;/button&gt;
+&lt;/div&gt;
+</code></pre></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/python.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/html.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/css.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/javascript.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../../.."</script>
+    
+    <script src="../../../../js/base.js"></script>
+    <script src="../../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
