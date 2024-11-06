@@ -8,9 +8,10 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 
 ### Entrega
 
-- **[Obrigatório]** - **Prazo:** 27/11/2024 até as 9:20h(**AP2 ocorrerá antes do intervalo**). Obrigatório a presença em sala de aula.
-- **[Obrigatório]** - Enviar o projeto para o repositório em que o professor foi adicionado como colaborador em uma pasta chamada ap2 dentro da pasta docs, com  **HTML**, **CSS**, **JAVASCRIPT** e **imagens** utilizados.
-- **[Obrigatório]** - Deve ser feita a publicação da pasta docs no github-pages, na pasta docs portanto devem estar a pasta ac, ap1 e ap2.
+- **Prazo:** 27/11/2024 até as 9:20h(**AP2 ocorrerá antes do intervalo**). Obrigatório a presença em sala de aula.
+- Enviar o projeto para o repositório em que o professor foi adicionado como colaborador em uma pasta chamada ap2 dentro da pasta docs, com  **HTML**, **CSS**, **JAVASCRIPT** e **imagens** utilizados.
+- Deve ser feita a publicação da pasta docs no github-pages, na pasta docs portanto devem estar a pasta ac, ap1 e ap2 e páginas disponíveis para serem visualizadas na Web
+- Apresentação individualmente para o professor.
 
 ### Critérios de Avaliação
 
@@ -19,13 +20,13 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 - **Design** e **usabilidade** do site (estética, organização visual, navegação).
 - **Organização e clareza** do código.
 - Implementação correta de **media queries** para diferentes dispositivos.
-- <span style="color:red">Comentários específicos detalhando funcionalidades em todos os itens da avaliação</span>
+- > ***Comentários específicos detalhando funcionalidades em todos os itens da avaliação***
 
 ### Requisitos
 
 1/. **Estrutura do site:**
 
-- O site deverá privilegiar a exibição em dispositivos mobile, no máximo 600px, deve ser desenvolvido um layout para desktop.
+- O site deverá privilegiar a exibição em dispositivos mobile, no máximo 600px e também deve ser desenvolvido um layout para desktop.
 - Utilização correta de **tags semânticas** do HTML5 (ex.: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
 
 2/. **Design da barra de navegação:**
@@ -38,24 +39,15 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 3/. **Responsividade:**
 
 - O site deve se adaptar corretamente a **diferentes tamanhos de tela** (desktop e smartphone).
-- Utilização de **media queries** no CSS para ajustar o layout conforme a largura da tela.
+- Utilização de **media queries** no CSS para ajustar o layout conforme a largura da tela do mobile e desktop.
 
-3.1. **Layout:**
+3/1. **Layout:**
 
 - Deverá ser possível ver diferentes layouts de página dependendo do dispositivo (ex.: layout em uma coluna para mobile, e em duas ou mais colunas para desktop).
 
-3.2. **Conteúdo:**
-
-- Cada página deve conter conteúdo informativo fictício (utilizar **Lorem Ipsum** quando necessário).
-- Incluir **imagens** e **vídeos** relevantes e de alta qualidade. Certifique-se de que as imagens sejam redimensionáveis e não distorçam em diferentes resoluções.
-- Uma **navegação clara** entre as páginas deve ser possível por meio de um menu no `<nav>`, que deve ser responsivo.
-- Na página inicial o conteúdo principal deve usar a estrutura abaixo. Usando o sistema de layout de sua escolha:
-- Crie um layout de três colunas.
-- Garanta preenchimento consistente e margem entre os elementos.
-
 6/.**Formulário de Contato:**
 
-- Deve possui um placeholder para orientação de preenchimento
+- Deve possui um placeholder para a orientação sobre o preenchimento
 - Validação básica dos campos com **JAVASCRIPT** [Não permitindo a inserção de números e caracteres especiais]
 
 7/.**Design de rodapé:**
@@ -74,9 +66,10 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 
 - O código deve ser organizado, indentado e comentado adequadamente.
 - O **CSS** deve ser escrito em um arquivo separado e vinculado corretamente ao HTML.
+- O **Javascript** deve ser escrito em um arquivo separado e vinculado corretamente ao HTML.
 - As imagens devem ser colocadas em uma subpasta "imagens"
 
-10/. Plano em Pseudocódigo
+10/. **Plano em Pseudocódigo**
 
 - Criar a estrutura de arquivos:
 
