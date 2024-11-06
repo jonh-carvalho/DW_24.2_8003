@@ -44,7 +44,7 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 - O site deve se adaptar corretamente a **diferentes tamanhos de tela** (desktop e smartphone).
 - Utilização de **media queries** no CSS para ajustar o layout conforme a largura da tela do mobile e desktop.
 
-3\1. **Layout:**
+3.1\. **Layout:**
 
 - Deverá ser possível ver diferentes layouts de página dependendo do dispositivo (ex.: layout em uma coluna para mobile, e em duas ou mais colunas para desktop).
 
@@ -78,23 +78,19 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 
   - Criar uma pasta para o projeto.
   - Criar arquivos index.html, styles.css e script.js.
-  
 - Configurar o arquivo HTML:
 
   - Adicionar um formulário para buscar Pokémon pelo nome.
   - Adicionar uma área para exibir os dados do Pokémon.
   - Incluir referências aos arquivos CSS e JavaScript.
-
 - Estilizar a interface com CSS:
 
   - Adicionar estilos básicos para o formulário e a área de exibição.
-
 - Implementar a lógica com JavaScript:
 
   - Adicionar um evento de submissão ao formulário.
   - Usar fetch para fazer requisições à API do Pokémon.
   - Processar e exibir os dados recebidos na interface do usuário.
-
 - **Passo 1:** Criar a estrutura de arquivos
 
 ```bash
@@ -189,7 +185,8 @@ Agora, você pode abrir o arquivo index.html no seu navegador e buscar informaç
 ### Questões
 
 1\. Busque e exiba as informações de um Pokémon.
-    - name, sprites, height, weight, abilities, types, moves, baseExperience, stats.
+
+- name, sprites, height, weight, abilities, types, moves, baseExperience, stats.
 
 2\. Buscar por Tipo Pokémon e mostrar uma galeria com os 10 primeiros Pokémons
 
