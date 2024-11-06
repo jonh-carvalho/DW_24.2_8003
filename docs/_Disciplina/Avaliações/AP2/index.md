@@ -9,9 +9,9 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 ### Entrega
 
 - **Prazo:** 27/11/2024 até as 9:20h(**AP2 ocorrerá antes do intervalo**). Obrigatório a presença em sala de aula.
-- Enviar o projeto para o repositório em que o professor foi adicionado como colaborador em uma pasta chamada ap2 dentro da pasta docs, com  **HTML**, **CSS**, **JAVASCRIPT** e **imagens** utilizados.
-- Deve ser feita a publicação da pasta docs no github-pages, na pasta docs portanto devem estar a pasta ac, ap1 e ap2 e páginas disponíveis para serem visualizadas na Web
-- Apresentação individualmente para o professor.
+- **Enviar o projeto** para o repositório em que o professor foi adicionado como colaborador em uma pasta chamada ap2 dentro da pasta docs, com  **HTML**, **CSS**, **JAVASCRIPT** e **imagens** utilizados.
+- Deve ser feita a publicação da pasta docs no **github-pages**, na pasta docs portanto devem estar a pasta ac, ap1 e ap2 e páginas disponíveis para serem visualizadas na Web
+- **Apresentação** individualmente para o professor.
 
 ### Critérios de Avaliação
 
@@ -21,55 +21,58 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 - **Organização e clareza** do código.
 - Implementação correta de **media queries** para diferentes dispositivos.
 - > ***Comentários específicos detalhando funcionalidades em todos os itens da avaliação***
+  >
+- Busca na Api
+- Construção de Interfaces via Javascript
 
 ### Requisitos
 
-1/. **Estrutura do site:**
+1\. **Estrutura do site:**
 
 - O site deverá privilegiar a exibição em dispositivos mobile, no máximo 600px e também deve ser desenvolvido um layout para desktop.
 - Utilização correta de **tags semânticas** do HTML5 (ex.: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
 
-2/. **Design da barra de navegação:**
+2\. **Design da barra de navegação:**
 
 - Usando flexbox ou grid, crie uma barra de navegação que:
 - Exibe seus itens em uma linha no desktop(telas grandes.)
 - Empilha itens verticalmente para celular(tamanhos pequenos.
 - Tem um logotipo à esquerda e links de navegação à direita.
 
-3/. **Responsividade:**
+3\. **Responsividade:**
 
 - O site deve se adaptar corretamente a **diferentes tamanhos de tela** (desktop e smartphone).
 - Utilização de **media queries** no CSS para ajustar o layout conforme a largura da tela do mobile e desktop.
 
-3/1. **Layout:**
+3\1. **Layout:**
 
 - Deverá ser possível ver diferentes layouts de página dependendo do dispositivo (ex.: layout em uma coluna para mobile, e em duas ou mais colunas para desktop).
 
-6/.**Formulário de Contato:**
+4\.**Formulário de Contato:**
 
 - Deve possui um placeholder para a orientação sobre o preenchimento
 - Validação básica dos campos com **JAVASCRIPT** [Não permitindo a inserção de números e caracteres especiais]
 
-7/.**Design de rodapé:**
+5\.**Design de rodapé:**
 
 - Usando flexbox ou grid:
   - Crie um rodapé que tenha três seções: Sobre, Links e ícones de mídia social.
 
-8/.**Estilo e Design:**
+6\.**Estilo e Design:**
 
 - Aplicar um esquema de cores consistente e harmonioso.
 - O design deve ser moderno e seguir boas práticas de **UX/UI**, com foco na legibilidade e usabilidade.
 - Uso de **tipografia** apropriada, com pelo menos **duas fontes** diferentes.
 - Usar **ícones** quando necessário (ex.: Font Awesome).
 
-9/.**Código organizado:**
+7\.**Código organizado:**
 
 - O código deve ser organizado, indentado e comentado adequadamente.
 - O **CSS** deve ser escrito em um arquivo separado e vinculado corretamente ao HTML.
 - O **Javascript** deve ser escrito em um arquivo separado e vinculado corretamente ao HTML.
 - As imagens devem ser colocadas em uma subpasta "imagens"
 
-10/. **Plano em Pseudocódigo**
+8\. **Plano em Pseudocódigo**
 
 - Criar a estrutura de arquivos:
 
@@ -181,29 +184,29 @@ Agora, você pode abrir o arquivo index.html no seu navegador e buscar informaç
 
 ### Questões
 
-1/. Busque e exiba as informações de um Pokémon.
+1\. Busque e exiba as informações de um Pokémon.
     - name, sprites, height, weight, abilities, types, moves, baseExperience, stats.
 
-2/. Buscar por Tipo Pokémon e mostrar uma galeria com os 10 primeiros Pokémons
+2\. Buscar por Tipo Pokémon e mostrar uma galeria com os 10 primeiros Pokémons
 
 - Layout deve ser 2 colunas e 5 linhas para o Mobile
 - Layout de 5 colunas e duas linhas para Desktop.
 
-3/. Exibir todos os Pokémon de cada região.
+3\. Exibir todos os Pokémon de cada região.
 
 - Layout deve ser 2 colunas e 5 linhas para o Mobile
 - Layout de 5 colunas e duas linhas para Desktop.
 
-4/. Adicionar o css de efeito flip card(virar a carta) para cada item da galeria.
+4\. Adicionar o css de efeito flip card(virar a carta) para cada item da galeria.
 
 - Ao passar o mouse sobre a carta, ela gira e fica mostrando a parte de trás da carta enquanto o mouse estive sobre a carta.
 - A parte de trás da carta deve usar uma imagem da carta oficial pokemon.
 
-5/. Adicionar a funcionalidade de ao clicar em cada item da galeria, abrir uma janela modal com todas as infomarções do Pokémon clicado
+5\. Adicionar a funcionalidade de ao clicar em cada item da galeria, abrir uma janela modal com todas as infomarções do Pokémon clicado
 
-6/. Desenvolver o layout da janela modal de modo que ele tenha a estrutura de uma carta oficial Pokémon.
+6\. Desenvolver o layout da janela modal de modo que ele tenha a estrutura de uma carta oficial Pokémon.
 
-7/. Pesquise a PokeApi, e acrescente uma nova funcionalidade de busca e exibição no site, que ainda não tenho sido usada.
+7\. Pesquise a PokeApi, e acrescente uma nova funcionalidade de busca e exibição no site, que ainda não tenho sido usada.
 
 ### Aplicativos e Sites a serem estudados e se inspirar
 
