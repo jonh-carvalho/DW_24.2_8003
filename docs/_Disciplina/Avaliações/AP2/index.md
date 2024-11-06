@@ -32,23 +32,16 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 - O site deverá privilegiar a exibição em dispositivos mobile, no máximo 600px e também deve ser desenvolvido um layout para desktop.
 - Utilização correta de **tags semânticas** do HTML5 (ex.: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
 
-2\. **Design da barra de navegação:**
-
-- Usando flexbox ou grid, crie uma barra de navegação que:
-- Exibe seus itens em uma linha no desktop(telas grandes.)
-- Empilha itens verticalmente para celular(tamanhos pequenos.
-- Tem um logotipo à esquerda e links de navegação à direita.
-
-3\. **Responsividade:**
+2\. **Responsividade:**
 
 - O site deve se adaptar corretamente a **diferentes tamanhos de tela** (desktop e smartphone).
 - Utilização de **media queries** no CSS para ajustar o layout conforme a largura da tela do mobile e desktop.
 
-3.1\. **Layout:**
+2.1\. **Layout:**
 
 - Deverá ser possível ver diferentes layouts de página dependendo do dispositivo (ex.: layout em uma coluna para mobile, e em duas ou mais colunas para desktop).
 
-4\.**Formulário de Contato:**
+3\.**Formulário de Contato:**
 
 - Deve possui um placeholder para a orientação sobre o preenchimento
 - Validação básica dos campos com **JAVASCRIPT** [Não permitindo a inserção de números e caracteres especiais]
@@ -214,6 +207,7 @@ Agora, você pode abrir o arquivo index.html no seu navegador e buscar informaç
 
 ### Aplicativos e Sites a serem estudados e se inspirar
 
+- [PokeAPI](https://pokeapi.co/) - Exemplos de consumo da Api
 - Site - [Pokédex](https://www.pokemon.com/br/pokedex)
 - [Datadex](https://datadex.talzz.com/)
 - [PokePedia](https://play.google.com/store/apps/details?id=com.pascualgorrita.pokedex&hl=pt_BR&pli=1)
