@@ -224,12 +224,6 @@ botao.addEventListener('click', () => {
 </html>
 ```
 
-* **<!DOCTYPE html>:** Declara o tipo de documento HTML.
-* **<html>:** Raiz de todos os elementos HTML.
-* **<head>:** Contém metadados da página, como o título e links para arquivos CSS.
-* **<body>:** Contém o conteúdo visível da página.
-* **<script>:** Inclui um script JavaScript.
-
 ### Criando uma Página Simples
 
 ```html
@@ -318,11 +312,11 @@ botao.addEventListener("click", function() {
 
 Uma Single Page Application (SPA) é um tipo de aplicação web que carrega uma única página HTML e, em vez de recarregar toda a página durante a navegação, ela atualiza dinamicamente o conteúdo com base nas interações do usuário. Isso proporciona uma experiência mais fluida e semelhante a um aplicativo desktop.
 
-**Criando Elementos HTML com JavaScript**
+### **Criando Elementos HTML com JavaScript**
 
 Para criar elementos HTML dinamicamente com JavaScript, utilizamos o método `createElement()`. Após criar o elemento, podemos configurá-lo com atributos, adicionar conteúdo e, finalmente, inseri-lo no DOM (Document Object Model) da página.
 
-**Exemplo Prático: Criando um Card de Produto**
+### **Exemplo Prático: Criando um Card de Produto**
 
 ```javascript
 // Criando um novo elemento div
@@ -368,7 +362,7 @@ container.appendChild(card);
 }
 ```
 
-**Explicação:**
+### **Explicação:**
 
 1. **Criamos os elementos:** `div`, `h2`, `p` e `img`.
 2. **Configuramos os elementos:** Definimos o texto, a classe, a fonte da imagem e o texto alternativo.
@@ -399,11 +393,11 @@ links.forEach(link => {
 
 ## Criando uma Galeria de Cards com Três Colunas e Três Linhas em HTML, CSS e JavaScript
 
-**Entendendo o Desafio**
+### **Entendendo o Desafio**
 
 Queremos construir uma galeria de cards, onde cada card contém um título, uma imagem e possivelmente outros elementos. O objetivo é organizar esses cards em uma grade de três colunas e três linhas, utilizando HTML para a estrutura, CSS para o estilo e JavaScript para adicionar interatividade (opcional).
 
-**Estrutura HTML Básica**
+### **Estrutura HTML Básica**
 
 ```html
 <!DOCTYPE html>
@@ -420,7 +414,7 @@ Queremos construir uma galeria de cards, onde cada card contém um título, uma 
 </html>
 ```
 
-**Estilização com CSS**
+### **Estilização com CSS**
 
 ```css
 .gallery {
@@ -440,7 +434,7 @@ Queremos construir uma galeria de cards, onde cada card contém um título, uma 
 }
 ```
 
-**Criando os Cards com JavaScript**
+### **Criando os Cards com JavaScript**
 
 ```javascript
 const gallery = document.querySelector('.gallery');
@@ -476,7 +470,7 @@ cardsData.forEach(data => {
 });
 ```
 
-**Explicando o Código:**
+### **Explicando o Código:**
 
 1. **HTML:** Criamos um container com a classe `gallery` para agrupar os cards.
 2. **CSS:** 
@@ -489,21 +483,10 @@ cardsData.forEach(data => {
    * A função `createCard` cria um elemento `div` com as classes e conteúdos necessários.
    * Iteramos sobre os dados dos cards, criando um elemento `card` para cada um e adicionando-o à galeria.
 
-**Exercícios**
+### **Exercícios**
 
 * **Estilização:** Modifique as classes CSS para personalizar a aparência dos cards e da galeria.
 * **Conteúdo:** Adicione mais dados aos cards, como descrições, botões, etc.
 * **Layout:** Experimente diferentes valores para `grid-template-columns` e `gap` para ajustar o layout.
 * **Responsividade:** Utilize media queries para adaptar a galeria a diferentes tamanhos de tela.
 * **Interatividade:** Adicione eventos aos cards, como hover, clique, etc., para criar efeitos visuais ou ações.
-
-**Exemplo com Mais Detalhes:**
-
-```html
-<div class="card">
-    <h2>Título do Card</h2>
-    <img src="image.jpg" alt="Descrição da Imagem">
-    <p>Descrição detalhada do card.</p>
-    <button>Ver Mais</button>
-</div>
-```
