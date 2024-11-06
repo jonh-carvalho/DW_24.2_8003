@@ -1,0 +1,30 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+form {
+    margin: 20px auto;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#pokemon-data {
+    margin-top: 20px;
+}
+
+#pokemon-data img {
+    width: 150px;
+    height: 150px;
+}

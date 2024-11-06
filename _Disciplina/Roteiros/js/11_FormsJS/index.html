@@ -415,13 +415,6 @@
                 <li class="third-level"><a href="#estilizando-com-css-stylescss">Estilizando com CSS (styles.css)</a></li>
                 <li class="third-level"><a href="#adicionando-interatividade-com-javascript-scriptjs">Adicionando Interatividade com JavaScript (script.js)</a></li>
                 <li class="third-level"><a href="#explicando-o-codigo">Explicando o Código</a></li>
-            <li class="second-level"><a href="#criando-uma-interface-html-com-javascript-ii">Criando uma Interface HTML com JavaScript II</a></li>
-                
-                <li class="third-level"><a href="#estrutura-basica">Estrutura Básica</a></li>
-                <li class="third-level"><a href="#criando-uma-pagina-simples">Criando uma Página Simples</a></li>
-                <li class="third-level"><a href="#adicionando-interatividade-com-javascript">Adicionando Interatividade com JavaScript</a></li>
-                <li class="third-level"><a href="#trabalhando-com-eventos">Trabalhando com Eventos</a></li>
-                <li class="third-level"><a href="#estrutura-basica-com-header-nav-section-article-e-footer">Estrutura Básica com Header, Nav, Section, Article e Footer</a></li>
             <li class="second-level"><a href="#manipulando-html-com-javascript-criando-uma-spa-do-zero">Manipulando HTML com JavaScript: Criando uma SPA do Zero</a></li>
                 
                 <li class="third-level"><a href="#criando-elementos-html-com-javascript">Criando Elementos HTML com JavaScript</a></li>
@@ -624,89 +617,6 @@ botao.addEventListener('click', () =&gt; {
 <li><strong>CSS:</strong> Estiliza a página, definindo cores, fontes, espaçamentos, etc.</li>
 <li><strong>JavaScript:</strong> Adiciona interatividade à página, permitindo que você manipule elementos HTML e responda a eventos do usuário.</li>
 </ul>
-<h2 id="criando-uma-interface-html-com-javascript-ii">Criando uma Interface HTML com JavaScript II</h2>
-<h3 id="estrutura-basica">Estrutura Básica</h3>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Meu Site&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h3 id="criando-uma-pagina-simples">Criando uma Página Simples</h3>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Minha Primeira Página&lt;/title&gt;
-    &lt;style&gt;
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
-    &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
-    &lt;button onclick=&quot;mostrarMensagem()&quot;&gt;Clique aqui&lt;/button&gt;
-
-    &lt;script&gt;
-        function mostrarMensagem() {
-            alert(&quot;Olá, mundo!&quot;);
-        }
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<p>Neste exemplo:</p>
-<ul>
-<li><strong>HTML:</strong> Cria um título, um parágrafo e um botão.</li>
-<li><strong>CSS:</strong> Define a fonte e o alinhamento do texto.</li>
-<li><strong>JavaScript:</strong> Cria uma função que exibe uma mensagem de alerta quando o botão é clicado.</li>
-</ul>
-<h3 id="adicionando-interatividade-com-javascript">Adicionando Interatividade com JavaScript</h3>
-<pre><code class="language-javascript">// Selecione o elemento com o ID &quot;meuParagrafo&quot;
-const paragrafo = document.getElementById(&quot;meuParagrafo&quot;);
-
-// Altere o conteúdo do parágrafo
-paragrafo.textContent = &quot;O texto foi alterado pelo JavaScript!&quot;;
-</code></pre>
-<h3 id="trabalhando-com-eventos">Trabalhando com Eventos</h3>
-<pre><code class="language-javascript">// Selecione o botão
-const botao = document.getElementById(&quot;meuBotao&quot;);
-
-// Adicione um ouvinte de eventos para o clique
-botao.addEventListener(&quot;click&quot;, function() {
-    // Código a ser executado quando o botão for clicado
-    console.log(&quot;Botão clicado!&quot;);
-});
-</code></pre>
-<h3 id="estrutura-basica-com-header-nav-section-article-e-footer">Estrutura Básica com Header, Nav, Section, Article e Footer</h3>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Meu Site&lt;/h1&gt;
-        &lt;nav&gt;
-            &lt;/nav&gt;
-    &lt;/header&gt;
-    &lt;section&gt;
-        &lt;article&gt;
-            &lt;/article&gt;
-    &lt;/section&gt;
-    &lt;footer&gt;
-        &lt;/footer&gt;
-    &lt;script&gt;
-        &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
 <h2 id="manipulando-html-com-javascript-criando-uma-spa-do-zero">Manipulando HTML com JavaScript: Criando uma SPA do Zero</h2>
 <p><strong>O que é uma SPA?</strong></p>
 <p>Uma Single Page Application (SPA) é um tipo de aplicação web que carrega uma única página HTML e, em vez de recarregar toda a página durante a navegação, ela atualiza dinamicamente o conteúdo com base nas interações do usuário. Isso proporciona uma experiência mais fluida e semelhante a um aplicativo desktop.</p>
