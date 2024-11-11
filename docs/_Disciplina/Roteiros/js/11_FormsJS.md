@@ -1,4 +1,6 @@
-# Criando uma Tabela HTML a partir de Dados JSON
+# 11 Manipulando html com js
+
+## Criando uma Tabela HTML a partir de Dados JSON
 
 Vamos transformar a lista de produtos em uma tabela mais organizada e visualmente atraente.
 
@@ -81,11 +83,11 @@ buscarProdutos();
 **Explicação das Alterações:**
 
 * **Estrutura da tabela:**
-  * O HTML agora inclui uma tabela com cabeçalho (<thead>) e corpo (<tbody>).
+  * O HTML agora inclui uma tabela com cabeçalho (`<thead>`) e corpo (`<tbody>`).
   * O cabeçalho define as colunas "Nome" e "Preço".
 * **Inserção de dados:**
-  * O JavaScript cria novas linhas (<tr>) para cada produto.
-  * Dentro de cada linha, são criadas células (<td>) para o nome e preço.
+  * O JavaScript cria novas linhas (`<tr>`) para cada produto.
+  * Dentro de cada linha, são criadas células (`<td>`) para o nome e preço.
   * As células são preenchidas com os dados do produto e adicionadas à tabela.
 * **CSS:**
   * O CSS adiciona estilos básicos à tabela, como bordas e espaçamento entre as células.
@@ -155,7 +157,7 @@ Antes de começarmos a codificar, vamos entender a função de cada elemento HTM
     </section>
 
     <footer>
-        <p>&copy; 2023 Meu Site</p>
+        <p>© 2023 Meu Site</p>
     </footer>
 
     <script src="script.js"></script>
@@ -374,7 +376,7 @@ cardsData.forEach(data => {
 ### **Explicando o Código:**
 
 1. **HTML:** Criamos um container com a classe `gallery` para agrupar os cards.
-2. **CSS:** 
+2. **CSS:**
    * `display: grid;` transforma o container em um grid.
    * `grid-template-columns: repeat(3, 1fr);` cria três colunas de tamanho igual.
    * `gap: 20px;` adiciona um espaço de 20px entre os cards.
