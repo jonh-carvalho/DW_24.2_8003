@@ -1,15 +1,15 @@
-## AP1
+# AP1
 
-### Objetivo:
+## Objetivo:
 
 Desenvolver um site responsivo utilizando **HTML**, **CSS** e técnicas de layout como **Flexbox** e **CSS Grid**, seguindo boas práticas de design web. Escolha um tema(Loja de hardware, brinquedos, clubes, fâ-clube, etc.)
 
-### Entrega:
+## Entrega:
 
 - **Prazo:** 25/09/2024 até as 9:20h.
 - Enviar o projeto para o repositório em que o professor foi adicionado como colaborador em uma pasta chamada ap1 dentro da pasta docs, com  **HTML**, **CSS**, e **imagens** utilizados.
 
-### Critérios de Avaliação:
+## Critérios de Avaliação:
 
 * Uso correto das **tags HTML5** semânticas.
 * Implementação de **layout responsivo** com Flexbox e/ou Grid para o nav e footer.
@@ -18,7 +18,7 @@ Desenvolver um site responsivo utilizando **HTML**, **CSS** e técnicas de layou
 * Implementação correta de **media queries** para diferentes dispositivos.
 * Funcionalidade e layout do  **formulário de contato** .
 
-### Requisitos:
+## Requisitos:
 
 1. **Estrutura do site:**
 
