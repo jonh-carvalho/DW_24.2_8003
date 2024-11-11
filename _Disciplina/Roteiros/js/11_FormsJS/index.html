@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../../img/favicon.ico">
 
     
-    <title>Criando uma Tabela HTML a partir de Dados JSON - DW</title>
+    <title>11 Manipulando html com js - DW</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -328,7 +328,7 @@
         
             
 <li class="active">
-    <a href="./">Criando uma Tabela HTML a partir de Dados JSON</a>
+    <a href="./">11 Manipulando html com js</a>
 </li>
 
         
@@ -408,7 +408,9 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#criando-uma-tabela-html-a-partir-de-dados-json">Criando uma Tabela HTML a partir de Dados JSON</a></li>
+        <li class="first-level active"><a href="#11-manipulando-html-com-js">11 Manipulando html com js</a></li>
+            <li class="second-level"><a href="#criando-uma-tabela-html-a-partir-de-dados-json">Criando uma Tabela HTML a partir de Dados JSON</a></li>
+                
             <li class="second-level"><a href="#criando-uma-interface-html-com-javascript">Criando uma Interface HTML com JavaScript</a></li>
                 
                 <li class="third-level"><a href="#estrutura-basica-html">Estrutura Básica HTML</a></li>
@@ -433,7 +435,8 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="criando-uma-tabela-html-a-partir-de-dados-json">Criando uma Tabela HTML a partir de Dados JSON</h1>
+<h1 id="11-manipulando-html-com-js">11 Manipulando html com js</h1>
+<h2 id="criando-uma-tabela-html-a-partir-de-dados-json">Criando uma Tabela HTML a partir de Dados JSON</h2>
 <p>Vamos transformar a lista de produtos em uma tabela mais organizada e visualmente atraente.</p>
 <p><strong>HTML (index.html):</strong></p>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
@@ -505,11 +508,11 @@ buscarProdutos();
 <p><strong>Explicação das Alterações:</strong></p>
 <ul>
 <li><strong>Estrutura da tabela:</strong></li>
-<li>O HTML agora inclui uma tabela com cabeçalho (<thead>) e corpo (<tbody>).</li>
+<li>O HTML agora inclui uma tabela com cabeçalho (<code>&lt;thead&gt;</code>) e corpo (<code>&lt;tbody&gt;</code>).</li>
 <li>O cabeçalho define as colunas "Nome" e "Preço".</li>
 <li><strong>Inserção de dados:</strong></li>
-<li>O JavaScript cria novas linhas (<tr>) para cada produto.</li>
-<li>Dentro de cada linha, são criadas células (<td>) para o nome e preço.</li>
+<li>O JavaScript cria novas linhas (<code>&lt;tr&gt;</code>) para cada produto.</li>
+<li>Dentro de cada linha, são criadas células (<code>&lt;td&gt;</code>) para o nome e preço.</li>
 <li>As células são preenchidas com os dados do produto e adicionadas à tabela.</li>
 <li><strong>CSS:</strong></li>
 <li>O CSS adiciona estilos básicos à tabela, como bordas e espaçamento entre as células.</li>
@@ -572,7 +575,7 @@ precoCelula.textContent = produto.preco.toLocaleString('pt-BR', { style: 'curren
     &lt;/section&gt;
 
     &lt;footer&gt;
-        &lt;p&gt;&amp;copy; 2023 Meu Site&lt;/p&gt;
+        &lt;p&gt;© 2023 Meu Site&lt;/p&gt;
     &lt;/footer&gt;
 
     &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
@@ -754,7 +757,7 @@ cardsData.forEach(data =&gt; {
 <h3 id="explicando-o-codigo_1"><strong>Explicando o Código:</strong></h3>
 <ol>
 <li><strong>HTML:</strong> Criamos um container com a classe <code>gallery</code> para agrupar os cards.</li>
-<li><strong>CSS:</strong> </li>
+<li><strong>CSS:</strong></li>
 <li><code>display: grid;</code> transforma o container em um grid.</li>
 <li><code>grid-template-columns: repeat(3, 1fr);</code> cria três colunas de tamanho igual.</li>
 <li><code>gap: 20px;</code> adiciona um espaço de 20px entre os cards.</li>
