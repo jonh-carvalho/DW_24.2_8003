@@ -5,7 +5,6 @@
 * AC3 - Entrega 18/09/2024
 * AC4 - Entrega 22/10/2024
 * AC5 - Entrega 06/11/2024
-* AC6 - Entrega 13/11/2024
 
 Repositório de Avaliações ACs e APs
 
@@ -17,6 +16,6 @@ Repositório de Avaliações ACs e APs
 - [Gabriel](https://github.com/brioncio/desenvolvimento_web)
 - [Juliana](https://github.com/Julijolie/desenvolvimento_web/)
 - [Sarah](https://github.com/sarahferrarir/desenvolvimento_web)
-- [Arthur](https://github.com/Arthur-azeredo/DW) - não estou adicionado como colaborador.
+- [Arthur](https://github.com/Arthur-azeredo/DW) 
 - [Matheus](https://github.com/mcascaes/repositorio-dw)
 - [Luiz Fabiano](https://github.com/LFCMerino/AP1_DesenvolvimentoWeb.git)
