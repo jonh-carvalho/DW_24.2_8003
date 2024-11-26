@@ -2,16 +2,15 @@
 
 ## Objetivo
 
-Desenvolver um site responsivo utilizando **HTML**, **CSS** e técnicas de layout como **Flexbox** e **CSS Grid**, seguindo boas práticas de design web. Escolha um tema(Loja de hardware, brinquedos, clubes, fâ-clube, etc.).
-
-Crie uma aplicação web interativa que utilize a API Pokémon para exibir informações detalhadas sobre Pokémons. A aplicação deve ser responsiva (mobile-first) e seguir os **padrões web**.
+Desenvolver um site responsivo utilizando **HTML**, **CSS, JS** e técnicas de layout como **Flexbox** e **CSS Grid**, seguindo boas práticas de design web e Mobile First. Crie uma aplicação web interativa que utilize a API Pokémon para exibir informações detalhadas sobre Pokémons. A aplicação deve ser responsiva (mobile-first) e seguir os **padrões web**.
 
 ### Entrega
 
-- **Prazo:** 27/11/2024 até as 9:20h(**AP2 ocorrerá antes do intervalo**). Obrigatório a presença em sala de aula.
+- **Prazo:** 27/11/2024 até as 9:20h (**AP2 ocorrerá antes do intervalo**).
+- **Obrigatório** a presença em sala de aula.
 - **Enviar o projeto** para o repositório em que o professor foi adicionado como colaborador em uma pasta chamada ap2 dentro da pasta docs, com  **HTML**, **CSS**, **JAVASCRIPT** e **imagens** utilizados.
 - Deve ser feita a publicação da pasta docs no **github-pages**, na pasta docs portanto devem estar a pasta ac, ap1 e ap2 e páginas disponíveis para serem visualizadas na Web
-- **Apresentação** individualmente para o professor.
+- **Apresentação** individualmente para o professor em sala de aula das **07:30 às 9:20h.**
 
 ### Critérios de Avaliação
 
@@ -68,24 +67,18 @@ Crie uma aplicação web interativa que utilize a API Pokémon para exibir infor
 8\. **Plano em Pseudocódigo**
 
 * Criar a estrutura de arquivos:
-*     Criar uma pasta para o projeto.
-
-*     Criar arquivos index.html, styles.css e script.js.
+* Criar uma pasta para o projeto.
+* Criar arquivos index.html, styles.css e script.js.
 * Configurar o arquivo HTML:
-
-*     Adicionar um formulário para buscar Pokémon pelo nome.
-*     Adicionar uma área para exibir os dados do Pokémon.
-
-*     Incluir referências aos arquivos CSS e JavaScript.
+* Adicionar um formulário para buscar Pokémon pelo nome.
+* Adicionar uma área para exibir os dados do Pokémon.
+* Incluir referências aos arquivos CSS e JavaScript.
 * Estilizar a interface com CSS:
-
-*     Adicionar estilos básicos para o formulário e a área de exibição.
+* Adicionar estilos básicos para o formulário e a área de exibição.
 * Implementar a lógica com JavaScript:
-
-*     Adicionar um evento de submissão ao formulário.
-*     Usar fetch para fazer requisições à API do Pokémon.
-
-*     Processar e exibir os dados recebidos na interface do usuário.
+* Adicionar um evento de submissão ao formulário.
+* Usar fetch para fazer requisições à API do Pokémon.
+* Processar e exibir os dados recebidos na interface do usuário.
 
 **Passo 1:** Criar a estrutura de arquivos
 
